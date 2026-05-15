@@ -67,10 +67,10 @@ export default function HomePage() {
                 Comparar programas
               </Link>
               <Link
-                href="/white-label/solucao-white-label-para-broker"
+                href="/white-label/solucao-white-label-para-broker#lead-form"
                 className="rounded-full border border-line bg-white px-6 py-3 text-sm font-black text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-ink"
               >
-                Corretora white label
+                Ir para o próximo nível
               </Link>
             </div>
           </div>

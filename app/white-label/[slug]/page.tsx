@@ -169,7 +169,7 @@ export default async function WhiteLabelPage({ params }: PageProps) {
             </div>
           </div>
           <div className="lg:sticky lg:top-24">
-            <BeBrokerCTA compact />
+            <BeBrokerCTA compact formId="lead-form" />
           </div>
         </div>
       </article>

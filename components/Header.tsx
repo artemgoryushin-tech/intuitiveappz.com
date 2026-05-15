@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { ExternalLink } from "@/components/ExternalLink";
 import { navigation, siteConfig } from "@/data/site";
 
 export function Header() {
@@ -44,12 +43,12 @@ export function Header() {
             </nav>
           </div>
         </details>
-        <ExternalLink
-          href={siteConfig.bebrokerUrl}
+        <Link
+          href="/white-label/solucao-white-label-para-broker#lead-form"
           className="hidden rounded-full bg-ink px-4 py-2.5 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand sm:inline-flex"
         >
-          Ver BeBroker
-        </ExternalLink>
+          Ir para o próximo nível
+        </Link>
       </div>
     </header>
   );

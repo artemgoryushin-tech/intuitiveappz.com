@@ -1,9 +1,10 @@
 "use client";
 
-import { type FormEvent, useState } from "react";
+import { type FormEvent, useId, useState } from "react";
 import { PhoneNumberField } from "@/components/PhoneNumberField";
 
 type BrokerageLeadFormProps = {
+  formId?: string;
   contextName?: string;
   contextSlug?: string;
   requestType?: string;
@@ -51,12 +52,15 @@ function getTrackingPayload() {
 }
 
 export function BrokerageLeadForm({
+  formId,
   contextName = "AfiliadosPro Brasil",
   contextSlug = "afiliadospro-brasil",
   requestType = "white-label brokerage platform",
   title = "Solicitar contato",
   description = "Compartilhe seus dados e o contexto do projeto. A solicitação será enviada ao CRM para follow-up."
 }: BrokerageLeadFormProps) {
+  const generatedId = useId().replace(/:/g, "");
+  const idPrefix = formId ?? `lead-${generatedId}`;
   const [status, setStatus] = useState<SubmitState>("idle");
   const [message, setMessage] = useState("");
 
@@ -120,7 +124,7 @@ export function BrokerageLeadForm({
   }
 
   return (
-    <section id="lead-form" className="surface-card scroll-mt-24 rounded-[2rem] p-7 md:p-10">
+    <section id={formId} className="surface-card scroll-mt-24 rounded-[2rem] p-7 md:p-10">
       <div className="flex flex-col gap-3">
         <p className="text-xs font-black uppercase tracking-[0.18em] text-brand">CRM lead form</p>
         <h2 className="text-balance text-3xl font-black tracking-tight text-ink">{title}</h2>
@@ -129,9 +133,9 @@ export function BrokerageLeadForm({
 
       <form className="mt-7 grid gap-5" onSubmit={handleSubmit}>
         <div className="grid gap-4 md:grid-cols-2">
-          <Field label="Nome" htmlFor="lead-first-name" required>
+          <Field label="Nome" htmlFor={`${idPrefix}-first-name`} required>
             <input
-              id="lead-first-name"
+              id={`${idPrefix}-first-name`}
               name="first_name"
               autoComplete="name"
               placeholder="Seu nome"
@@ -139,9 +143,9 @@ export function BrokerageLeadForm({
               className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-base font-bold text-ink outline-brand"
             />
           </Field>
-          <Field label="Email" htmlFor="lead-email" required>
+          <Field label="Email" htmlFor={`${idPrefix}-email`} required>
             <input
-              id="lead-email"
+              id={`${idPrefix}-email`}
               name="email"
               type="email"
               autoComplete="email"
@@ -152,20 +156,20 @@ export function BrokerageLeadForm({
           </Field>
         </div>
 
-        <PhoneNumberField id="lead-phone" name="phone" label="Telefone" required />
+        <PhoneNumberField id={`${idPrefix}-phone`} name="phone" label="Telefone" required />
 
         <div className="grid gap-4 md:grid-cols-2">
-          <Field label="Empresa ou projeto" htmlFor="lead-company">
+          <Field label="Empresa ou projeto" htmlFor={`${idPrefix}-company`}>
             <input
-              id="lead-company"
+              id={`${idPrefix}-company`}
               name="company_name"
               placeholder="Corretora, time afiliado, fintech..."
               className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-base font-bold text-ink outline-brand"
             />
           </Field>
-          <Field label="Telegram" htmlFor="lead-telegram">
+          <Field label="Telegram" htmlFor={`${idPrefix}-telegram`}>
             <input
-              id="lead-telegram"
+              id={`${idPrefix}-telegram`}
               name="tg"
               placeholder="@usuario"
               className="w-full rounded-2xl border border-line bg-white px-4 py-3 text-base font-bold text-ink outline-brand"
@@ -173,9 +177,9 @@ export function BrokerageLeadForm({
           </Field>
         </div>
 
-        <Field label="Notas do projeto" htmlFor="lead-notes">
+        <Field label="Notas do projeto" htmlFor={`${idPrefix}-notes`}>
           <textarea
-            id="lead-notes"
+            id={`${idPrefix}-notes`}
             name="comment"
             placeholder="Regiões alvo, pagamentos, CRM, apps, prazo de lançamento..."
             className="min-h-28 w-full rounded-2xl border border-line bg-white px-4 py-3 text-base font-bold text-ink outline-brand"

@@ -3,7 +3,6 @@ export const siteConfig = {
   domain: "https://afiliadosprobr.com",
   description:
     "Guias, rankings e análises independentes sobre programas de afiliados para brokers, forex, trading e fintech no Brasil.",
-  bebrokerUrl: "https://bebroker.io",
   locale: "pt_BR"
 };
 
@@ -21,7 +20,7 @@ export const positioning = {
   subheadline:
     "Analisamos comissões, modelos CPA/RevShare, reputação, mercados, pagamentos e riscos para ajudar afiliados brasileiros a escolher ofertas melhores.",
   bebrokerValue:
-    "Para afiliados que já dominam aquisição de traders, BeBroker aparece como o próximo passo B2B: lançar uma marca própria de corretora com plataforma white label (marca branca), implantação rápida e US$0 de mensalidade."
+    "Para afiliados que já dominam aquisição de traders, o próximo passo B2B pode ser lançar uma marca própria de corretora com plataforma white label (marca branca), operação estruturada e captação direta de receita."
 };
 
 export type Program = {
@@ -801,7 +800,7 @@ export const whiteLabelPages: WhiteLabelPage[] = [
     slug: "solucao-white-label-para-broker",
     title: "Solução white label (marca branca) para broker: o que avaliar antes de lançar",
     description:
-      "Veja critérios para escolher uma solução corretora white label (marca branca) e quando BeBroker pode ser uma alternativa para afiliados avançados que já compram tráfego.",
+      "Veja critérios para escolher uma solução corretora white label (marca branca) e quando a marca própria pode ser uma alternativa para afiliados avançados que já compram tráfego.",
     keyword: "solução white label (marca branca) para broker",
     sections: [
       {
@@ -952,7 +951,7 @@ export const contentRoadmap = [
   "Semana 1: publicar rankings principais e páginas institucionais para indexação inicial.",
   "Semana 2: publicar análises de Pocket Option, Quotex, IQ Option, Exness, XM e AvaTrade.",
   "Semana 3: publicar guias CPA/RevShare, compliance, tráfego e seleção de programas.",
-  "Semana 4: publicar white label (marca branca) hub, calculadoras simples e interlinks para BeBroker.",
+  "Semana 4: publicar white label (marca branca) hub, calculadoras simples e interlinks para a página de próximo nível.",
   "Meses 2-3: expandir análises, criar comparativos marca vs marca e atualizar dados de pagamento."
 ];
 
@@ -1302,7 +1301,7 @@ const defaultRankingSeoContent: RankingSeoContent = {
     }
   ],
   bebrokerBridge:
-    "Se você já gera FTDs de forma previsível, conhece CAC/LTV e domina aquisição de traders, comparar programas de afiliados é apenas uma etapa. O próximo movimento pode ser testar uma corretora própria com solução white label como BeBroker, capturando mais valor do funil em vez de depender só de CPA ou RevShare de terceiros.",
+    "Se você já gera FTDs de forma previsível, conhece CAC/LTV e domina aquisição de traders, comparar programas de afiliados é apenas uma etapa. O próximo movimento pode ser testar uma corretora própria com solução white label, capturando mais valor do funil em vez de depender só de CPA ou RevShare de terceiros.",
   faqs: [
     {
       question: "Qual é o melhor programa de afiliados para brokers?",
@@ -1315,7 +1314,7 @@ const defaultRankingSeoContent: RankingSeoContent = {
         "Pode pagar bem, mas o valor real depende de FTD qualificado, país, volume de trading, aprovação do lead e qualidade da fonte de tráfego."
     },
     {
-      question: "Quando BeBroker faz sentido para afiliados?",
+      question: "Quando uma corretora white label faz sentido para afiliados?",
       answer:
         "Quando o afiliado já tem aquisição previsível, entende retenção e quer construir uma marca própria em vez de promover apenas ofertas de terceiros."
     }
@@ -1826,7 +1825,7 @@ export const reviewSeoEnhancements: Record<string, ReviewSeoEnhancement> = Objec
         "Medir clique, cadastro, FTD, trader qualificado e pagamento líquido separadamente."
       ],
       whiteLabelAlternative:
-        "Se sua audiência já gera FTDs previsíveis, a decisão deixa de ser apenas qual programa promover. Nesse estágio, vale comparar a comissão de terceiros com a possibilidade de lançar uma marca própria usando uma solução white label como BeBroker.",
+        "Se sua audiência já gera FTDs previsíveis, a decisão deixa de ser apenas qual programa promover. Nesse estágio, vale comparar a comissão de terceiros com a possibilidade de lançar uma marca própria usando uma solução white label.",
       faq: [
         {
           question: `${program.name} é um bom programa para afiliados no Brasil?`,
