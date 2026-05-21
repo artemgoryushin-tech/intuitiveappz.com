@@ -10,12 +10,11 @@ import {
 } from "libphonenumber-js/min";
 
 const priorityCountries = ["US", "GB", "CA", "AU", "BR", "PT", "ES", "CY", "AE", "IN", "ZA", "DE", "FR", "IT"] as const;
-const countryNameFormatter = new Intl.DisplayNames(["en"], { type: "region" });
 
 const countryOptions = getCountries()
   .map((country) => ({
     country,
-    name: countryNameFormatter.of(country) ?? country,
+    name: country,
     callingCode: getCountryCallingCode(country)
   }))
   .sort((left, right) => {
@@ -26,7 +25,7 @@ const countryOptions = getCountries()
       return (leftPriority === -1 ? 999 : leftPriority) - (rightPriority === -1 ? 999 : rightPriority);
     }
 
-    return left.name.localeCompare(right.name, "en");
+    return left.name.localeCompare(right.name, "en-US");
   });
 
 type PhoneNumberFieldProps = {
