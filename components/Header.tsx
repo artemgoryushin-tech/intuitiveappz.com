@@ -10,7 +10,7 @@ export function Header() {
           className="flex items-center gap-3 text-lg font-black tracking-tight text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
         >
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-ink text-sm text-white shadow-soft">
-            AH
+            AP
           </span>
           <span>{siteConfig.name}</span>
         </Link>

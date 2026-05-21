@@ -3,23 +3,23 @@ export const siteConfig = {
   // TODO: Replace with the final production domain before launch.
   domain: "https://affiliateprohub.com",
   description:
-    "Independent guides, rankings and reviews for broker, forex, trading and fintech affiliate programs worldwide.",
+    "Independent guides for broker affiliate programs, trading platform clone scripts, white label brokerage launches and fintech growth.",
   locale: "en_US"
 };
 
 export const navigation = [
   { label: "Programs", href: "/programas" },
   { label: "Reviews", href: "/reviews" },
+  { label: "Clone Scripts", href: "/clone-script" },
   { label: "Guides", href: "/guias" },
-  { label: "Tools", href: "/ferramentas" },
   { label: "White Label", href: "/white-label/broker-white-label-solution" }
 ];
 
 export const positioning = {
-  eyebrow: "Affiliate marketing for brokers, trading and fintech",
-  headline: "Compare affiliate programs for brokers, forex and trading",
+  eyebrow: "Affiliate growth, broker launches and trading platform infrastructure",
+  headline: "From broker affiliate offers to your own trading platform",
   subheadline:
-    "We review commission models, CPA and RevShare terms, reputation, markets, payouts, traffic rules and risk signals so financial affiliates can choose offers with more context.",
+    "Compare affiliate programs, study clone-script requirements and plan compliant white label brokerage launches without copying brands, trademarks or risky marketing claims.",
   bebrokerValue:
     "For affiliates who already understand trader acquisition, the next B2B step may be launching a broker brand with a white label platform, structured operations and direct ownership of the customer funnel."
 };
@@ -723,10 +723,352 @@ export const whiteLabelPages: WhiteLabelPage[] = [
   }
 ];
 
+export type CloneScriptPage = {
+  slug: string;
+  title: string;
+  description: string;
+  keyword: string;
+  brandReference: string;
+  positioning: string;
+  mustHaveFeatures: string[];
+  buildModules: Array<{ title: string; body: string }>;
+  complianceNotes: string[];
+  monetizationAngles: string[];
+  faq: FaqContent[];
+  relatedLinks: Array<{ label: string; href: string }>;
+};
+
+const cloneScriptDisclaimer =
+  "Clone script does not mean copying a protected brand, logo, interface, database, codebase or regulated entity. These pages use brand names only as search references and describe legal, white label or custom platform alternatives with original branding and compliance review.";
+
+export const cloneScriptPages: CloneScriptPage[] = [
+  {
+    slug: "quotex-clone-script",
+    title: "Quotex clone script: compliant trading platform alternative",
+    description:
+      "What a Quotex clone script request usually means: digital options UI, CRM, payments, risk controls, affiliate module and a legal white label build with original branding.",
+    keyword: "Quotex clone script",
+    brandReference: "Quotex",
+    positioning:
+      "Use Quotex as a product-pattern reference, not as something to copy. A serious build should focus on a fast trading interface, simple onboarding, campaign tracking and strong operational controls under your own brand.",
+    mustHaveFeatures: [
+      "Short-cycle trading interface with clear risk disclosure",
+      "Trader cabinet with deposits, withdrawals and KYC status",
+      "Admin CRM for users, balances, tickets and conversion events",
+      "Affiliate tracking with subIDs, postbacks and source-level reporting",
+      "Payment integrations, reconciliation and anti-fraud workflows",
+      "Market, country and product controls for compliance teams"
+    ],
+    buildModules: [
+      {
+        title: "Trading front end",
+        body: "The front end should be fast, mobile-first and original. Instead of copying Quotex screens, define the trading flow, chart layout, asset list, expiration logic and risk messages around your legal product scope."
+      },
+      {
+        title: "Back office and CRM",
+        body: "A clone-script project without CRM quickly becomes unmanageable. Operators need user segmentation, FTD events, deposits, withdrawals, support notes, source attribution and fraud signals in one panel."
+      },
+      {
+        title: "Affiliate and campaign layer",
+        body: "If acquisition comes from affiliates, the platform needs links, subIDs, postback support, creative rules, lead quality reports and revocation logic for prohibited traffic."
+      },
+      {
+        title: "White label launch path",
+        body: "For most teams, the practical option is a white label or custom build using original branding, not a literal copy of a competitor's product or marks."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not use Quotex logos, trade dress, domain lookalikes or wording that suggests official affiliation.",
+      "Trading and digital options can be high risk and may be restricted in target markets.",
+      "Plan legal review, risk warnings, KYC, payment monitoring and complaint handling before launch."
+    ],
+    monetizationAngles: [
+      "Own the trader lifecycle instead of sending every FTD to third-party affiliate programs.",
+      "Use affiliate and IB modules to recruit publishers under controlled rules.",
+      "Build retention through education, support and responsible product design rather than aggressive promises."
+    ],
+    faq: [
+      {
+        question: "Can I legally launch a Quotex clone script?",
+        answer:
+          "You should not copy Quotex branding, interface, code or protected assets. A safer path is an original trading platform or white label build inspired by broad product patterns, reviewed for your target market."
+      },
+      {
+        question: "What is the difference between a clone script and white label?",
+        answer:
+          "A clone script usually describes desired functionality. White label is an operational launch model where technology is supplied by a vendor and branded for your business."
+      }
+    ],
+    relatedLinks: [
+      { label: "Quotex affiliate review", href: "/reviews/quotex-affiliate-program" },
+      { label: "Broker white label", href: "/white-label/broker-white-label-solution" },
+      { label: "Trading platform cost", href: "/white-label/trading-platform-launch-cost" }
+    ]
+  },
+  {
+    slug: "pocket-option-clone-script",
+    title: "Pocket Option clone script: features, risks and white label path",
+    description:
+      "Plan a Pocket Option-style trading platform with original branding, affiliate tracking, CRM, payments, risk controls and compliance-first launch requirements.",
+    keyword: "Pocket Option clone script",
+    brandReference: "Pocket Option",
+    positioning:
+      "A Pocket Option clone script brief normally signals demand for a simple trading UX, partner acquisition and quick onboarding. The defensible version is a custom or white label platform with your own brand and documented compliance rules.",
+    mustHaveFeatures: [
+      "Mobile-first trading room with original UI and clear product rules",
+      "Partner dashboard for CPA, RevShare, tiers and sub-affiliates",
+      "CRM for FTD tracking, trader activity and retention cohorts",
+      "Payment rails with limits, holds, reconciliation and withdrawal status",
+      "Content, bonus and notification controls that avoid misleading claims",
+      "Audit logs for user actions, balance changes and manager decisions"
+    ],
+    buildModules: [
+      {
+        title: "Partner-driven acquisition",
+        body: "Pocket Option is heavily associated with affiliate acquisition. A similar business model needs robust tracking, source rules, partner caps and quality feedback instead of only a sign-up form."
+      },
+      {
+        title: "Risk and bonus controls",
+        body: "Short-cycle trading platforms need conservative bonus language, risk visibility and controls for regions where the product is restricted or unsuitable."
+      },
+      {
+        title: "CRM and retention",
+        body: "Retention cannot depend on interface similarity. Build user education, support workflows, segmentation and responsible reactivation into the CRM."
+      },
+      {
+        title: "Original product identity",
+        body: "Do not imitate logos, colors, typography or layouts closely enough to confuse users. Use the search demand to explain requirements, then launch a distinct brand."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not imply that the platform is affiliated with Pocket Option.",
+      "Avoid income, profit, signal or guaranteed-return messaging in ads and landing pages.",
+      "Validate whether the product, onboarding and payment flows are permitted in each target market."
+    ],
+    monetizationAngles: [
+      "Move from third-party RevShare to direct product economics if acquisition is predictable.",
+      "Offer affiliate tiers only after fraud, traffic quality and regional restrictions are controlled.",
+      "Use education and transparent product rules as conversion assets."
+    ],
+    faq: [
+      {
+        question: "What should a Pocket Option clone script include?",
+        answer:
+          "At minimum: trading room, user cabinet, admin CRM, affiliate tracking, payment operations, risk notices, KYC/anti-fraud workflows and reporting."
+      },
+      {
+        question: "Is a clone script cheaper than white label?",
+        answer:
+          "Not always. A cheap script can become expensive if it lacks payments, reporting, security, support and compliance controls."
+      }
+    ],
+    relatedLinks: [
+      { label: "Pocket Option affiliate review", href: "/reviews/pocket-option-affiliate-program" },
+      { label: "Broker white label", href: "/white-label/broker-white-label-solution" },
+      { label: "Affiliate vs own brand", href: "/guias/affiliate-program-vs-own-broker-brand" }
+    ]
+  },
+  {
+    slug: "olymp-trade-clone-script",
+    title: "Olymp Trade clone script: trading app modules and launch checklist",
+    description:
+      "A compliance-aware guide to Olymp Trade-style platform requirements: onboarding, education, CRM, payments, affiliate tracking and white label infrastructure.",
+    keyword: "Olymp Trade clone script",
+    brandReference: "Olymp Trade",
+    positioning:
+      "The useful lesson from Olymp Trade-style products is not brand imitation; it is the mix of simple onboarding, education, trading UX and partner monetization. Build those capabilities under a distinct brand.",
+    mustHaveFeatures: [
+      "Education-first onboarding and product explanations",
+      "Trading interface with original visual language",
+      "Multi-language content and support workflows",
+      "Affiliate or partner program with source-level compliance rules",
+      "CRM for deposits, activation, retention and support tickets",
+      "Payment monitoring, KYC and market access controls"
+    ],
+    buildModules: [
+      {
+        title: "Education and onboarding",
+        body: "Many trading users need explanation before activation. Build lessons, product walkthroughs, risk messages and support entry points into the first-session flow."
+      },
+      {
+        title: "Partner model",
+        body: "If the launch depends on affiliates, define CPA, RevShare, referral and hybrid terms alongside traffic restrictions and brand-use rules."
+      },
+      {
+        title: "Operational panel",
+        body: "Managers need a clean panel for user status, deposits, withdrawals, KYC, bonus usage, support events and campaign attribution."
+      },
+      {
+        title: "Brand separation",
+        body: "Use an original name, domain, visuals and legal terms. A clone-script landing page should qualify leads, not encourage trademark confusion."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not use Olymp Trade or Kingfin marks unless you have explicit permission.",
+      "Review advertising, bonus, influencer and Telegram rules for every target market.",
+      "Make risk disclosure part of onboarding and promotional pages."
+    ],
+    monetizationAngles: [
+      "Use education to improve activation quality, not to imply easier results.",
+      "Combine affiliate acquisition with CRM-based retention and support.",
+      "Evaluate white label if speed matters more than owning every technical component."
+    ],
+    faq: [
+      {
+        question: "Can I build an Olymp Trade-like platform?",
+        answer:
+          "You can define similar broad capabilities, but you should not copy protected branding, interface details or legal positioning. Build an original platform and review it legally."
+      },
+      {
+        question: "What matters most in an Olymp Trade clone script brief?",
+        answer:
+          "Onboarding, education, original trading UX, payments, CRM, affiliate tracking, support workflows and compliance controls."
+      }
+    ],
+    relatedLinks: [
+      { label: "Olymp Trade affiliate review", href: "/reviews/olymp-trade-affiliate-program" },
+      { label: "How to start brokerage", href: "/white-label/how-to-start-online-brokerage" },
+      { label: "Traffic sources", href: "/guias/best-traffic-sources-for-broker-affiliates" }
+    ]
+  },
+  {
+    slug: "iq-option-clone-script",
+    title: "IQ Option clone script: platform architecture and compliance notes",
+    description:
+      "Understand IQ Option-style platform requirements for a broker launch: trading UI, CRM, analytics, payments, mobile experience and brand-safe white label alternatives.",
+    keyword: "IQ Option clone script",
+    brandReference: "IQ Option",
+    positioning:
+      "IQ Option-style search demand often comes from teams that want a polished trading experience. The safer product strategy is to define your own UX, legal entity, product scope and acquisition model instead of imitating the brand.",
+    mustHaveFeatures: [
+      "Responsive trading room and mobile-first cabinet",
+      "Real-time reports for acquisition, deposits and user activity",
+      "CRM for support, KYC, segmentation and lifecycle events",
+      "Payment methods with status tracking and reconciliation",
+      "Affiliate or IB module if publishers will drive acquisition",
+      "Compliance layer for countries, products, claims and disclosures"
+    ],
+    buildModules: [
+      {
+        title: "Architecture before interface",
+        body: "A serious build starts with product scope, entity model, risk controls, data model and reporting requirements. Interface inspiration comes later and must remain original."
+      },
+      {
+        title: "Analytics and attribution",
+        body: "Teams moving from affiliate marketing need clean attribution from ad click to FTD, active trader, payout and retention cohort."
+      },
+      {
+        title: "Mobile experience",
+        body: "A polished mobile flow can matter more than a desktop clone. Prioritize onboarding speed, account status, support and transparent risk information."
+      },
+      {
+        title: "White label versus custom build",
+        body: "White label can be faster; custom build gives more control. The right choice depends on launch timeline, budget, compliance capacity and acquisition certainty."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Avoid IQ Option marks, visual imitation and language that suggests official relationship.",
+      "Confirm product restrictions by market before writing ad or landing page copy.",
+      "Do not present platform design as a substitute for licensing, legal review or payment compliance."
+    ],
+    monetizationAngles: [
+      "Use attribution data to decide whether to stay affiliate, negotiate hybrid deals or launch a brand.",
+      "Build partner reporting into the first version if acquisition depends on publishers.",
+      "Treat mobile onboarding and support quality as retention levers."
+    ],
+    faq: [
+      {
+        question: "Is IQ Option clone script a technical or legal question?",
+        answer:
+          "Both. The technical platform is only one part. You also need brand separation, product legality, payments, KYC, risk disclosure and advertising rules."
+      },
+      {
+        question: "Should I choose white label or custom development?",
+        answer:
+          "White label is usually faster for validation. Custom development can make sense when the business has proven acquisition, budget and a clear product roadmap."
+      }
+    ],
+    relatedLinks: [
+      { label: "IQ Option affiliate review", href: "/reviews/iq-option-affiliate-program" },
+      { label: "Broker launch cost", href: "/white-label/trading-platform-launch-cost" },
+      { label: "Compliance guide", href: "/guias/financial-affiliate-compliance" }
+    ]
+  },
+  {
+    slug: "binomo-clone-script",
+    title: "Binomo clone script: build requirements for a trading platform",
+    description:
+      "A brand-safe guide to Binomo-style trading platform builds, including front end, CRM, payments, affiliate tracking, risk notices and white label alternatives.",
+    keyword: "Binomo clone script",
+    brandReference: "Binomo",
+    positioning:
+      "A Binomo clone script page should qualify platform-build intent while making clear that the launch needs original branding, legal review and operational infrastructure.",
+    mustHaveFeatures: [
+      "Original trading interface and user cabinet",
+      "Admin CRM for acquisition, KYC, balances and support",
+      "Payments, withdrawals and reconciliation workflows",
+      "Affiliate tracking with fraud and source controls",
+      "Risk notices and product-availability rules",
+      "Reporting for FTD, active trader, retention and complaints"
+    ],
+    buildModules: [
+      {
+        title: "MVP scope",
+        body: "Define the smallest launchable product: onboarding, trading room, cabinet, payments, support and reporting. Avoid buying a script that only shows a front-end demo."
+      },
+      {
+        title: "Compliance and operations",
+        body: "Trading products need rules for market access, KYC, complaints, disclosures, promotions and payment monitoring from day one."
+      },
+      {
+        title: "Affiliate stack",
+        body: "If affiliates are the main growth engine, build source-level reports and traffic restrictions into the partner module."
+      },
+      {
+        title: "Distinct brand",
+        body: "The platform should not look like Binomo or imply affiliation. Use original identity, domain, legal copy and product terms."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not copy Binomo logos, design, wording, domains or protected assets.",
+      "Avoid advertising claims around easy earnings or guaranteed outcomes.",
+      "Review market-specific restrictions before accepting deposits."
+    ],
+    monetizationAngles: [
+      "Capture more funnel value only when acquisition and operations are ready.",
+      "Use partner data to reward quality traffic rather than volume alone.",
+      "Build retention around support and education, not misleading urgency."
+    ],
+    faq: [
+      {
+        question: "What is a Binomo clone script?",
+        answer:
+          "In SEO terms, it usually means a request for a trading platform with similar broad capabilities. It should not mean copying Binomo branding, code or protected design."
+      },
+      {
+        question: "What should I ask a vendor before buying a script?",
+        answer:
+          "Ask about source code, hosting, security, payments, CRM, KYC, reporting, legal responsibilities, support SLA and exit terms."
+      }
+    ],
+    relatedLinks: [
+      { label: "Digital options programs", href: "/programas/digital-options-affiliate-programs" },
+      { label: "Broker white label", href: "/white-label/broker-white-label-solution" },
+      { label: "Compliance guide", href: "/guias/financial-affiliate-compliance" }
+    ]
+  }
+];
+
 export const seoKeywordMap = [
   { cluster: "Commercial rankings", intent: "Compare programs and monetize finance traffic", pages: rankings.map((ranking) => ranking.slug) },
   { cluster: "Brand reviews", intent: "Validate program terms, reputation and affiliate potential", pages: programs.map((program) => program.slug) },
   { cluster: "Affiliate education", intent: "Learn commission models, traffic, compliance and operations", pages: guides.map((guide) => guide.slug) },
+  { cluster: "Clone script SEO", intent: "Capture platform-build searches and qualify white label leads", pages: cloneScriptPages.map((page) => page.slug) },
   { cluster: "White label B2B", intent: "Evaluate launching a proprietary broker brand", pages: whiteLabelPages.map((page) => page.slug) }
 ];
 
@@ -734,7 +1076,7 @@ export const contentRoadmap = [
   "Week 1: publish core rankings and institutional pages for initial indexing.",
   "Week 2: publish reviews for Pocket Option, Quotex, IQ Option, Exness, XM and AvaTrade.",
   "Week 3: publish CPA/RevShare, compliance, traffic and program-selection guides.",
-  "Week 4: publish the white label hub, calculators and internal links to the B2B next-step CTA.",
+  "Week 4: publish the clone script and white label hubs with internal links to the B2B next-step CTA.",
   "Months 2-3: expand reviews, add brand-vs-brand comparisons and update payout data."
 ];
 

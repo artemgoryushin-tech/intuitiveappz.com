@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { editorialProfile, guides, programs, rankings, siteConfig, whiteLabelPages } from "@/data/site";
+import { cloneScriptPages, editorialProfile, guides, programs, rankings, siteConfig, whiteLabelPages } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const editorialDate = new Date(editorialProfile.lastUpdated);
@@ -7,6 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/programas",
     "/reviews",
+    "/clone-script",
     "/guias",
     "/white-label",
     "/ferramentas",
@@ -20,13 +21,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const dynamicRoutes = [
     ...rankings.map((item) => `/programas/${item.slug}`),
     ...programs.map((item) => `/reviews/${item.slug}`),
+    ...cloneScriptPages.map((item) => `/clone-script/${item.slug}`),
     ...guides.map((item) => `/guias/${item.slug}`),
     ...whiteLabelPages.map((item) => `/white-label/${item.slug}`)
   ];
 
   return [...staticRoutes, ...dynamicRoutes].map((route) => {
     const isHome = route === "";
-    const isMoneyPage = route.startsWith("/programas/");
+    const isMoneyPage = route.startsWith("/programas/") || route.startsWith("/clone-script/");
     const isReview = route.startsWith("/reviews/");
     const isGuide = route.startsWith("/guias/");
     const isWhiteLabel = route.startsWith("/white-label/");

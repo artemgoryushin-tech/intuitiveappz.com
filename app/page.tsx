@@ -7,6 +7,7 @@ import { BeBrokerCTA } from "@/components/BeBrokerCTA";
 import { SectionHeader } from "@/components/SectionHeader";
 import { CategoryVisual, FunnelVisual, HeroVisual, WhiteLabelFlowVisual } from "@/components/Visuals";
 import {
+  cloneScriptPages,
   guides,
   positioning,
   programs,
@@ -67,14 +68,55 @@ export default function HomePage() {
                 Compare programs
               </Link>
               <Link
-                href="/white-label/broker-white-label-solution#lead-form"
+                href="/clone-script"
                 className="rounded-full border border-line bg-white px-6 py-3 text-sm font-black text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-ink"
               >
-                Move to the next level
+                Explore clone script briefs
               </Link>
             </div>
           </div>
           <HeroVisual />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-5 py-20">
+        <div className="grid items-start gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="surface-card-strong rounded-[2rem] p-7 md:p-10">
+            <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
+              New SEO cluster
+            </p>
+            <h2 className="mt-4 text-balance text-4xl font-black tracking-tight text-ink">
+              From affiliate offer pages to platform-build intent
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-muted">
+              The English site now covers people searching for broker affiliate offers and people
+              exploring their own trading platform. Clone-script pages are written as brand-safe
+              white label briefs, not as instructions to copy a competitor.
+            </p>
+            <Link
+              href="/clone-script"
+              className="mt-7 inline-flex rounded-full bg-ink px-6 py-3 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-brand"
+            >
+              View clone script hub
+            </Link>
+          </div>
+          <div className="grid gap-5 md:grid-cols-2">
+            {cloneScriptPages.slice(0, 4).map((page) => (
+              <Link
+                key={page.slug}
+                href={`/clone-script/${page.slug}`}
+                className="visual-card group rounded-[1.75rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
+              >
+                <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
+                  {page.keyword}
+                </p>
+                <h3 className="mt-3 text-balance text-xl font-black tracking-tight text-ink group-hover:text-brand">
+                  {page.brandReference} build brief
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-muted">{page.description}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

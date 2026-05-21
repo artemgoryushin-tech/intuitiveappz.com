@@ -6,7 +6,7 @@ export type FaqItem = {
 export function Faq({ items }: { items: FaqItem[] }) {
   return (
     <section className="rounded-[2rem] border border-line bg-cream/80 p-7 md:p-10">
-      <h2 className="text-balance text-3xl font-black tracking-tight text-ink">Perguntas frequentes</h2>
+      <h2 className="text-balance text-3xl font-black tracking-tight text-ink">Frequently asked questions</h2>
       <div className="mt-7 grid gap-4">
         {items.map((item) => (
           <details

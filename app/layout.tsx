@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
   title: {
-    default: `${siteConfig.name} | Broker and trading affiliate programs`,
+    default: `${siteConfig.name} | Broker affiliate programs and clone script guides`,
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
