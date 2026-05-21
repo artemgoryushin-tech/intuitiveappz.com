@@ -51,14 +51,14 @@ export default async function GuidePage({ params }: PageProps) {
   const faqItems = [
     ...(seoEnhancement?.faq ?? []),
     {
-      question: "Este conteúdo substitui os termos oficiais dos programas?",
+      question: "Does this content replace official program terms?",
       answer:
-        "Não. Use os guias como referência editorial e sempre confirme regras, comissões e restrições diretamente com cada programa."
+        "No. Use the guides as editorial references and always confirm rules, commissions and restrictions directly with each program."
     },
     {
-      question: "Por que white label (marca branca) aparece em um site de afiliados?",
+      question: "Why does white label appear on an affiliate site?",
       answer:
-        "Porque afiliados experientes muitas vezes já possuem a parte mais difícil do negócio: aquisição de usuários. White label pode ser uma evolução natural."
+        "Because experienced affiliates often already own the hardest part of the business: user acquisition. White label can be a natural next step."
     }
   ];
 
@@ -76,7 +76,7 @@ export default async function GuidePage({ params }: PageProps) {
           mainEntityOfPage: pageUrl,
           datePublished: editorialProfile.lastUpdated,
           dateModified: editorialProfile.lastUpdated,
-          inLanguage: "pt-BR",
+          inLanguage: "en-US",
           isPartOf: {
             "@type": "WebSite",
             "@id": `${siteConfig.domain}#website`,
@@ -111,8 +111,8 @@ export default async function GuidePage({ params }: PageProps) {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Início", item: siteConfig.domain },
-            { "@type": "ListItem", position: 2, name: "Guias", item: `${siteConfig.domain}/guias` },
+            { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.domain },
+            { "@type": "ListItem", position: 2, name: "Guides", item: `${siteConfig.domain}/guias` },
             { "@type": "ListItem", position: 3, name: guide.title, item: `${siteConfig.domain}/guias/${guide.slug}` }
           ]
         }}
@@ -124,16 +124,16 @@ export default async function GuidePage({ params }: PageProps) {
         <h1 className="mt-5 text-balance text-5xl font-black tracking-tight text-ink">{guide.title}</h1>
         <p className="mt-6 text-xl leading-9 text-muted">{guide.description}</p>
         <p className="mt-5 text-sm font-semibold leading-7 text-muted">
-          Por {editorialProfile.author}. Atualizado em {editorialProfile.lastUpdated}.
+          By {editorialProfile.author}. Updated on {editorialProfile.lastUpdated}.
         </p>
 
         {deepDive ? (
           <section className="surface-card-strong mt-10 rounded-[2rem] p-7 md:p-10">
             <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-              Guia prático
+              Practical guide
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-              Antes de aplicar
+              Before you apply it
             </h2>
             <p className="mt-4 text-lg leading-8 text-muted">{deepDive.intro}</p>
           </section>
@@ -143,7 +143,7 @@ export default async function GuidePage({ params }: PageProps) {
           {(seoEnhancement?.expandedSections ?? guide.sections.map((section) => ({ title: "Aprofunde a estratégia", body: section }))).map((section, index) => (
             <section key={`${section.title}-${index}`} className="surface-card rounded-[2rem] p-7">
               <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
-                Ponto {index + 1}
+                Point {index + 1}
               </p>
               <h2 className="mt-3 text-balance text-3xl font-black tracking-tight text-ink">
                 {section.title}
@@ -156,7 +156,7 @@ export default async function GuidePage({ params }: PageProps) {
         {seoEnhancement ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7">
             <h2 className="text-balance text-3xl font-black tracking-tight text-ink">
-              Próximas leituras recomendadas
+              Recommended next reads
             </h2>
             <div className="mt-6 grid gap-3 md:grid-cols-3">
               {seoEnhancement.internalLinks.map((item) => (
@@ -193,7 +193,7 @@ export default async function GuidePage({ params }: PageProps) {
               </ul>
             </div>
             <div className="surface-card rounded-[2rem] p-7">
-              <h2 className="text-2xl font-black tracking-tight text-ink">Erros comuns</h2>
+              <h2 className="text-2xl font-black tracking-tight text-ink">Common mistakes</h2>
               <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">
                 {deepDive.mistakes.map((item) => (
                   <li key={item}>• {item}</li>
@@ -202,7 +202,7 @@ export default async function GuidePage({ params }: PageProps) {
             </div>
             <div className="surface-card rounded-[2rem] p-7">
               <h2 className="text-2xl font-black tracking-tight text-ink">
-                Métricas para acompanhar
+                Metrics to track
               </h2>
               <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">
                 {deepDive.metrics.map((item) => (
@@ -211,7 +211,7 @@ export default async function GuidePage({ params }: PageProps) {
               </ul>
             </div>
             <div className="rounded-[2rem] border border-line bg-ink p-7 text-white shadow-soft">
-              <h2 className="text-2xl font-black tracking-tight">Plano de ação</h2>
+              <h2 className="text-2xl font-black tracking-tight">Action plan</h2>
               <ol className="mt-5 grid gap-3 text-sm leading-7 text-white/75">
                 {deepDive.actionPlan.map((item, index) => (
                   <li key={item}>

@@ -5,16 +5,16 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { guides, siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Guias de afiliado marketing para trading",
+  title: "Affiliate marketing guides for trading",
   description:
-    "Guias sobre CPA, RevShare, tráfego, compliance e estratégia para afiliados de brokers e trading.",
+    "Guides on CPA, RevShare, traffic, compliance and strategy for broker and trading affiliates.",
   alternates: {
     canonical: "/guias"
   },
   openGraph: {
-    title: "Guias de afiliado marketing para trading",
+    title: "Affiliate marketing guides for trading",
     description:
-      "Guias sobre CPA, RevShare, tráfego, compliance e estratégia para afiliados de brokers e trading.",
+      "Guides on CPA, RevShare, traffic, compliance and strategy for broker and trading affiliates.",
     url: `${siteConfig.domain}/guias`
   }
 };
@@ -26,7 +26,7 @@ export default function GuidesIndexPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Guias para afiliados financeiros",
+          name: "Guides for financial affiliates",
           url: `${siteConfig.domain}/guias`,
           mainEntity: {
             "@type": "ItemList",
@@ -42,9 +42,9 @@ export default function GuidesIndexPage() {
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="surface-card-strong rounded-[2rem] p-7 md:p-10">
           <SectionHeader
-            eyebrow="Guias"
-            title="Guias práticos para afiliados financeiros"
-            description="Aprenda a avaliar ofertas, estruturar funis, gerar tráfego e reduzir riscos no nicho financeiro."
+            eyebrow="Guides"
+            title="Practical guides for financial affiliates"
+            description="Learn how to evaluate offers, structure funnels, generate traffic and reduce risk in the finance niche."
             titleAs="h1"
           />
         </div>

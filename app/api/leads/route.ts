@@ -89,7 +89,7 @@ export async function POST(request: Request) {
   const body = (await request.json().catch(() => null)) as LeadBody | null;
 
   if (!body || typeof body !== "object") {
-    return NextResponse.json({ message: "Payload inválido." }, { status: 400 });
+    return NextResponse.json({ message: "Invalid payload." }, { status: 400 });
   }
 
   const firstName = readString(body, "first_name", 120);
@@ -100,15 +100,15 @@ export async function POST(request: Request) {
   const termsAgree = readBoolean(body, "terms_agree");
 
   if (!firstName || !email || !phoneInput || !termsAgree) {
-    return NextResponse.json({ message: "Nome, email, telefone e consentimento são obrigatórios." }, { status: 400 });
+    return NextResponse.json({ message: "Name, email, phone and consent are required." }, { status: 400 });
   }
 
   if (!isEmail(email)) {
-    return NextResponse.json({ message: "Digite um email válido." }, { status: 400 });
+    return NextResponse.json({ message: "Enter a valid email address." }, { status: 400 });
   }
 
   if (!phone) {
-    return NextResponse.json({ message: "Digite um telefone válido com código do país." }, { status: 400 });
+    return NextResponse.json({ message: "Enter a valid phone number with country code." }, { status: 400 });
   }
 
   const companyName = readString(body, "company_name", 180);
@@ -118,7 +118,7 @@ export async function POST(request: Request) {
   const requestType = readString(body, "request_type", 180) || "brokerage / white-label platform";
   const sourceUrl = readString(body, "source_url", 500);
   const pagePath = readString(body, "page_path", 220);
-  const language = readString(body, "lang_by_browser", 20) || "pt";
+  const language = readString(body, "lang_by_browser", 20) || "en";
   const roistatId = readString(body, "roistat_id", 120);
   const comment = readString(body, "comment", 1200) || readString(body, "short_bio", 900);
   const landingReference = getLandingReference(sourceUrl, pagePath);
@@ -148,7 +148,7 @@ export async function POST(request: Request) {
   payload.set("landing_url", landingReference);
   payload.set("referrer", landingReference);
   payload.set("lang_by_browser", language);
-  payload.set("source_form", "afiliadospro_brokerage_lead");
+  payload.set("source_form", "affiliatepro_hub_brokerage_lead");
   payload.set("source_site", siteConfig.name);
   appendIfPresent(payload, "tg", telegram);
   appendIfPresent(payload, "comment", contextLines.join("\n"));
@@ -183,13 +183,13 @@ export async function POST(request: Request) {
       });
 
       return NextResponse.json(
-        { message: "CRM recusou a solicitação. Verifique os campos e tente novamente." },
+        { message: "The CRM rejected the request. Check the fields and try again." },
         { status: crmResponse.status === 422 ? 422 : 502 }
       );
     }
 
-    return NextResponse.json({ success: true, message: "Solicitação enviada." });
+    return NextResponse.json({ success: true, message: "Request sent." });
   } catch {
-    return NextResponse.json({ message: "Não foi possível enviar a solicitação agora." }, { status: 502 });
+    return NextResponse.json({ message: "We could not send the request right now." }, { status: 502 });
   }
 }

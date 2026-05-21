@@ -48,18 +48,18 @@ function getTrackingPayload() {
     payload.roistat_id = roistatId;
   }
 
-  payload.lang_by_browser = localStorage.getItem("form__lang") || navigator.language?.split("-")[0] || "pt";
+  payload.lang_by_browser = localStorage.getItem("form__lang") || navigator.language?.split("-")[0] || "en";
 
   return payload;
 }
 
 export function BrokerageLeadForm({
   formId,
-  contextName = "AfiliadosPro Brasil",
-  contextSlug = "afiliadospro-brasil",
+  contextName = "AffiliatePro Hub",
+  contextSlug = "affiliatepro-hub",
   requestType = "white-label brokerage platform",
-  title = "Solicitar contato",
-  description = "Compartilhe seus dados e o contexto do projeto. A solicitação será enviada ao CRM para follow-up.",
+  title = "Request contact",
+  description = "Share your details and project context. The request will be sent to the CRM for follow-up.",
   compact = false,
   layout = compact ? "sidebar" : "standard"
 }: BrokerageLeadFormProps) {
@@ -108,14 +108,14 @@ export function BrokerageLeadForm({
       const result = (await response.json().catch(() => null)) as { message?: string; success?: boolean } | null;
 
       if (!response.ok || result?.success === false) {
-        throw new Error(result?.message ?? "Não foi possível enviar a solicitação.");
+        throw new Error(result?.message ?? "We could not send the request.");
       }
 
       const dataLayer = (window as Window & { dataLayer?: Record<string, unknown>[] }).dataLayer;
 
       dataLayer?.push({
         event: "lead_submit",
-        form_id: "afiliadospro_brokerage_lead",
+        form_id: "affiliatepro_hub_brokerage_lead",
         context_slug: contextSlug,
         utm_source: trackingPayload.utm_source,
         utm_campaign: trackingPayload.utm_campaign
@@ -123,10 +123,10 @@ export function BrokerageLeadForm({
 
       form.reset();
       setStatus("success");
-      setMessage("Obrigado. Sua solicitação foi enviada e entraremos em contato em breve.");
+      setMessage("Thank you. Your request has been sent and we will contact you shortly.");
     } catch (error) {
       setStatus("error");
-      setMessage(error instanceof Error ? error.message : "Não foi possível enviar a solicitação.");
+      setMessage(error instanceof Error ? error.message : "We could not send the request.");
     }
   }
 
@@ -140,7 +140,7 @@ export function BrokerageLeadForm({
       <div className={isWide ? "grid gap-7 @5xl:grid-cols-[0.78fr_1.22fr] @5xl:items-start" : ""}>
         <div className="flex min-w-0 flex-col gap-3">
           <p className="w-fit rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase leading-5 tracking-[0.12em] text-brand">
-            Próximo nível
+            Next level
           </p>
           <h2 className={`text-balance font-black tracking-tight text-ink ${isCompact ? "text-[1.65rem] leading-tight" : "text-3xl"}`}>
             {title}
@@ -152,12 +152,12 @@ export function BrokerageLeadForm({
 
         <form className={`${isWide ? "mt-0" : isCompact ? "mt-5" : "mt-7"} grid gap-4`} onSubmit={handleSubmit}>
         <div className="grid gap-4 @2xl:grid-cols-2">
-          <Field label="Nome" htmlFor={`${idPrefix}-first-name`} required>
+          <Field label="Name" htmlFor={`${idPrefix}-first-name`} required>
             <input
               id={`${idPrefix}-first-name`}
               name="first_name"
               autoComplete="name"
-              placeholder="Seu nome"
+              placeholder="Your name"
               required
               className="h-12 w-full rounded-2xl border border-line bg-white px-4 text-sm font-bold text-ink outline-brand transition focus:border-brand"
             />
@@ -175,14 +175,14 @@ export function BrokerageLeadForm({
           </Field>
         </div>
 
-        <PhoneNumberField id={`${idPrefix}-phone`} name="phone" label="Telefone" required compact={isCompact} />
+        <PhoneNumberField id={`${idPrefix}-phone`} name="phone" label="Phone" required compact={isCompact} />
 
         <div className="grid gap-4 @2xl:grid-cols-2">
-          <Field label="Empresa ou projeto" htmlFor={`${idPrefix}-company`}>
+          <Field label="Company or project" htmlFor={`${idPrefix}-company`}>
             <input
               id={`${idPrefix}-company`}
               name="company_name"
-              placeholder="Empresa, time afiliado..."
+              placeholder="Company, affiliate team..."
               className="h-12 w-full rounded-2xl border border-line bg-white px-4 text-sm font-bold text-ink outline-brand transition focus:border-brand"
             />
           </Field>
@@ -190,17 +190,17 @@ export function BrokerageLeadForm({
             <input
               id={`${idPrefix}-telegram`}
               name="tg"
-              placeholder="@usuario"
+              placeholder="@username"
               className="h-12 w-full rounded-2xl border border-line bg-white px-4 text-sm font-bold text-ink outline-brand transition focus:border-brand"
             />
           </Field>
         </div>
 
-        <Field label="Notas do projeto" htmlFor={`${idPrefix}-notes`}>
+        <Field label="Project notes" htmlFor={`${idPrefix}-notes`}>
           <textarea
             id={`${idPrefix}-notes`}
             name="comment"
-            placeholder="Regiões alvo, pagamentos, CRM, apps, prazo de lançamento..."
+            placeholder="Target regions, payments, CRM, apps, launch timeline..."
             className={`${isCompact ? "min-h-24" : "min-h-28"} w-full rounded-2xl border border-line bg-white px-4 py-3 text-sm font-bold text-ink outline-brand transition focus:border-brand`}
           />
         </Field>
@@ -208,8 +208,8 @@ export function BrokerageLeadForm({
         <label className={`flex items-start gap-3 rounded-2xl bg-cream/80 ${isCompact ? "p-3 text-xs leading-5" : "p-4 text-sm leading-6"}`}>
           <input name="terms_agree" type="checkbox" required className={`${isCompact ? "h-4 w-4" : "h-5 w-5"} mt-1 shrink-0 accent-brand`} />
           <span className="font-semibold text-muted">
-            Concordo em ser contatado sobre plataforma/corretora white label e entendo que isso não é consultoria
-            jurídica ou financeira.
+            I agree to be contacted about a white label brokerage platform and understand this is not legal or
+            financial advice.
           </span>
         </label>
 
@@ -218,7 +218,7 @@ export function BrokerageLeadForm({
           disabled={status === "loading"}
           className="inline-flex w-full items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-black text-white shadow-soft transition hover:bg-ink disabled:cursor-not-allowed disabled:opacity-70"
         >
-          {status === "loading" ? "Enviando..." : "Ir para o próximo nível"}
+          {status === "loading" ? "Sending..." : "Move to the next level"}
         </button>
 
         {message ? (

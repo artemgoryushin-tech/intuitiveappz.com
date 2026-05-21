@@ -23,29 +23,29 @@ const defaultValues = {
 };
 
 const toolsDescription =
-  "Calcule CPA vs RevShare, estime ROI de tráfego e use um checklist para comparar programas de afiliados de brokers.";
+  "Calculate CPA vs RevShare, estimate traffic ROI and use a checklist to compare broker affiliate programs.";
 
 const checklist = [
-  "Comissão publicada ou confirmada por gerente",
-  "Regras de qualificação: FTD, depósito mínimo e volume",
-  "Países aceitos para Brasil/LATAM",
-  "Fontes permitidas: SEO, social, mídia paga, Telegram, influenciadores",
-  "Política de brand bidding e uso de marca",
-  "Frequência, mínimo e método de pagamento",
-  "Acesso a subIDs, postback e relatórios por campanha",
-  "Aviso de risco visível em páginas e criativos",
-  "Termos de sub-afiliados ou master affiliate",
-  "Plano alternativo se CPA cair ou RevShare não reter"
+  "Commission published or confirmed by a manager",
+  "Qualification rules: FTD, minimum deposit and trading volume",
+  "Accepted countries and restricted regions",
+  "Allowed sources: SEO, social, paid media, Telegram, influencers",
+  "Brand bidding and trademark-use policy",
+  "Payout frequency, minimum and method",
+  "Access to subIDs, postback and campaign-level reports",
+  "Visible risk notice on pages and creatives",
+  "Sub-affiliate or master affiliate terms",
+  "Fallback plan if CPA drops or RevShare does not retain"
 ];
 
 export const metadata: Metadata = {
-  title: "Calculadoras para afiliados de brokers: CPA, RevShare e ROI",
+  title: "Calculators for broker affiliates: CPA, RevShare and ROI",
   description: toolsDescription,
   alternates: {
     canonical: "/ferramentas"
   },
   openGraph: {
-    title: "Calculadoras para afiliados de brokers: CPA, RevShare e ROI",
+    title: "Calculators for broker affiliates: CPA, RevShare and ROI",
     description: toolsDescription,
     url: `${siteConfig.domain}/ferramentas`
   }
@@ -63,7 +63,7 @@ function valueOf(
 }
 
 function money(value: number) {
-  return new Intl.NumberFormat("pt-BR", {
+  return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
     maximumFractionDigits: 0
@@ -71,7 +71,7 @@ function money(value: number) {
 }
 
 function number(value: number) {
-  return new Intl.NumberFormat("pt-BR", {
+  return new Intl.NumberFormat("en-US", {
     maximumFractionDigits: 1
   }).format(value);
 }
@@ -153,7 +153,7 @@ export default async function ToolsPage({ searchParams }: ToolsPageProps) {
         data={{
           "@context": "https://schema.org",
           "@type": "SoftwareApplication",
-          name: "Calculadoras para afiliados de brokers",
+          name: "Calculators for broker affiliates",
           applicationCategory: "BusinessApplication",
           operatingSystem: "Web",
           url: `${siteConfig.domain}/ferramentas`,
@@ -169,9 +169,9 @@ export default async function ToolsPage({ searchParams }: ToolsPageProps) {
         <div>
           <div className="surface-card-strong rounded-[2rem] p-7 md:p-10">
             <SectionHeader
-              eyebrow="Ferramentas"
-              title="Calculadoras para afiliados de brokers"
-              description="Compare CPA, RevShare, ROI de tráfego e critérios operacionais antes de enviar orçamento para uma oferta."
+              eyebrow="Tools"
+              title="Calculators for broker affiliates"
+              description="Compare CPA, RevShare, traffic ROI and operational criteria before sending budget to an offer."
               titleAs="h1"
             />
           </div>
@@ -183,49 +183,49 @@ export default async function ToolsPage({ searchParams }: ToolsPageProps) {
                   CPA vs RevShare
                 </p>
                 <h2 className="mt-3 text-2xl font-black tracking-tight text-ink @3xl:text-3xl">
-                  Receita estimada por modelo
+                  Estimated revenue by model
                 </h2>
               </div>
               <button className="w-fit rounded-full bg-brand px-5 py-3 text-sm font-black text-white shadow-soft transition hover:bg-ink">
-                Recalcular
+                Recalculate
               </button>
             </div>
 
             <div className="mt-7 grid gap-4 @2xl:grid-cols-2 @6xl:grid-cols-3">
-              <CalculatorInput label="FTDs aprovados" name="ftd" value={ftd} />
-              <CalculatorInput label="CPA por FTD" name="cpa" value={cpa} suffix="US$" />
-              <CalculatorInput label="Traders ativos" name="activeRate" value={activeRate} suffix="%" />
-              <CalculatorInput label="Receita mensal/trader" name="revenuePerTrader" value={revenuePerTrader} suffix="US$" />
+              <CalculatorInput label="Approved FTDs" name="ftd" value={ftd} />
+              <CalculatorInput label="CPA per FTD" name="cpa" value={cpa} suffix="US$" />
+              <CalculatorInput label="Active traders" name="activeRate" value={activeRate} suffix="%" />
+              <CalculatorInput label="Monthly revenue/trader" name="revenuePerTrader" value={revenuePerTrader} suffix="US$" />
               <CalculatorInput label="RevShare" name="revShare" value={revShare} suffix="%" />
-              <CalculatorInput label="Meses de retenção" name="months" value={months} />
+              <CalculatorInput label="Retention months" name="months" value={months} />
             </div>
 
             <div className="mt-7 grid gap-4 @3xl:grid-cols-3">
               <ResultTile label="Total CPA" value={money(cpaTotal)} />
               <ResultTile label="Total RevShare" value={money(revShareTotal)} tone="accent" />
-              <ResultTile label="Break-even RevShare" value={`${number(revShareBreakEvenMonths)} meses`} tone="ink" />
+              <ResultTile label="RevShare break-even" value={`${number(revShareBreakEvenMonths)} months`} tone="ink" />
             </div>
 
             <div className="mt-10 border-t border-line pt-8">
               <p className="text-xs font-black uppercase tracking-[0.18em] text-brand">
-                ROI de tráfego
+                Traffic ROI
               </p>
               <h2 className="mt-3 text-2xl font-black tracking-tight text-ink @3xl:text-3xl">
-                Simulador de campanha
+                Campaign simulator
               </h2>
 
               <div className="mt-7 grid gap-4 @2xl:grid-cols-2 @6xl:grid-cols-3">
-                <CalculatorInput label="Cliques" name="clicks" value={clicks} />
+                <CalculatorInput label="Clicks" name="clicks" value={clicks} />
                 <CalculatorInput label="CPC" name="cpc" value={cpc} step="0.01" suffix="US$" />
-                <CalculatorInput label="Cadastro" name="signupRate" value={signupRate} step="0.1" suffix="%" />
-                <CalculatorInput label="FTD sobre cadastro" name="ftdRate" value={ftdRate} step="0.1" suffix="%" />
-                <CalculatorInput label="Comissão média" name="avgCommission" value={avgCommission} suffix="US$" />
+                <CalculatorInput label="Signup rate" name="signupRate" value={signupRate} step="0.1" suffix="%" />
+                <CalculatorInput label="FTD from signup" name="ftdRate" value={ftdRate} step="0.1" suffix="%" />
+                <CalculatorInput label="Average commission" name="avgCommission" value={avgCommission} suffix="US$" />
               </div>
 
               <div className="mt-7 grid gap-4 @2xl:grid-cols-2 @6xl:grid-cols-4">
-                <ResultTile label="Custo" value={money(trafficCost)} tone="ink" />
-                <ResultTile label="FTDs estimados" value={number(roiFtd)} />
-                <ResultTile label="Lucro" value={money(profit)} tone={profit >= 0 ? "accent" : "ink"} />
+                <ResultTile label="Cost" value={money(trafficCost)} tone="ink" />
+                <ResultTile label="Estimated FTDs" value={number(roiFtd)} />
+                <ResultTile label="Profit" value={money(profit)} tone={profit >= 0 ? "accent" : "ink"} />
                 <ResultTile label="ROI" value={`${number(roi)}%`} tone={roi >= 0 ? "accent" : "ink"} />
               </div>
             </div>
@@ -236,7 +236,7 @@ export default async function ToolsPage({ searchParams }: ToolsPageProps) {
               Checklist
             </p>
             <h2 className="mt-3 text-3xl font-black tracking-tight text-ink">
-              Comparador de programas
+              Program comparison checklist
             </h2>
             <div className="mt-7 grid gap-3 md:grid-cols-2">
               {checklist.map((item) => (

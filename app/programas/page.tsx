@@ -5,16 +5,16 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { rankings, siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Programas de afiliados para brokers, forex e trading",
+  title: "Affiliate programs for brokers, forex and trading",
   description:
-    "Rankings e comparativos de programas de afiliados para brokers, forex, trading, cripto e fintech.",
+    "Rankings and comparisons of broker, forex, trading, crypto and fintech affiliate programs.",
   alternates: {
     canonical: "/programas"
   },
   openGraph: {
-    title: "Programas de afiliados para brokers, forex e trading",
+    title: "Affiliate programs for brokers, forex and trading",
     description:
-      "Rankings e comparativos de programas de afiliados para brokers, forex, trading, cripto e fintech.",
+      "Rankings and comparisons of broker, forex, trading, crypto and fintech affiliate programs.",
     url: `${siteConfig.domain}/programas`
   }
 };
@@ -26,7 +26,7 @@ export default function ProgramsIndexPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Programas de afiliados",
+          name: "Affiliate programs",
           url: `${siteConfig.domain}/programas`,
           mainEntity: {
             "@type": "ItemList",
@@ -42,9 +42,9 @@ export default function ProgramsIndexPage() {
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="surface-card-strong rounded-[2rem] p-7 md:p-10">
           <SectionHeader
-            eyebrow="Programas de afiliados"
-            title="Comparativos para escolher uma oferta com menos risco"
-            description="Escolha uma categoria para ver comissões, modelos de pagamento, pontos fortes, riscos e alternativas."
+            eyebrow="Affiliate programs"
+            title="Comparisons for choosing an offer with less risk"
+            description="Choose a category to review commissions, payout models, strengths, risks and alternatives."
             titleAs="h1"
           />
         </div>

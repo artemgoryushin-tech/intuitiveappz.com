@@ -7,7 +7,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
   title: {
-    default: `${siteConfig.name} | Programas de afiliados para brokers e trading`,
+    default: `${siteConfig.name} | Broker and trading affiliate programs`,
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
@@ -41,16 +41,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-BR" data-scroll-behavior="smooth">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <a
-          href="#conteudo"
+          href="#content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-5 focus:py-3 focus:text-sm focus:font-black focus:text-white"
         >
-          Ir para o conteúdo
+          Skip to content
         </a>
         <Header />
-        <main id="conteudo">{children}</main>
+        <main id="content">{children}</main>
         <Footer />
       </body>
     </html>

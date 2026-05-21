@@ -53,24 +53,24 @@ export default async function RankingPage({ params }: PageProps) {
       ? programs
       : programs.filter((program) => program.category === ranking.category);
   const rankedPrograms = filteredPrograms.length > 0 ? filteredPrograms : programs;
-  const seoContent = rankingSeoContent[ranking.slug] ?? rankingSeoContent["melhores-programas-afiliados-brokers"];
+  const seoContent = rankingSeoContent[ranking.slug] ?? rankingSeoContent["best-broker-affiliate-programs"];
 
   const faqItems = [
     ...seoContent.faqs,
     {
-      question: `Como escolher entre os melhores ${ranking.keyword}?`,
+      question: `How should affiliates choose among ${ranking.keyword}?`,
       answer:
-        "Compare comissão real, modelo de pagamento, reputação, rastreamento, mercados aceitos, métodos de pagamento e restrições de tráfego antes de escalar campanhas."
+        "Compare real commission, payout model, reputation, tracking, accepted markets, payment methods and traffic restrictions before scaling campaigns."
     },
     {
-      question: "CPA é melhor do que RevShare?",
+      question: "Is CPA better than RevShare?",
       answer:
-        "CPA melhora previsibilidade de caixa. RevShare pode gerar mais valor no longo prazo se o broker retém usuários e o rastreamento é confiável."
+        "CPA improves cash-flow predictability. RevShare can create more long-term value if the broker retains users and tracking is reliable."
     },
     {
-      question: "Quando considerar uma solução white label (marca branca)?",
+      question: "When should affiliates consider a white label solution?",
       answer:
-        "Quando você já tem aquisição previsível, entende o funil de trading e quer capturar mais valor do que receber apenas comissão de afiliado."
+        "When acquisition is predictable, the trading funnel is understood and the affiliate wants to capture more value than third-party commission alone."
     }
   ];
 
@@ -114,13 +114,13 @@ export default async function RankingPage({ params }: PageProps) {
             {
               "@type": "ListItem",
               position: 1,
-              name: "Início",
+              name: "Home",
               item: siteConfig.domain
             },
             {
               "@type": "ListItem",
               position: 2,
-              name: "Programas",
+              name: "Programs",
               item: `${siteConfig.domain}/programas`
             },
             {
@@ -142,11 +142,11 @@ export default async function RankingPage({ params }: PageProps) {
           </h1>
           <p className="mt-6 max-w-5xl text-xl leading-9 text-muted">{ranking.intro}</p>
           <p className="mt-4 max-w-5xl text-base leading-8 text-muted">
-            Público ideal: {ranking.audience}
+            Ideal audience: {ranking.audience}
           </p>
           <div className="mt-6 rounded-3xl border border-line bg-cream/80 p-5">
             <p className="text-sm font-black uppercase tracking-[0.16em] text-brand">
-              Resposta rápida
+              Quick answer
             </p>
             <p className="mt-3 text-base leading-8 text-muted">{seoContent.directAnswer}</p>
           </div>
@@ -188,23 +188,23 @@ export default async function RankingPage({ params }: PageProps) {
 
         <section className="surface-card mt-14 overflow-hidden rounded-[2rem]">
           <div className="border-b border-line bg-white/70 p-7">
-            <h2 className="text-3xl font-black tracking-tight text-ink">Comparativo rápido</h2>
+            <h2 className="text-3xl font-black tracking-tight text-ink">Quick comparison</h2>
             <p className="mt-3 text-sm font-semibold text-muted">
-              Em telas menores, deslize a tabela horizontalmente para ver todas as colunas.
+              On smaller screens, scroll the table horizontally to view all columns.
             </p>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[980px] text-left text-sm">
               <thead className="bg-cream text-ink">
                 <tr>
-                  <th className="p-4">Programa</th>
-                  <th className="p-4">Modelo</th>
-                  <th className="p-4">Comissão</th>
-                  <th className="p-4">Pagamento</th>
-                  <th className="p-4">Sub-afiliados</th>
-                  <th className="p-4">Mercados</th>
-                  <th className="p-4">Melhor para</th>
-                  <th className="p-4">Oficial</th>
+                  <th className="p-4">Program</th>
+                  <th className="p-4">Model</th>
+                  <th className="p-4">Commission</th>
+                  <th className="p-4">Payout</th>
+                  <th className="p-4">Sub-affiliates</th>
+                  <th className="p-4">Markets</th>
+                  <th className="p-4">Best for</th>
+                  <th className="p-4">Official</th>
                 </tr>
               </thead>
               <tbody>
@@ -226,7 +226,7 @@ export default async function RankingPage({ params }: PageProps) {
                         href={program.officialUrl}
                         className="font-bold text-brand hover:text-ink"
                       >
-                        Abrir
+                        Open
                       </ExternalLink>
                     </td>
                   </tr>
@@ -241,11 +241,11 @@ export default async function RankingPage({ params }: PageProps) {
             <div key={item.model} className="surface-card rounded-[2rem] p-7">
               <h2 className="text-3xl font-black tracking-tight text-ink">{item.model}</h2>
               <p className="mt-4 text-sm font-black uppercase tracking-[0.16em] text-brand">
-                Quando faz sentido
+                Best when
               </p>
               <p className="mt-2 text-sm leading-7 text-muted">{item.bestWhen}</p>
               <p className="mt-4 text-sm font-black uppercase tracking-[0.16em] text-brand">
-                Risco
+                Risk
               </p>
               <p className="mt-2 text-sm leading-7 text-muted">{item.risk}</p>
             </div>
@@ -254,7 +254,7 @@ export default async function RankingPage({ params }: PageProps) {
 
         <section className="surface-card mt-14 rounded-[2rem] p-7 md:p-10">
           <h2 className="text-balance text-3xl font-black tracking-tight text-ink">
-            O que um afiliado deve validar antes de promover
+            What affiliates should validate before promoting
           </h2>
           <div className="mt-7 grid gap-4 md:grid-cols-2">
             {seoContent.brazilValidation.map((item) => (
@@ -268,7 +268,7 @@ export default async function RankingPage({ params }: PageProps) {
         {seoContent.relatedLinks ? (
           <section className="surface-card mt-14 rounded-[2rem] p-7">
             <h2 className="text-balance text-3xl font-black tracking-tight text-ink">
-              Leituras para aprofundar a decisão
+              Further reading for the decision
             </h2>
             <div className="mt-6 grid gap-3 md:grid-cols-3">
               {seoContent.relatedLinks.map((item) => (
@@ -286,10 +286,10 @@ export default async function RankingPage({ params }: PageProps) {
 
         <section className="surface-card mt-14 rounded-[2rem] p-7 md:p-10">
           <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-            Como escolhemos
+            How we choose
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-            Metodologia editorial para comparar programas
+            Editorial methodology for comparing programs
           </h2>
           <div className="mt-7 grid gap-4 md:grid-cols-2">
             {seoContent.methodology.map((item) => (
@@ -299,7 +299,7 @@ export default async function RankingPage({ params }: PageProps) {
             ))}
           </div>
           <p className="mt-6 text-sm leading-7 text-muted">
-            Autor: {editorialProfile.author}. Revisão: {editorialProfile.reviewer}. Última atualização:
+            Author: {editorialProfile.author}. Review: {editorialProfile.reviewer}. Last updated:
             {" "}
             {editorialProfile.lastUpdated}.
           </p>
@@ -307,10 +307,10 @@ export default async function RankingPage({ params }: PageProps) {
 
         <section className="mt-14 rounded-[2rem] border border-line bg-ink p-7 text-white shadow-soft md:p-10">
           <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white/70">
-            Próximo passo B2B
+            B2B next step
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight">
-            Quando vale sair de afiliado e lançar sua própria corretora
+            When it can make sense to move from affiliate to broker owner
           </h2>
           <p className="mt-4 max-w-4xl text-base leading-8 text-white/75">{seoContent.bebrokerBridge}</p>
           <div className="mt-6">

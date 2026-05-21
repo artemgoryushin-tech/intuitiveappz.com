@@ -63,7 +63,7 @@ export default async function WhiteLabelPage({ params }: PageProps) {
           mainEntityOfPage: pageUrl,
           datePublished: editorialProfile.lastUpdated,
           dateModified: editorialProfile.lastUpdated,
-          inLanguage: "pt-BR",
+          inLanguage: "en-US",
           isPartOf: {
             "@type": "WebSite",
             "@id": `${siteConfig.domain}#website`,
@@ -98,7 +98,7 @@ export default async function WhiteLabelPage({ params }: PageProps) {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Início", item: siteConfig.domain },
+            { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.domain },
             { "@type": "ListItem", position: 2, name: "White Label", item: `${siteConfig.domain}/white-label` },
             { "@type": "ListItem", position: 3, name: page.title, item: `${siteConfig.domain}/white-label/${page.slug}` }
           ]
@@ -147,7 +147,7 @@ export default async function WhiteLabelPage({ params }: PageProps) {
 
             <section className="surface-card mt-12 rounded-[2rem] p-7">
               <h2 className="text-balance text-3xl font-black tracking-tight text-ink">
-                Próximas leituras recomendadas
+                Recommended next reads
               </h2>
               <div className="mt-6 grid gap-3 md:grid-cols-3">
                 {page.relatedLinks.map((item) => (

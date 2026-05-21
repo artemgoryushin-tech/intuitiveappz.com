@@ -9,8 +9,8 @@ import {
   type CountryCode
 } from "libphonenumber-js/min";
 
-const priorityCountries = ["BR", "US", "GB", "PT", "ES", "CY", "AE", "IN", "ZA", "DE", "FR", "IT"] as const;
-const countryNameFormatter = new Intl.DisplayNames(["pt-BR"], { type: "region" });
+const priorityCountries = ["US", "GB", "CA", "AU", "BR", "PT", "ES", "CY", "AE", "IN", "ZA", "DE", "FR", "IT"] as const;
+const countryNameFormatter = new Intl.DisplayNames(["en"], { type: "region" });
 
 const countryOptions = getCountries()
   .map((country) => ({
@@ -26,7 +26,7 @@ const countryOptions = getCountries()
       return (leftPriority === -1 ? 999 : leftPriority) - (rightPriority === -1 ? 999 : rightPriority);
     }
 
-    return left.name.localeCompare(right.name, "pt-BR");
+    return left.name.localeCompare(right.name, "en");
   });
 
 type PhoneNumberFieldProps = {
@@ -65,7 +65,7 @@ function normalizePhoneNumber(rawValue: string, country: CountryCode) {
 }
 
 export function PhoneNumberField({ id, name, label, required, compact = false }: PhoneNumberFieldProps) {
-  const [country, setCountry] = useState<CountryCode>("BR");
+  const [country, setCountry] = useState<CountryCode>("US");
   const [phoneInput, setPhoneInput] = useState("");
   const [touched, setTouched] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -87,7 +87,7 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
         setCountry(result.country);
       })
       .catch(() => {
-        // Keep the Brazil fallback if geolocation headers are unavailable.
+        // Keep the US fallback if geolocation headers are unavailable.
       });
 
     return () => {
@@ -96,7 +96,7 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
   }, []);
 
   useEffect(() => {
-    inputRef.current?.setCustomValidity(isInvalid ? "Digite um telefone válido para o país selecionado." : "");
+    inputRef.current?.setCustomValidity(isInvalid ? "Enter a valid phone number for the selected country." : "");
   }, [isInvalid]);
 
   function handleCountryChange(value: string) {
@@ -119,7 +119,7 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
           <select
             className="h-12 w-full min-w-0 appearance-none rounded-2xl border border-line bg-white px-4 pr-10 text-sm font-black text-ink outline-brand transition focus:border-brand"
             value={country}
-            aria-label="País do telefone"
+            aria-label="Phone country"
             onChange={(event) => handleCountryChange(event.target.value)}
           >
             {countryOptions.map((option) => (
@@ -141,7 +141,7 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
           type="tel"
           inputMode="tel"
           autoComplete="tel-national"
-          placeholder="Telefone"
+          placeholder="Phone number"
           value={phoneInput}
           required={required}
           aria-invalid={isInvalid && touched ? true : undefined}
@@ -154,11 +154,11 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
       <input type="hidden" name={`${name}_country`} value={country} />
       {isInvalid && touched ? (
         <p id={`${id}-error`} className="text-xs font-bold leading-5 text-brand">
-          Digite um telefone válido para o país selecionado.
+          Enter a valid phone number for the selected country.
         </p>
       ) : (
         <p id={`${id}-hint`} className="text-xs font-semibold leading-5 text-muted">
-          País detectado automaticamente. Altere se necessário.
+          Country is detected automatically. Change it if needed.
         </p>
       )}
     </div>

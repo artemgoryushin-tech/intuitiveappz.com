@@ -9,11 +9,10 @@ export function SourceList({ sources }: { sources: Source[] }) {
   return (
     <section className="surface-card rounded-[2rem] p-7">
       <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-        Fontes e links oficiais
+        Sources and official links
       </p>
       <p className="mt-3 text-sm leading-7 text-muted">
-        Links externos são marcados como nofollow/sponsored. Confirme sempre os termos oficiais
-        antes de enviar tráfego.
+        External links are marked as nofollow/sponsored. Always confirm official terms before sending traffic.
       </p>
       <div className="mt-5 grid gap-3">
         {sources.map((source) => (

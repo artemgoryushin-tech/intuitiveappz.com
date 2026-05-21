@@ -29,15 +29,15 @@ export function ProgramCard({ program, rank }: { program: Program; rank?: number
       <p className="mt-4 text-sm leading-7 text-muted">{program.verdict}</p>
       <dl className="mt-6 grid gap-3 text-sm">
         <div className="rounded-2xl bg-cream/80 p-4">
-          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Comissão</dt>
+          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Commission</dt>
           <dd className="text-muted">{program.commission}</dd>
         </div>
         <div className="rounded-2xl bg-cream/80 p-4">
-          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Melhor para</dt>
+          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Best for</dt>
           <dd className="text-muted">{program.bestFor}</dd>
         </div>
         <div className="rounded-2xl bg-cream/80 p-4">
-          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Pagamento</dt>
+          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Payout</dt>
           <dd className="text-muted">{program.payoutFrequency}</dd>
         </div>
       </dl>
@@ -46,13 +46,13 @@ export function ProgramCard({ program, rank }: { program: Program; rank?: number
           href={`/reviews/${program.slug}`}
           className="rounded-full bg-brand px-4 py-2.5 text-white transition group-hover:bg-ink"
         >
-          Ler análise completa
+          Read full review
         </Link>
         <ExternalLink
           href={program.officialUrl}
           className="rounded-full border border-line bg-white px-4 py-2.5 text-muted transition hover:border-ink hover:text-ink"
         >
-          Site oficial
+          Official site
         </ExternalLink>
       </div>
     </article>

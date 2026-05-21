@@ -6,16 +6,16 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { siteConfig, whiteLabelPages } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Soluções white label para brokers",
+  title: "White label solutions for brokers",
   description:
-    "Conteúdo B2B para afiliados que querem entender soluções white label para lançar uma marca de corretora.",
+    "B2B content for affiliates who want to understand white label solutions for launching a broker brand.",
   alternates: {
     canonical: "/white-label"
   },
   openGraph: {
-    title: "Soluções white label para brokers",
+    title: "White label solutions for brokers",
     description:
-      "Conteúdo B2B para afiliados que querem entender soluções white label para lançar uma marca de corretora.",
+      "B2B content for affiliates who want to understand white label solutions for launching a broker brand.",
     url: `${siteConfig.domain}/white-label`
   }
 };
@@ -27,7 +27,7 @@ export default function WhiteLabelIndexPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Soluções white label para brokers",
+          name: "White label solutions for brokers",
           url: `${siteConfig.domain}/white-label`,
           mainEntity: {
             "@type": "ItemList",
@@ -45,8 +45,8 @@ export default function WhiteLabelIndexPage() {
           <div className="surface-card-strong rounded-[2rem] p-7 md:p-10">
             <SectionHeader
               eyebrow="White label"
-              title="Quando o afiliado vira dono da marca"
-              description="Guias para entender tecnologia, custos e decisões antes de lançar uma corretora online com solução white label."
+              title="When the affiliate becomes the brand owner"
+              description="Guides to understand technology, costs and decisions before launching an online brokerage with a white label solution."
               titleAs="h1"
             />
           </div>

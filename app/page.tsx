@@ -38,7 +38,7 @@ export default function HomePage() {
           name: siteConfig.name,
           url: siteConfig.domain,
           description: siteConfig.description,
-          inLanguage: "pt-BR",
+          inLanguage: "en-US",
           publisher: {
             "@type": "Organization",
             name: siteConfig.name,
@@ -61,16 +61,16 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
-                href="/programas/melhores-programas-afiliados-brokers"
+                href="/programas/best-broker-affiliate-programs"
                 className="rounded-full bg-brand px-6 py-3 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-ink"
               >
-                Comparar programas
+                Compare programs
               </Link>
               <Link
-                href="/white-label/solucao-white-label-para-broker#lead-form"
+                href="/white-label/broker-white-label-solution#lead-form"
                 className="rounded-full border border-line bg-white px-6 py-3 text-sm font-black text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-ink"
               >
-                Ir para o próximo nível
+                Move to the next level
               </Link>
             </div>
           </div>
@@ -80,9 +80,9 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-5 py-20">
         <SectionHeader
-          eyebrow="Comparativos"
-          title="Escolha o tipo de programa antes de enviar tráfego"
-          description="Compare categorias por comissão, regras de qualificação, pagamentos e adequação ao seu público."
+            eyebrow="Comparisons"
+            title="Choose the program type before sending traffic"
+            description="Compare categories by commission, qualification rules, payouts and fit for your audience."
         />
         <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {rankings.map((ranking, index) => (
@@ -113,9 +113,9 @@ export default function HomePage() {
       <section className="bg-white/70">
         <div className="mx-auto max-w-7xl px-5 py-20">
           <SectionHeader
-            eyebrow="Destaques da redação"
-            title="Programas em destaque"
-            description="Análises iniciais para marcas com alta demanda de busca entre afiliados de trading e forex."
+            eyebrow="Editorial picks"
+            title="Featured programs"
+            description="Initial reviews for brands with strong search demand among trading and forex affiliates."
           />
           <div className="mt-9 grid gap-6 lg:grid-cols-3">
             {featuredPrograms.map((program, index) => (
@@ -129,21 +129,21 @@ export default function HomePage() {
         <MethodologyBlock />
         <div className="surface-card rounded-[2rem] p-7 md:p-10">
           <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-            Critérios de escolha
+            Selection criteria
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-            O que observar antes de enviar tráfego para uma oferta
+            What to check before sending traffic to an offer
           </h2>
           <p className="mt-4 text-sm leading-7 text-muted">
-            Bons programas não são definidos só pela comissão anunciada. Antes de escalar uma campanha,
-            compare qualidade do funil, regras de qualificação, reputação, pagamentos e restrições de mídia.
+            Good programs are not defined only by advertised commission. Before scaling a campaign,
+            compare funnel quality, qualification rules, reputation, payouts and media restrictions.
           </p>
           <div className="mt-7 grid gap-4 md:grid-cols-2">
             {[
-              ["Modelo de comissão", "CPA, RevShare ou híbrido precisam combinar com o ciclo de compra do seu tráfego."],
-              ["Regras de qualificação", "FTD, volume mínimo, países aceitos e fontes proibidas mudam o resultado real."],
-              ["Pagamentos e suporte", "Frequência, métodos de saque e gerente dedicado pesam quando a campanha escala."],
-              ["Risco e compliance", "Trading, forex e CFDs exigem comunicação conservadora e avisos de risco claros."]
+              ["Commission model", "CPA, RevShare or hybrid should match the buying cycle of your traffic."],
+              ["Qualification rules", "FTD, minimum volume, accepted countries and blocked sources change the real result."],
+              ["Payouts and support", "Frequency, withdrawal methods and manager support matter when campaigns scale."],
+              ["Risk and compliance", "Trading, forex and CFDs need conservative messaging and clear risk notices."]
             ].map(([title, copy]) => (
               <div key={title} className="rounded-2xl bg-cream/80 p-5">
                 <p className="font-black text-ink">{title}</p>
@@ -161,9 +161,9 @@ export default function HomePage() {
       <section className="bg-cream">
         <div className="mx-auto max-w-7xl px-5 py-20">
           <SectionHeader
-            eyebrow="Guias"
-            title="Educação para afiliados financeiros"
-            description="Conteúdo evergreen para aumentar confiança, interlinking e profundidade temática."
+            eyebrow="Guides"
+            title="Education for financial affiliates"
+            description="Evergreen content for trust, internal links and topical depth."
           />
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {guides.map((guide) => (

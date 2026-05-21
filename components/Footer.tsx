@@ -2,10 +2,10 @@ import Link from "next/link";
 import { navigation, siteConfig } from "@/data/site";
 
 const legalLinks = [
-  { label: "Metodologia", href: "/metodologia" },
-  { label: "Divulgação", href: "/divulgacao" },
-  { label: "Privacidade", href: "/privacidade" },
-  { label: "Contato", href: "/contato" }
+  { label: "Methodology", href: "/metodologia" },
+  { label: "Disclosure", href: "/divulgacao" },
+  { label: "Privacy", href: "/privacidade" },
+  { label: "Contact", href: "/contato" }
 ];
 
 export function Footer() {
@@ -15,17 +15,17 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <span className="grid h-10 w-10 place-items-center rounded-2xl bg-white text-sm font-black text-ink">
-              AP
+              AH
             </span>
             <p className="text-xl font-black">{siteConfig.name}</p>
           </div>
           <p className="mt-4 max-w-md text-sm leading-7 text-white/70">
-            Conteúdo editorial para afiliados brasileiros que comparam programas de brokers,
-            forex, trading e fintech. Não oferecemos consultoria financeira.
+            Editorial content for affiliates comparing broker, forex, trading and fintech
+            programs. We do not provide financial advice.
           </p>
         </div>
         <div>
-          <p className="font-bold">Navegação</p>
+          <p className="font-bold">Navigation</p>
           <div className="mt-4 grid gap-3 text-sm font-semibold text-white/70">
             {navigation.map((item) => (
               <Link key={item.href} href={item.href} className="transition hover:translate-x-1 hover:text-white">
@@ -35,7 +35,7 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <p className="font-bold">Confiança</p>
+          <p className="font-bold">Trust</p>
           <div className="mt-4 grid gap-3 text-sm font-semibold text-white/70">
             {legalLinks.map((item) => (
               <Link key={item.href} href={item.href} className="transition hover:translate-x-1 hover:text-white">

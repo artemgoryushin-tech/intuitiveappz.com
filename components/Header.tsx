@@ -10,7 +10,7 @@ export function Header() {
           className="flex items-center gap-3 text-lg font-black tracking-tight text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
         >
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-ink text-sm text-white shadow-soft">
-            AP
+            AH
           </span>
           <span>{siteConfig.name}</span>
         </Link>
@@ -44,10 +44,10 @@ export function Header() {
           </div>
         </details>
         <Link
-          href="/white-label/solucao-white-label-para-broker#lead-form"
+          href="/white-label/broker-white-label-solution#lead-form"
           className="hidden rounded-full bg-ink px-4 py-2.5 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-brand focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand sm:inline-flex"
         >
-          Ir para o próximo nível
+          Move to the next level
         </Link>
       </div>
     </header>

@@ -21,31 +21,31 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-const categoryBrazilNotes: Record<string, string[]> = {
+const categoryMarketNotes: Record<string, string[]> = {
   broker: [
-    "Confirme entidade, país aceito e produto disponível antes de publicar como opção para o Brasil.",
-    "Para forex/CFDs, inclua aviso de risco e evite tratar bônus, alavancagem ou copy trading como vantagem garantida.",
-    "Priorize conteúdo educativo e comparativo; tráfego frio direto tende a gerar cadastro barato e FTD de baixa qualidade."
+    "Confirm entity, accepted country and available product before presenting the offer to a market.",
+    "For forex/CFDs, include risk disclosure and do not present bonuses, leverage or copy trading as guaranteed advantages.",
+    "Prioritize educational and comparison content; cold traffic often creates cheap signups and low-quality FTDs."
   ],
   forex: [
-    "Verifique se LATAM/Brasil entram na tabela de CPA ou no acordo de IB antes de projetar ROI.",
-    "Compare CPA bruto com CPA líquido após depósito mínimo, volume de negociação, hold e reprovações.",
-    "Conteúdo em português, YouTube educativo e SEO de comparação costumam gerar traders mais qualificados que promessa de lucro rápido."
+    "Verify whether the target country is included in the CPA table or IB agreement before projecting ROI.",
+    "Compare gross CPA with net CPA after minimum deposit, trading volume, hold and rejected leads.",
+    "Educational content, YouTube and comparison SEO usually produce more qualified traders than quick-profit messaging."
   ],
   trading: [
-    "Opções digitais e trading de curto prazo exigem comunicação conservadora e risco muito visível.",
-    "Separe campanhas por país, criativo e fonte para entender quais FTDs viram traders ativos.",
-    "Antes de usar Telegram, influenciadores ou anúncios nativos, peça regras por escrito ao programa."
+    "Digital options and short-term trading require conservative messaging and very visible risk disclosure.",
+    "Separate campaigns by country, creative and source to see which FTDs become active traders.",
+    "Before using Telegram, influencers or native ads, ask the program for written rules."
   ],
-  cripto: [
-    "Valide disponibilidade local, elegibilidade do afiliado e regras por produto: spot, futuros, margem ou campanhas específicas.",
-    "Inclua risco de criptoativos e evite prometer retorno com trading, staking ou bônus.",
-    "Meça volume e trader ativo; cadastro sem negociação raramente sustenta comissão recorrente."
+  crypto: [
+    "Validate local availability, affiliate eligibility and product rules for spot, futures, margin or specific campaigns.",
+    "Include crypto-asset risk and avoid promising returns from trading, staking or bonuses.",
+    "Measure volume and active traders; registration without trading rarely supports recurring commission."
   ],
   fintech: [
-    "Confirme regras de dados, pagamentos, comunicação comercial e países aceitos antes de criar campanhas.",
-    "Use conteúdo educativo para explicar produto e reduzir tráfego curioso de baixa intenção.",
-    "Compare receita por usuário ativo com custo de aquisição, não apenas comissão anunciada."
+    "Confirm data, payment, commercial-message and country rules before creating campaigns.",
+    "Use educational content to explain the product and reduce low-intent curiosity traffic.",
+    "Compare revenue per active user with acquisition cost, not just advertised commission."
   ]
 };
 
@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const brandSeo = brandReviewSeoContent[program.slug];
-  const title = brandSeo?.metaTitle ?? `${program.name} análise do programa de afiliados`;
+  const title = brandSeo?.metaTitle ?? `${program.name} affiliate program review`;
   const description = brandSeo?.metaDescription ?? program.verdict;
 
   return {
@@ -97,22 +97,22 @@ export default async function ReviewPage({ params }: PageProps) {
   const deepDive = programDeepDives[program.slug];
   const seoEnhancement = reviewSeoEnhancements[program.slug];
   const brandSeo = brandReviewSeoContent[program.slug];
-  const pageHeadline = brandSeo?.h1 ?? `${program.name} análise do programa de afiliados`;
+  const pageHeadline = brandSeo?.h1 ?? `${program.name} affiliate program review`;
   const pageDescription = brandSeo?.metaDescription ?? program.verdict;
   const pageUrl = `${siteConfig.domain}/reviews/${program.slug}`;
-  const localNotes = categoryBrazilNotes[program.category] ?? categoryBrazilNotes.broker;
+  const localNotes = categoryMarketNotes[program.category] ?? categoryMarketNotes.broker;
   const faqItems = [
     ...(brandSeo?.faq ?? []),
     ...(seoEnhancement?.faq ?? []),
     {
-      question: `${program.name} é bom para afiliados brasileiros?`,
+      question: `Is ${program.name} good for affiliates?`,
       answer:
-        "Depende do mercado aceito, do canal de tráfego e dos termos atuais. Use esta análise como ponto de partida e confirme as regras no programa oficial."
+        "It depends on accepted markets, traffic channel and current terms. Use this review as a starting point and confirm rules with the official program."
     },
     {
-      question: "Posso promover trading com anúncios pagos?",
+      question: "Can affiliates promote trading with paid ads?",
       answer:
-        "Somente se as políticas do programa e das plataformas de mídia permitirem. Evite promessas de lucro e promessas financeiras agressivas."
+        "Only if the program and ad-platform policies allow it. Avoid profit promises and aggressive financial claims."
     }
   ];
 
@@ -126,7 +126,7 @@ export default async function ReviewPage({ params }: PageProps) {
           headline: pageHeadline,
           description: pageDescription,
           image: `${siteConfig.domain}/illustrations/stock-market-monetization.jpg`,
-          inLanguage: "pt-BR",
+          inLanguage: "en-US",
           mainEntityOfPage: pageUrl,
           datePublished: program.lastChecked,
           dateModified: program.lastChecked,
@@ -158,7 +158,7 @@ export default async function ReviewPage({ params }: PageProps) {
           data={{
             "@context": "https://schema.org",
             "@type": "HowTo",
-            name: `Como funciona ${brandSeo.primaryKeyword}`,
+            name: `How ${brandSeo.primaryKeyword} works`,
             description: brandSeo.quickAnswer,
             totalTime: "PT10M",
             step: brandSeo.integrationSteps.map((step, index) => ({
@@ -189,12 +189,12 @@ export default async function ReviewPage({ params }: PageProps) {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Início", item: siteConfig.domain },
-            { "@type": "ListItem", position: 2, name: "Análises", item: `${siteConfig.domain}/reviews` },
+            { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.domain },
+            { "@type": "ListItem", position: 2, name: "Reviews", item: `${siteConfig.domain}/reviews` },
             {
               "@type": "ListItem",
               position: 3,
-              name: `${program.name} afiliados`,
+              name: `${program.name} affiliates`,
               item: `${siteConfig.domain}/reviews/${program.slug}`
             }
           ]
@@ -204,20 +204,20 @@ export default async function ReviewPage({ params }: PageProps) {
         <div className="grid items-start gap-10 lg:grid-cols-[1fr_0.4fr]">
           <div>
             <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-              {brandSeo?.primaryKeyword ?? "Análise de programa de afiliados"}
+              {brandSeo?.primaryKeyword ?? "Affiliate program review"}
             </p>
             <h1 className="mt-5 text-balance text-5xl font-black tracking-tight text-ink">
               {pageHeadline}
             </h1>
             <p className="mt-6 text-xl leading-9 text-muted">{program.verdict}</p>
             <p className="mt-5 text-sm font-semibold leading-7 text-muted">
-              Revisado por {editorialProfile.reviewer}. Última checagem editorial: {program.lastChecked}.
+              Reviewed by {editorialProfile.reviewer}. Last editorial check: {program.lastChecked}.
             </p>
             <ExternalLink
               href={program.officialUrl}
               className="mt-7 inline-flex rounded-full bg-brand px-6 py-3 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-ink"
             >
-              Abrir {program.officialLabel}
+              Open {program.officialLabel}
             </ExternalLink>
           </div>
           <BrandReviewVisual
@@ -234,10 +234,10 @@ export default async function ReviewPage({ params }: PageProps) {
         {brandSeo ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
             <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
-              Resposta rápida
+              Quick answer
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-              {brandSeo.primaryKeyword}: vale a pena?
+              {brandSeo.primaryKeyword}: is it worth it?
             </h2>
             <p className="mt-4 text-base leading-8 text-muted">{brandSeo.quickAnswer}</p>
             <div className="mt-6 flex flex-wrap gap-2">
@@ -252,12 +252,12 @@ export default async function ReviewPage({ params }: PageProps) {
 
         <section className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {[
-            ["Modelo", program.payoutModel],
-            ["Comissão", program.commission],
-            ["Frequência", program.payoutFrequency],
-            ["Sub-afiliados", program.subAffiliate],
-            ["Mercados", program.markets],
-            ["Pagamentos", program.paymentMethods]
+            ["Model", program.payoutModel],
+            ["Commission", program.commission],
+            ["Frequency", program.payoutFrequency],
+            ["Sub-affiliates", program.subAffiliate],
+            ["Markets", program.markets],
+            ["Payments", program.paymentMethods]
           ].map(([label, value]) => (
             <div key={label} className="surface-card rounded-3xl p-5">
               <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">{label}</p>
@@ -268,19 +268,19 @@ export default async function ReviewPage({ params }: PageProps) {
 
         <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
           <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-            Dados oficiais
+            Official data
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-            Dados oficiais para validar antes de promover
+            Official data to validate before promoting
           </h2>
           <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {[
-              ["Programa", program.officialLabel],
-              ["Categoria", program.category],
-              ["Modelo", program.payoutModel],
-              ["Comissão", program.commission],
-              ["Pagamentos", program.paymentMethods],
-              ["Última checagem", program.lastChecked]
+              ["Program", program.officialLabel],
+              ["Category", program.category],
+              ["Model", program.payoutModel],
+              ["Commission", program.commission],
+              ["Payments", program.paymentMethods],
+              ["Last check", program.lastChecked]
             ].map(([label, value]) => (
               <div key={label} className="rounded-2xl bg-cream/80 p-4">
                 <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">{label}</p>
@@ -294,23 +294,23 @@ export default async function ReviewPage({ params }: PageProps) {
           <section className="surface-card mt-12 overflow-hidden rounded-[2rem]">
             <div className="border-b border-line bg-white/70 p-7 md:p-10">
               <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-                Comissão e regras
+                Commission and rules
               </p>
               <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-                Comissão, payout e pontos de validação
+                Commission, payout and validation points
               </h2>
               <p className="mt-3 text-sm leading-7 text-muted">
-                Use esta tabela como resumo editorial. Antes de comprar mídia ou publicar CTAs agressivos,
-                confirme os termos atuais no programa oficial.
+                Use this table as an editorial summary. Before buying media or publishing assertive CTAs,
+                confirm current terms in the official program.
               </p>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full min-w-[760px] text-left text-sm">
                 <thead className="bg-cream text-ink">
                   <tr>
-                    <th className="p-4">Critério</th>
-                    <th className="p-4">Resumo</th>
-                    <th className="p-4">O que validar</th>
+                    <th className="p-4">Criteria</th>
+                    <th className="p-4">Summary</th>
+                    <th className="p-4">What to validate</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -330,10 +330,10 @@ export default async function ReviewPage({ params }: PageProps) {
         {brandSeo ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
             <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-              Como funciona para afiliados
+              How it works for affiliates
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-              Do cadastro ao pagamento: etapas para validar
+              From application to payout: steps to validate
             </h2>
             <div className="mt-7 grid gap-4 md:grid-cols-2">
               {brandSeo.integrationSteps.map((step, index) => (
@@ -358,7 +358,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
           <h2 className="text-balance text-3xl font-black tracking-tight text-ink">
-            Dados úteis para afiliados
+            Useful data for affiliates
           </h2>
           <div className="mt-7 grid gap-3 md:grid-cols-2">
             {program.facts.map((fact) => (
@@ -371,10 +371,10 @@ export default async function ReviewPage({ params }: PageProps) {
 
         <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
           <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-            Brasil e LATAM
+            Markets and compliance
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-            O que validar antes de enviar tráfego brasileiro
+            What to validate before sending traffic
           </h2>
           <div className="mt-7 grid gap-4 md:grid-cols-3">
             {localNotes.map((note) => (
@@ -395,19 +395,19 @@ export default async function ReviewPage({ params }: PageProps) {
         {deepDive ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
             <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-              Análise editorial
+              Editorial analysis
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-              O que realmente importa neste programa
+              What really matters in this program
             </h2>
             <div className="mt-6 grid gap-6 lg:grid-cols-2">
               <div>
-                <h3 className="text-xl font-black tracking-tight text-ink">Visão geral</h3>
+                <h3 className="text-xl font-black tracking-tight text-ink">Overview</h3>
                 <p className="mt-3 text-sm leading-7 text-muted">{deepDive.overview}</p>
               </div>
               <div>
                 <h3 className="text-xl font-black tracking-tight text-ink">
-                  Como pensar na comissão
+                  How to think about commission
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-muted">
                   {deepDive.commissionDeepDive}
@@ -420,14 +420,14 @@ export default async function ReviewPage({ params }: PageProps) {
         {seoEnhancement ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
             <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-              Como monetizar
+              How to monetize
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
-              Como ganhar dinheiro com {program.name} como afiliado
+              How affiliates can monetize {program.name}
             </h2>
             <p className="mt-4 text-base leading-8 text-muted">{seoEnhancement.moneySection}</p>
             <h3 className="mt-8 text-2xl font-black tracking-tight text-ink">
-              Exemplo de funil recomendado
+              Recommended funnel example
             </h3>
             <ol className="mt-5 grid gap-3 text-sm leading-7 text-muted">
               {seoEnhancement.funnelExample.map((item, index) => (
@@ -442,7 +442,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         <section className="mt-12 grid gap-8 lg:grid-cols-2">
           <div className="surface-card rounded-[2rem] p-7">
-            <h2 className="text-3xl font-black tracking-tight text-ink">Pontos fortes</h2>
+            <h2 className="text-3xl font-black tracking-tight text-ink">Strengths</h2>
             <ul className="mt-6 grid gap-3 text-sm leading-7 text-muted">
               {program.pros.map((item) => (
                 <li key={item}>• {item}</li>
@@ -450,7 +450,7 @@ export default async function ReviewPage({ params }: PageProps) {
             </ul>
           </div>
           <div className="surface-card rounded-[2rem] p-7">
-            <h2 className="text-3xl font-black tracking-tight text-ink">Limitações</h2>
+            <h2 className="text-3xl font-black tracking-tight text-ink">Limitations</h2>
             <ul className="mt-6 grid gap-3 text-sm leading-7 text-muted">
               {program.cons.map((item) => (
                 <li key={item}>• {item}</li>
@@ -463,7 +463,7 @@ export default async function ReviewPage({ params }: PageProps) {
           <section className="mt-12 grid gap-6 lg:grid-cols-2">
             <div className="surface-card rounded-[2rem] p-7">
               <h2 className="text-2xl font-black tracking-tight text-ink">
-                Melhores fontes de tráfego
+                Best traffic sources
               </h2>
               <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">
                 {deepDive.bestTrafficSources.map((item) => (
@@ -473,7 +473,7 @@ export default async function ReviewPage({ params }: PageProps) {
             </div>
             <div className="surface-card rounded-[2rem] p-7">
               <h2 className="text-2xl font-black tracking-tight text-ink">
-                Como montar o funil
+                How to build the funnel
               </h2>
               <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">
                 {deepDive.funnelAdvice.map((item) => (
@@ -483,7 +483,7 @@ export default async function ReviewPage({ params }: PageProps) {
             </div>
             <div className="surface-card rounded-[2rem] p-7">
               <h2 className="text-2xl font-black tracking-tight text-ink">
-                O que negociar com o gerente
+                What to negotiate with the manager
               </h2>
               <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">
                 {deepDive.negotiationAngles.map((item) => (
@@ -493,7 +493,7 @@ export default async function ReviewPage({ params }: PageProps) {
             </div>
             <div className="surface-card rounded-[2rem] p-7">
               <h2 className="text-2xl font-black tracking-tight text-ink">
-                Red flags antes de escalar
+                Red flags before scaling
               </h2>
               <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">
                 {deepDive.redFlags.map((item) => (
@@ -507,10 +507,10 @@ export default async function ReviewPage({ params }: PageProps) {
         {seoEnhancement ? (
           <section className="mt-12 rounded-[2rem] border border-line bg-ink p-7 text-white shadow-soft md:p-10">
             <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white/70">
-              Alternativa estratégica
+              Strategic alternative
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight">
-              Quando considerar white label em vez de promover terceiros
+              When to consider white label instead of promoting third parties
             </h2>
             <p className="mt-4 max-w-4xl text-base leading-8 text-white/75">
               {seoEnhancement.whiteLabelAlternative}
@@ -523,7 +523,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         <section className="mt-12 grid gap-8 lg:grid-cols-3">
           <div className="surface-card rounded-[2rem] p-7">
-            <h2 className="text-2xl font-black tracking-tight text-ink">Ferramentas</h2>
+            <h2 className="text-2xl font-black tracking-tight text-ink">Tools</h2>
             <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">
               {program.affiliateTools.map((item) => (
                 <li key={item}>• {item}</li>
@@ -531,7 +531,7 @@ export default async function ReviewPage({ params }: PageProps) {
             </ul>
           </div>
           <div className="surface-card rounded-[2rem] p-7">
-            <h2 className="text-2xl font-black tracking-tight text-ink">Notas de tráfego</h2>
+            <h2 className="text-2xl font-black tracking-tight text-ink">Traffic notes</h2>
             <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">
               {program.trafficNotes.map((item) => (
                 <li key={item}>• {item}</li>
@@ -551,10 +551,10 @@ export default async function ReviewPage({ params }: PageProps) {
         {deepDive ? (
           <section className="mt-12 rounded-[2rem] border border-line bg-ink p-7 text-white shadow-soft md:p-10">
             <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white/70">
-              Checklist de otimização
+              Optimization checklist
             </p>
             <h2 className="mt-3 text-3xl font-black tracking-tight">
-              Antes de aumentar o orçamento
+              Before increasing budget
             </h2>
             <div className="mt-7 grid gap-3 md:grid-cols-2">
               {deepDive.optimizationChecklist.map((item) => (
@@ -567,16 +567,16 @@ export default async function ReviewPage({ params }: PageProps) {
         ) : null}
 
         <section className="mt-12 rounded-[2rem] border border-line bg-cream/80 p-7 md:p-10">
-          <h2 className="text-3xl font-black tracking-tight text-ink">Para quem faz sentido?</h2>
+          <h2 className="text-3xl font-black tracking-tight text-ink">Who is it for?</h2>
           <p className="mt-5 text-lg leading-8 text-muted">{program.bestFor}</p>
           <p className="mt-4 text-sm leading-7 text-muted">
-            Antes de escalar, valide termos oficiais, países aceitos, métodos de promoção
-            permitidos e regras para comunicação de risco.
+            Before scaling, validate official terms, accepted countries, permitted promotion methods and
+            risk-communication rules.
           </p>
         </section>
 
         <section className="mt-12">
-          <h2 className="text-3xl font-black tracking-tight text-ink">Alternativas</h2>
+          <h2 className="text-3xl font-black tracking-tight text-ink">Alternatives</h2>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {alternatives.map((alternative) => (
               <Link
@@ -593,7 +593,7 @@ export default async function ReviewPage({ params }: PageProps) {
               href={`/programas/${relatedRanking.slug}`}
               className="mt-6 inline-flex text-sm font-black text-brand hover:text-ink"
             >
-              Ver ranking relacionado
+              View related ranking
             </Link>
           ) : null}
         </section>
@@ -601,7 +601,7 @@ export default async function ReviewPage({ params }: PageProps) {
         <div className="mt-12">
           <SourceList sources={program.sources} />
           <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-muted">
-            Última checagem editorial: {program.lastChecked}
+            Last editorial check: {program.lastChecked}
           </p>
         </div>
 

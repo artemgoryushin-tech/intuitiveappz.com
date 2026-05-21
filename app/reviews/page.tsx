@@ -25,16 +25,16 @@ const priorityKeywordLinks = priorityReviewSlugs
   .filter((item): item is { slug: string; content: BrandReviewSeoContent } => Boolean(item.content));
 
 export const metadata: Metadata = {
-  title: "Análises de programas de afiliados para trading e brokers",
+  title: "Reviews of trading and broker affiliate programs",
   description:
-    "Análises PT-BR de programas de afiliados como Pocket Option, Quotex, IQ Option, Olymp Trade, Deriv, Exness, XM e AvaTrade.",
+    "English reviews of affiliate programs such as Pocket Option, Quotex, IQ Option, Olymp Trade, Deriv, Exness, XM and AvaTrade.",
   alternates: {
     canonical: "/reviews"
   },
   openGraph: {
-    title: "Análises de programas de afiliados para trading e brokers",
+    title: "Reviews of trading and broker affiliate programs",
     description:
-      "Análises PT-BR de programas de afiliados como Pocket Option, Quotex, IQ Option, Olymp Trade, Deriv, Exness, XM e AvaTrade.",
+      "English reviews of affiliate programs such as Pocket Option, Quotex, IQ Option, Olymp Trade, Deriv, Exness, XM and AvaTrade.",
     url: `${siteConfig.domain}/reviews`
   }
 };
@@ -46,7 +46,7 @@ export default function ReviewsIndexPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          name: "Análises de programas de afiliados para trading e brokers",
+          name: "Reviews of trading and broker affiliate programs",
           url: `${siteConfig.domain}/reviews`,
           mainEntity: {
             "@type": "ItemList",
@@ -62,9 +62,9 @@ export default function ReviewsIndexPage() {
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="surface-card-strong rounded-[2rem] p-7 md:p-10">
           <SectionHeader
-            eyebrow="Análises"
-            title="Análises de programas de afiliados para trading e brokers"
-            description="Reviews em português para buscas de marca: comissão, CPA, RevShare, pagamentos, fontes de tráfego, riscos e alternativas."
+            eyebrow="Reviews"
+            title="Reviews of trading and broker affiliate programs"
+            description="English reviews for brand searches: commission, CPA, RevShare, payouts, traffic sources, risks and alternatives."
             titleAs="h1"
           />
         </div>
@@ -72,18 +72,18 @@ export default function ReviewsIndexPage() {
         <div className="mt-8 grid gap-4 lg:grid-cols-[1fr_0.7fr]">
           <div className="surface-card rounded-[2rem] p-7">
             <h2 className="text-2xl font-black tracking-tight text-ink">
-              Comece pelas páginas com maior intenção comercial
+              Start with the highest-intent pages
             </h2>
             <p className="mt-4 text-sm leading-7 text-muted">
-              Estas análises foram priorizadas para consultas como programa de afiliados Pocket Option,
-              programa de afiliados Quotex, IQ Option afiliados, Kingfin parceiros e Deriv afiliados.
-              O objetivo é responder rápido o que paga, como funciona, quais regras validar e quando
-              comparar com alternativas.
+              These reviews are prioritized for searches such as Pocket Option affiliate program,
+              Quotex affiliate program, IQ Option affiliates, Kingfin Partners and Deriv affiliates.
+              The goal is to answer what pays, how it works, which rules to validate and when to
+              compare alternatives.
             </p>
           </div>
           <div className="surface-card rounded-[2rem] p-7">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-brand">
-              Money queries PT-BR
+              Money queries
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {priorityKeywordLinks.map(({ slug, content }) => (

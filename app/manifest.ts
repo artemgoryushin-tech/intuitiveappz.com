@@ -4,14 +4,14 @@ import { siteConfig } from "@/data/site";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.name,
-    short_name: "AfiliadosPro",
+    short_name: "AffiliatePro",
     description: siteConfig.description,
     start_url: "/",
     scope: "/",
     display: "standalone",
     background_color: "#fffefa",
     theme_color: "#1347ff",
-    lang: "pt-BR",
+    lang: "en-US",
     icons: [
       {
         src: "/icon.svg",

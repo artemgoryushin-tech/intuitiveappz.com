@@ -1,6 +1,6 @@
-# AfiliadosPro Brasil
+# AffiliatePro Hub
 
-SEO media/catalog MVP for Brazilian affiliate marketers researching broker, forex, trading and fintech affiliate programs.
+SEO media/catalog MVP for English-speaking affiliate marketers researching broker, forex, trading and fintech affiliate programs.
 
 ## Stack
 
@@ -38,7 +38,7 @@ All MVP content lives in `data/site.ts`:
 
 ## Production Notes
 
-Before public launch, replace `siteConfig.domain`, connect real analytics, add final legal copy, validate all affiliate program terms against official sources and review financial/compliance disclaimers for Brazil.
+Before public launch, replace `siteConfig.domain`, connect real analytics, add final legal copy, validate all affiliate program terms against official sources and review financial/compliance disclaimers for the target markets.
 
 ## Lead Forms
 
