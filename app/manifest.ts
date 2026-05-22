@@ -18,6 +18,12 @@ export default function manifest(): MetadataRoute.Manifest {
         sizes: "any",
         type: "image/svg+xml",
         purpose: "any"
+      },
+      {
+        src: "/brand-mark.svg",
+        sizes: "96x96",
+        type: "image/svg+xml",
+        purpose: "any"
       }
     ]
   };

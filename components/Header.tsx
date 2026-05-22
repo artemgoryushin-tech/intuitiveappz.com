@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { navigation, siteConfig } from "@/data/site";
 
@@ -9,9 +10,15 @@ export function Header() {
           href="/"
           className="flex items-center gap-3 text-lg font-black tracking-tight text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
         >
-          <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand text-sm text-white shadow-soft">
-            AP
-          </span>
+          <Image
+            src="/brand-mark.svg"
+            alt=""
+            width={40}
+            height={40}
+            aria-hidden="true"
+            className="h-10 w-10 rounded-xl shadow-soft"
+            priority
+          />
           <span>{siteConfig.name}</span>
         </Link>
         <nav className="hidden items-center gap-1 rounded-2xl border border-line bg-white/80 p-1 text-sm font-bold text-muted shadow-sm lg:flex">

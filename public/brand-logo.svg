@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="176" viewBox="0 0 760 176" role="img" aria-label="AffiliatePro Hub logo">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="14" x2="154" y2="158" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.58" stop-color="#17213a"/>
+      <stop offset="1" stop-color="#2847a8"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="43" y1="122" x2="126" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7f9dff"/>
+      <stop offset="1" stop-color="#e9edff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="47" y1="122" x2="132" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f47b20"/>
+      <stop offset="0.54" stop-color="#ffb156"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="16" y="16" width="144" height="144" rx="36" fill="url(#bg)"/>
+    <path d="M37 53h102M37 77h102M37 101h102M37 125h102M61 34v108M85 34v108M109 34v108M133 34v108" stroke="#ffffff" stroke-opacity="0.055" stroke-width="2"/>
+    <circle cx="128" cy="49" r="22" fill="#f47b20" opacity="0.16"/>
+    <path d="M54 122 82 64c5-10 16-12 24-4l39 39h-26L94 74 71 122H54Z" fill="url(#blue)"/>
+    <path d="M57 122 86 64c4-10 17-12 24-4 2 2 4 4 5 7l23 55h-21l-6-16H78l-8 16H57Zm31-34h17l-7-19-10 19Z" fill="url(#accent)"/>
+    <path d="M112 62h26v26" fill="none" stroke="#f47b20" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+    <path d="M73 112h59" stroke="#ffffff" stroke-linecap="round" stroke-width="9"/>
+    <circle cx="136" cy="112" r="8" fill="#f47b20"/>
+  </g>
+  <g fill="#111827">
+    <text x="190" y="82" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="900" letter-spacing="0">AffiliatePro</text>
+    <text x="190" y="125" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="0" fill="#2847a8">Hub</text>
+  </g>
+  <path d="M283 137h210" stroke="#f47b20" stroke-linecap="round" stroke-width="8"/>
+</svg>

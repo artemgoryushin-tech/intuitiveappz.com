@@ -1,6 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
-  <rect width="180" height="180" rx="40" fill="#0b1220"/>
-  <path d="M42 124 75 46h23l33 78h-24l-5-15H70l-5 15H42Zm35-33h19l-9-27-10 27Z" fill="#fffefa"/>
-  <path d="M132 51h16v80h-16z" fill="#0dbf84"/>
-  <path d="M34 137h111v16H34z" fill="#1347ff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="AffiliatePro Hub app icon">
+  <defs>
+    <linearGradient id="bg" x1="25" y1="16" x2="160" y2="164" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.56" stop-color="#17213a"/>
+      <stop offset="1" stop-color="#2847a8"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="46" y1="126" x2="133" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f47b20"/>
+      <stop offset="0.5" stop-color="#ffb156"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="47" y1="126" x2="126" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7f9dff"/>
+      <stop offset="1" stop-color="#e9edff"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  <path d="M29 45h122M29 73h122M29 101h122M29 129h122M51 26v128M79 26v128M107 26v128M135 26v128" stroke="#ffffff" stroke-opacity="0.055" stroke-width="2"/>
+  <circle cx="136" cy="43" r="25" fill="#f47b20" opacity="0.14"/>
+  <path d="M48 126 83 55c4-7 11-9 17-5 2 2 4 4 5 6l29 70h-24l-6-16H72l-8 16H48Zm32-36h17l-7-20-10 20Z" fill="url(#mark)"/>
+  <path d="M47 126 81 57c4-7 13-9 19-3l37 37h-29L91 74 67 126H47Z" fill="url(#blue)" opacity="0.92"/>
+  <path d="M106 56h28v28" fill="none" stroke="#f47b20" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+  <path d="M67 114h66" stroke="#ffffff" stroke-linecap="round" stroke-width="10"/>
+  <circle cx="136" cy="114" r="9" fill="#f47b20"/>
 </svg>
