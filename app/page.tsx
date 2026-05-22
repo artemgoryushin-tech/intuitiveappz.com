@@ -47,55 +47,66 @@ export default function HomePage() {
           }
         }}
       />
-      <section className="relative overflow-hidden bg-cream">
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white/80 to-transparent" />
+      <section className="home-hero relative overflow-hidden">
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 md:grid-cols-[1.05fr_0.95fr] md:py-24">
           <div>
-            <p className="inline-flex rounded-full border border-brand/15 bg-white px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand shadow-sm">
+            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent shadow-sm">
               {positioning.eyebrow}
             </p>
-            <h1 className="mt-5 max-w-4xl text-balance text-5xl font-black tracking-tight text-ink md:text-7xl">
+            <h1 className="mt-5 max-w-4xl text-balance text-5xl font-black tracking-tight text-white md:text-7xl">
               {positioning.headline}
             </h1>
-            <p className="mt-6 max-w-2xl text-xl leading-9 text-muted">
+            <p className="mt-6 max-w-2xl text-xl leading-9 text-white/70">
               {positioning.subheadline}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/programas/best-broker-affiliate-programs"
-                className="rounded-full bg-brand px-6 py-3 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-ink"
+                className="rounded-xl bg-accent px-6 py-3 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-white hover:text-ink"
               >
                 Compare programs
               </Link>
               <Link
                 href="/clone-script"
-                className="rounded-full border border-line bg-white px-6 py-3 text-sm font-black text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-ink"
+                className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-white hover:text-ink"
               >
                 Explore clone script briefs
               </Link>
+            </div>
+            <div className="mt-10 grid max-w-2xl gap-3 text-sm font-bold text-white/70 sm:grid-cols-3">
+              {[
+                ["57", "indexed-style pages"],
+                ["5", "clone script briefs"],
+                ["B2B", "white label funnel"]
+              ].map(([value, label]) => (
+                <div key={label} className="rounded-2xl border border-white/15 bg-white/10 p-4">
+                  <p className="text-2xl font-black text-white">{value}</p>
+                  <p className="mt-1">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
           <HeroVisual />
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-5 py-20">
-        <div className="grid items-start gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-          <div className="surface-card-strong rounded-[2rem] p-7 md:p-10">
-            <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
+      <section className="section-band">
+        <div className="mx-auto grid max-w-7xl items-start gap-8 px-5 py-20 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="rounded-[1.5rem] bg-ink p-7 text-white shadow-soft md:p-10">
+            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
               New SEO cluster
             </p>
-            <h2 className="mt-4 text-balance text-4xl font-black tracking-tight text-ink">
+            <h2 className="mt-4 text-balance text-4xl font-black tracking-tight text-white">
               From affiliate offer pages to platform-build intent
             </h2>
-            <p className="mt-5 text-lg leading-8 text-muted">
+            <p className="mt-5 text-lg leading-8 text-white/70">
               The English site now covers people searching for broker affiliate offers and people
               exploring their own trading platform. Clone-script pages are written as brand-safe
               white label briefs, not as instructions to copy a competitor.
             </p>
             <Link
               href="/clone-script"
-              className="mt-7 inline-flex rounded-full bg-ink px-6 py-3 text-sm font-black text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-brand"
+              className="mt-7 inline-flex rounded-xl bg-white px-6 py-3 text-sm font-black text-ink shadow-soft transition hover:-translate-y-0.5 hover:bg-accent hover:text-white"
             >
               View clone script hub
             </Link>
@@ -105,7 +116,7 @@ export default function HomePage() {
               <Link
                 key={page.slug}
                 href={`/clone-script/${page.slug}`}
-                className="visual-card group rounded-[1.75rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
+                className="visual-card group rounded-[1.25rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
               >
                 <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
                   {page.keyword}
@@ -131,7 +142,7 @@ export default function HomePage() {
             <Link
               key={ranking.slug}
               href={`/programas/${ranking.slug}`}
-              className="visual-card group rounded-[1.75rem] p-5 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
+              className="visual-card group rounded-[1.25rem] p-5 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
             >
               <CategoryVisual
                 label={ranking.category === "all" ? "Broker" : ranking.category}
@@ -152,7 +163,7 @@ export default function HomePage() {
         <BeBrokerCTA compact />
       </section>
 
-      <section className="bg-white/70">
+      <section className="section-band">
         <div className="mx-auto max-w-7xl px-5 py-20">
           <SectionHeader
             eyebrow="Editorial picks"
@@ -169,8 +180,8 @@ export default function HomePage() {
 
       <section className="mx-auto grid max-w-7xl items-start gap-8 px-5 py-20 lg:grid-cols-[0.9fr_1.1fr]">
         <MethodologyBlock />
-        <div className="surface-card rounded-[2rem] p-7 md:p-10">
-          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+        <div className="surface-card rounded-[1.5rem] p-7 md:p-10">
+          <p className="inline-flex rounded-xl border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
             Selection criteria
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -187,7 +198,7 @@ export default function HomePage() {
               ["Payouts and support", "Frequency, withdrawal methods and manager support matter when campaigns scale."],
               ["Risk and compliance", "Trading, forex and CFDs need conservative messaging and clear risk notices."]
             ].map(([title, copy]) => (
-              <div key={title} className="rounded-2xl bg-cream/80 p-5">
+              <div key={title} className="rounded-xl bg-cream/80 p-5">
                 <p className="font-black text-ink">{title}</p>
                 <p className="mt-2 text-sm leading-7 text-muted">{copy}</p>
               </div>
@@ -200,7 +211,7 @@ export default function HomePage() {
         <WhiteLabelFlowVisual />
       </section>
 
-      <section className="bg-cream">
+      <section className="section-band">
         <div className="mx-auto max-w-7xl px-5 py-20">
           <SectionHeader
             eyebrow="Guides"
@@ -209,7 +220,7 @@ export default function HomePage() {
           />
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {guides.map((guide) => (
-              <Link key={guide.slug} href={`/guias/${guide.slug}`} className="surface-card group rounded-3xl p-6 transition hover:-translate-y-1 hover:shadow-soft">
+                <Link key={guide.slug} href={`/guias/${guide.slug}`} className="surface-card group rounded-[1.25rem] p-6 transition hover:-translate-y-1 hover:shadow-soft">
                 <p className="text-xs font-black uppercase tracking-[0.16em] text-accent">
                   {guide.keyword}
                 </p>

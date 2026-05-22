@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BeBrokerCTA } from "@/components/BeBrokerCTA";
 import { JsonLd } from "@/components/JsonLd";
-import { SectionHeader } from "@/components/SectionHeader";
 import { WhiteLabelFlowVisual } from "@/components/Visuals";
 import { cloneScriptPages, siteConfig } from "@/data/site";
 
@@ -51,22 +50,27 @@ export default function CloneScriptIndexPage() {
       />
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_0.45fr]">
-          <div className="surface-card-strong rounded-[2rem] p-7 md:p-10">
-            <SectionHeader
-              eyebrow="Clone Script SEO"
-              title="Capture platform-build searches without copying brands"
-              description="These briefs translate high-intent searches like Quotex clone script and Pocket Option clone script into legal white label, custom build and broker infrastructure requirements."
-              titleAs="h1"
-            />
+          <div className="rounded-[1.5rem] bg-ink p-7 text-white shadow-soft md:p-10">
+            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
+              Clone Script SEO
+            </p>
+            <h1 className="mt-4 max-w-3xl text-balance text-4xl font-black tracking-tight text-white md:text-5xl">
+              Capture platform-build searches without copying brands
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/70">
+              These briefs translate high-intent searches like Quotex clone script and Pocket
+              Option clone script into legal white label, custom build and broker infrastructure
+              requirements.
+            </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {[
                 ["Search intent", "Users are asking for trading platform functionality, launch speed and vendor options."],
                 ["Brand safety", "Names are search references only; the product needs original identity and legal review."],
                 ["B2B funnel", "Pages qualify teams that may be ready for white label, CRM, payments and affiliate tools."]
               ].map(([title, copy]) => (
-                <div key={title} className="rounded-2xl bg-white/75 p-5 shadow-sm">
-                  <p className="text-sm font-black text-ink">{title}</p>
-                  <p className="mt-2 text-sm leading-7 text-muted">{copy}</p>
+                <div key={title} className="rounded-xl border border-white/15 bg-white/10 p-5">
+                  <p className="text-sm font-black text-white">{title}</p>
+                  <p className="mt-2 text-sm leading-7 text-white/70">{copy}</p>
                 </div>
               ))}
             </div>
@@ -79,7 +83,7 @@ export default function CloneScriptIndexPage() {
             <Link
               key={page.slug}
               href={`/clone-script/${page.slug}`}
-              className="visual-card group rounded-[1.75rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
+              className="visual-card group rounded-[1.25rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
             >
               <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
                 {page.keyword}
