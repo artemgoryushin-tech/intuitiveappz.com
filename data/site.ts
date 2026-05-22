@@ -710,6 +710,227 @@ export const programs: Program[] = [
     sources: [{ label: "OKX Affiliates", url: "https://www.okx.com/affiliates" }],
     lastChecked: "2026-04-28",
     keywords: ["OKX affiliate program", "OKX affiliates", "crypto affiliate programs"]
+  },
+  {
+    name: "Tickmill",
+    slug: "tickmill-affiliate-program",
+    category: "forex",
+    officialUrl: "https://www.tickmill.com/uk/partners/affiliate-program",
+    officialLabel: "Tickmill Affiliate Program",
+    payoutModel: "CPA affiliate and Introducing Broker",
+    commission: "CPA is paid for qualified referrals; IB commissions are tied to referred client trading activity",
+    payoutFrequency: "Confirm current payment timing, hold rules and withdrawal methods in the affiliate agreement",
+    subAffiliate: "Not a primary public claim on the affiliate page; confirm network terms directly",
+    bestFor: "Forex publishers and paid-media teams that need a regulated multi-asset broker with CPA and IB paths",
+    markets: "International broker reach, with entity and country restrictions that must be checked before promotion",
+    paymentMethods: "Defined by the Tickmill partner account and agreement",
+    verdict:
+      "Tickmill is a useful forex comparison entry because it clearly separates affiliate CPA and IB-style partnerships. It should be evaluated by market, qualification rules and compliance requirements rather than by headline payout language alone.",
+    pros: ["CPA affiliate path", "IB partnership path", "Multi-asset broker positioning", "Official FAQ explains partner categories"],
+    cons: ["Public CPA values are not universal", "Terms vary by entity and country", "Forex and CFDs require strong risk disclosure"],
+    affiliateTools: ["Affiliate application", "Partner FAQ", "Marketing materials", "Partner reporting", "Manager validation"],
+    trafficNotes: ["Good fit for forex education, broker comparisons and active-trader communities", "Separate CPA campaigns from IB relationship traffic", "Validate brand bidding and paid media rules before launch"],
+    complianceNotes: ["Use forex and CFD risk warnings", "Do not imply CPA approval is automatic", "Check whether the target country is accepted"],
+    facts: ["Tickmill describes both Affiliate CPA and IB partnership models", "The official FAQ says partners can earn through CPA or ongoing IB commissions", "The affiliate page positions Tickmill as a multi-asset broker"],
+    sources: [
+      { label: "Tickmill Affiliate Program", url: "https://www.tickmill.com/uk/partners/affiliate-program" },
+      { label: "Tickmill partnership FAQ", url: "https://www.tickmill.com/about/faq/what-is-a-partnership-program-at-tickmill" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["Tickmill affiliate program", "Tickmill partners", "forex CPA affiliate"]
+  },
+  {
+    name: "RoboForex",
+    slug: "roboforex-affiliate-program",
+    category: "forex",
+    officialUrl: "https://roboforex.com/partners/affiliate/forex-affiliate/",
+    officialLabel: "RoboForex Partner Program",
+    payoutModel: "Multi-level partner program and commission from referred trading activity",
+    commission: "Partner commission depends on account type, instrument, activity and partner level; sub-partner structures are referenced in official materials",
+    payoutFrequency: "Confirm current timing and withdrawal methods inside the partner area",
+    subAffiliate: "Infinity Partner Program materials reference sub-partner commission",
+    bestFor: "Forex affiliates building a wider partner network or education-led trader community",
+    markets: "International markets, subject to entity restrictions and local CFD rules",
+    paymentMethods: "Defined in the RoboForex partner account and terms",
+    verdict:
+      "RoboForex is more of a partner-network and IB-style offer than a simple one-number CPA page. It is relevant when an affiliate can explain forex products carefully and track sub-partner or client activity over time.",
+    pros: ["Multi-level partner angle", "Sub-partner commission references", "Partner loyalty materials", "Useful for community operators"],
+    cons: ["Commission logic is more complex than fixed CPA", "Current terms must be validated", "CFD risk and regional restrictions need clear wording"],
+    affiliateTools: ["Partner links", "Sub-partner structures", "Partner loyalty materials", "Support center documentation", "Dashboard reporting"],
+    trafficNotes: ["Works for forex education, communities and partner recruitment", "Explain account and instrument differences before forecasting revenue", "Avoid using rebate messaging as a substitute for risk education"],
+    complianceNotes: ["Use CFD risk disclosure", "Do not promise stable income", "Validate current partner terms before publishing numbers"],
+    facts: ["RoboForex support materials reference partner loyalty rewards", "Official materials reference the Infinity Partner Program", "Commission depends on program type, level and referred activity"],
+    sources: [
+      { label: "RoboForex Infinity partner program", url: "https://roboforex.com/partners/affiliate/forex-affiliate/" },
+      { label: "RoboForex partner loyalty support", url: "https://help.roboforex.com/en/support/solutions/articles/501000256328-what-is-the-partner-loyalty-program-" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["RoboForex affiliate program", "RoboForex partners", "forex partner program"]
+  },
+  {
+    name: "HFM",
+    slug: "hfm-affiliate-program",
+    category: "forex",
+    officialUrl: "https://affiliates.hfm.com/en/",
+    officialLabel: "HFM Partnership Program",
+    payoutModel: "Affiliate and partner program with multi-tier tracking",
+    commission: "Commercial terms depend on affiliate approval, country, product and partner agreement",
+    payoutFrequency: "Confirm current schedule and methods in the HFM affiliate dashboard",
+    subAffiliate: "A 5-tier affiliate tracking system is referenced publicly",
+    bestFor: "Forex affiliates, educators and partner-network owners who need multi-tier tracking",
+    markets: "Global broker audience subject to entity, country and product restrictions",
+    paymentMethods: "Defined by the affiliate account and agreement",
+    verdict:
+      "HFM is worth listing for affiliates who care about network depth and partner tracking. The key due diligence points are the actual commercial plan, accepted regions, source rules and CFD risk language.",
+    pros: ["Public partner portal", "5-tier tracking angle", "Broker brand recognition", "Affiliate community positioning"],
+    cons: ["Public commission specifics are limited", "Terms depend on approval", "Country and entity rules need validation"],
+    affiliateTools: ["Affiliate portal", "Tracking system", "Campaign materials", "Partner support", "Performance reporting"],
+    trafficNotes: ["Good fit for forex education, regional communities and partner recruitment", "Track direct traffic separately from sub-partner traffic", "Ask for source rules before running ads"],
+    complianceNotes: ["Use forex and CFD risk warnings", "Avoid income guarantees", "Confirm permitted territories and product scope"],
+    facts: ["HFM presents a dedicated partnership program", "The public page references a 5-tier affiliate tracking system", "Final payout terms should be confirmed through the partner account"],
+    sources: [{ label: "HFM Partnership Program", url: "https://affiliates.hfm.com/en/" }],
+    lastChecked: "2026-05-22",
+    keywords: ["HFM affiliate program", "HFM partners", "forex affiliate program"]
+  },
+  {
+    name: "FP Markets",
+    slug: "fp-markets-affiliate-program",
+    category: "forex",
+    officialUrl: "https://www.fpmarkets.com/en-gb/fp-markets-partners/",
+    officialLabel: "FP Markets Partners",
+    payoutModel: "CPA for affiliates, IB, hybrid and white label partnership paths",
+    commission: "Official partner materials reference CPA for affiliates and custom deals for IBs; exact terms depend on account and region",
+    payoutFrequency: "Confirm through the FP Markets partner portal and terms",
+    subAffiliate: "Multi-tier structures are referenced in partner materials",
+    bestFor: "Forex and CFD affiliates who want CPA, IB, hybrid or white label discussion paths",
+    markets: "Global CFD and forex markets, subject to jurisdiction and entity restrictions",
+    paymentMethods: "Defined by partner portal and agreement",
+    verdict:
+      "FP Markets is useful for affiliates comparing more than one partnership route because public materials mention affiliate CPA, IB, hybrid and white label options. Treat the published positioning as a starting point and validate qualification details before forecasting.",
+    pros: ["CPA affiliate path", "IB and hybrid partnership paths", "White label partnership angle", "Transparent reporting messaging"],
+    cons: ["Rates vary by entity and agreement", "CFDs require conservative risk communication", "Country restrictions must be checked"],
+    affiliateTools: ["IB portal", "Affiliate reporting", "Marketing tools", "Conversion specialists", "Multi-tier structures"],
+    trafficNotes: ["Good for forex comparison content and active-trader audiences", "Use separate funnels for CPA, IB and white label intent", "Ask for country-by-country qualification criteria"],
+    complianceNotes: ["Use CFD risk warnings", "Do not overstate custom deal availability", "Confirm permitted channels and region rules"],
+    facts: ["FP Markets materials reference CPA for affiliates", "Partner materials reference IB, hybrid and white label paths", "The public page highlights reporting and partner support"],
+    sources: [
+      { label: "FP Markets Partners", url: "https://www.fpmarkets.com/en-gb/fp-markets-partners/" },
+      { label: "FP Markets Partners terms", url: "https://www.fpmarketspartners.com/wp-content/themes/fpmarkets/assets/FP-Affiliate-Program_%28FP%20Markets%20LLC%29.pdf" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["FP Markets affiliate program", "FP Markets partners", "forex CPA affiliate"]
+  },
+  {
+    name: "FxPro",
+    slug: "fxpro-affiliate-program",
+    category: "forex",
+    officialUrl: "https://www.fxpro.partners/",
+    officialLabel: "FxPro Affiliate Program",
+    payoutModel: "CPA affiliate, introducer and customized partnership schemes",
+    commission: "Official materials reference CPA up to USD 1,100 for active clients and spread-revenue sharing for introducers",
+    payoutFrequency: "Official FAQ references month-end reconciliation and flexible payout options after approval",
+    subAffiliate: "The public FAQ references a 5% referral-program income share for referred partners",
+    bestFor: "Forex affiliates that want a high-CPA broker offer with manager-led validation",
+    markets: "Global forex and CFD markets with different CPA rates by GEO",
+    paymentMethods: "Flexible payout options are referenced; confirm exact methods with the manager",
+    verdict:
+      "FxPro is a strong addition for CPA comparison pages because it publishes a clear affiliate portal and headline CPA language. Affiliates still need to validate GEO rates, hold status, approval rules and promotional restrictions.",
+    pros: ["CPA up to USD 1,100 referenced", "Real-time statistics", "Promotional materials", "Referral-program angle"],
+    cons: ["GEO rates vary", "Conversions can go on hold for review", "Final payout requires reconciliation and approval"],
+    affiliateTools: ["Affiliate portal", "Referral links", "Real-time statistics", "API or postback integration", "Custom promotional materials"],
+    trafficNotes: ["Good fit for broker comparison pages, paid tests and finance creators", "Forecast net CPA after hold and approval rules", "Ask for current GEO rate card before buying media"],
+    complianceNotes: ["Use CFD risk disclosure", "Do not imply every active client qualifies for the headline CPA", "Avoid unauthorized discount or performance claims"],
+    facts: ["FxPro affiliate materials reference up to USD 1,100 per active client", "FAQ content references different CPA rates by GEO", "FAQ content references month-end reconciliation and approval before withdrawal"],
+    sources: [
+      { label: "FxPro Affiliate Program", url: "https://www.fxpro.partners/" },
+      { label: "FxPro affiliate program press release", url: "https://www.fxpro.com/press-releases/fxpro-launches-new-affiliate-program" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["FxPro affiliate program", "FxPro partners", "forex CPA affiliate"]
+  },
+  {
+    name: "Libertex",
+    slug: "libertex-affiliate-program",
+    category: "broker",
+    officialUrl: "https://libertex.com/partnership",
+    officialLabel: "Libertex Affiliate Programme",
+    payoutModel: "CPA network for qualified trader events",
+    commission: "Official materials reference CPA payouts for qualified traders; current values and approved countries must be checked",
+    payoutFrequency: "Confirm in the affiliate agreement or partner account",
+    subAffiliate: "Not a core public claim; confirm directly before recruiting sub-affiliates",
+    bestFor: "Finance publishers and trading educators covering CFDs, stocks, ETFs, crypto and multi-asset platforms",
+    markets: "International markets with jurisdiction restrictions and approved-country rules",
+    paymentMethods: "Defined by the Libertex affiliate setup and agreement",
+    verdict:
+      "Libertex fits broader broker and trading content because it combines CFD/trading traffic with a CPA-network model. Affiliates should be careful with jurisdiction restrictions, qualified-trader criteria and product availability.",
+    pros: ["Established brand", "CPA affiliate positioning", "Multi-asset content angles", "Education and demo-account angles"],
+    cons: ["Approved countries matter", "Qualified trader rules determine net value", "CFDs and crypto products require risk disclosure"],
+    affiliateTools: ["Affiliate account", "Personal affiliate link", "Promotional materials", "Tracking assets", "Manager support"],
+    trafficNotes: ["Good fit for broker comparisons, trading education and multi-asset finance content", "Segment CFD, crypto and investing audiences", "Use conservative pages before commercial CTAs"],
+    complianceNotes: ["Disclose CFD and crypto risk", "Do not promise income or easy results", "Check whether the affiliate program accepts the target jurisdiction"],
+    facts: ["Libertex partnership materials reference a CPA network", "The official page says commission is tied to qualified trader conditions", "The page states that the program is not available in all jurisdictions"],
+    sources: [
+      { label: "Libertex Partnership", url: "https://libertex.com/partnership" },
+      { label: "Libertex affiliation terms", url: "https://libertex.com/sites/default/files/2023-06/Affiliation_Agreement_Marketing_Partners_Limited_V_15_05_2023%20-%20Terms_and_Conditions_FPM.docx%20%283%29.pdf" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["Libertex affiliate program", "Libertex partners", "broker affiliate program"]
+  },
+  {
+    name: "easyMarkets",
+    slug: "easymarkets-affiliate-program",
+    category: "forex",
+    officialUrl: "https://easymarketspartners.com/programs/",
+    officialLabel: "easyMarkets Partners",
+    payoutModel: "Affiliate and Introducing Broker programs",
+    commission: "Commercial terms depend on partner type, country and agreement; signup materials distinguish affiliate and IB traffic",
+    payoutFrequency: "Confirm payout timing and method in the partner account and affiliation agreement",
+    subAffiliate: "Not a universal public term; confirm directly with easyMarkets Partners",
+    bestFor: "Forex affiliates, financial publishers and IB-style partners who need a long-running broker partner program",
+    markets: "International, subject to entity, EU/non-EU and local product restrictions",
+    paymentMethods: "Signup materials reference bank wire, Skrill, Bitwallet, WebMoney, USDT and trader-account payment options",
+    verdict:
+      "easyMarkets is relevant for affiliates who want a broker partner program with both affiliate and IB application paths. Final economics need direct validation because public materials focus more on program fit than fixed universal rates.",
+    pros: ["Affiliate and IB paths", "Dedicated partner program", "Multiple payout method references", "Long-running forex partner positioning"],
+    cons: ["Public rates are limited", "EU and non-EU rules differ", "Accepted sources and territories need confirmation"],
+    affiliateTools: ["Partner signup", "Affiliate account", "Marketing tools", "Payment setup", "Agreement documentation"],
+    trafficNotes: ["Works for forex education, comparison pages and publisher funnels", "Separate direct-contact IB audiences from hands-off affiliate traffic", "Confirm whether PPC and brand bidding are allowed"],
+    complianceNotes: ["Use CFD and forex risk notices", "Do not overstate conversion or payout potential", "Review entity-specific affiliate agreement"],
+    facts: ["easyMarkets partner materials distinguish Affiliate and Introducing Broker paths", "Signup materials reference several payment methods", "The partner program uses formal affiliation agreement acceptance"],
+    sources: [
+      { label: "easyMarkets Partners programs", url: "https://easymarketspartners.com/programs/" },
+      { label: "easyMarkets affiliate signup", url: "https://partners.easymarkets.com/signup.php" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["easyMarkets affiliate program", "easyMarkets partners", "forex affiliate program"]
+  },
+  {
+    name: "TradingView",
+    slug: "tradingview-affiliate-program",
+    category: "fintech",
+    officialUrl: "https://www.tradingview.com/partner-program/",
+    officialLabel: "TradingView Partner Program",
+    payoutModel: "Commission on first-time paid subscriptions",
+    commission: "Official materials list fixed commissions by plan and billing period for qualifying first-time subscribers",
+    payoutFrequency: "Official rules reference monthly payouts, with timing and verification requirements",
+    subAffiliate: "Not a core public claim; the program focuses on direct subscription referrals",
+    bestFor: "Trading educators, charting-tool creators, publishers and communities with software-intent traffic",
+    markets: "Global software audience, subject to partner rules and product availability",
+    paymentMethods: "Official rules reference PayPal payouts",
+    verdict:
+      "TradingView is not a broker, but it belongs in a finance affiliate database because charting software can monetize trader audiences without broker execution risk. It is especially useful for educational and tool-oriented content.",
+    pros: ["Clear plan-based commission table", "Global product demand", "90-day conversion window", "Dedicated partner tools and creatives"],
+    cons: ["Only qualifying new paid subscribers count", "Brand keyword paid ads are restricted", "Market-data and app purchases may be excluded"],
+    affiliateTools: ["Partner dashboard", "Dedicated support", "Detailed reports", "Real-time tracking", "Creatives"],
+    trafficNotes: ["Good fit for charting tutorials, strategy content, newsletters and trading communities", "Avoid brand-bidding campaigns", "Separate free-user signups from paid subscriber conversion"],
+    complianceNotes: ["Do not claim trading outcomes from using software", "Follow TradingView partner rules for discounts and brand terms", "Disclose affiliate relationship clearly"],
+    facts: ["TradingView publishes plan-based partner commissions", "Official materials reference a 90-day conversion window", "Partner rules restrict brand keyword paid advertising"],
+    sources: [
+      { label: "TradingView Partner Program", url: "https://www.tradingview.com/partner-program/" },
+      { label: "TradingView Partner Program Rules", url: "https://www.tradingview.com/partner-rules/" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["TradingView affiliate program", "TradingView partner program", "trading software affiliate program"]
   }
 ];
 
@@ -764,6 +985,13 @@ export const rankings: RankingPage[] = [
       "eightcap-affiliate-program",
       "axi-affiliate-program",
       "fxtm-affiliate-program",
+      "tickmill-affiliate-program",
+      "roboforex-affiliate-program",
+      "hfm-affiliate-program",
+      "fp-markets-affiliate-program",
+      "fxpro-affiliate-program",
+      "libertex-affiliate-program",
+      "easymarkets-affiliate-program",
       "etoro-affiliate-program",
       "iq-option-affiliate-program",
       "fbs-affiliate-program"
@@ -787,6 +1015,12 @@ export const rankings: RankingPage[] = [
       "eightcap-affiliate-program",
       "fxtm-affiliate-program",
       "axi-affiliate-program",
+      "tickmill-affiliate-program",
+      "roboforex-affiliate-program",
+      "hfm-affiliate-program",
+      "fp-markets-affiliate-program",
+      "fxpro-affiliate-program",
+      "easymarkets-affiliate-program",
       "fbs-affiliate-program"
     ],
     intro: "Forex combines high lead value with strict requirements around trust, trader education and risk disclosure.",
@@ -812,7 +1046,10 @@ export const rankings: RankingPage[] = [
       "bybit-affiliate-program",
       "binance-affiliate-program",
       "okx-affiliate-program",
-      "kraken-affiliate-program"
+      "kraken-affiliate-program",
+      "tradingview-affiliate-program",
+      "libertex-affiliate-program",
+      "fxpro-affiliate-program"
     ],
     intro: "Trading affiliate programs can advertise high commissions, but the right offer depends on audience intent, product risk and traffic-source rules.",
     audience: "Affiliates with trading, investment, finance-app or creator traffic."
@@ -830,6 +1067,8 @@ export const rankings: RankingPage[] = [
       "bybit-affiliate-program",
       "coinbase-affiliate-program",
       "kraken-affiliate-program",
+      "tradingview-affiliate-program",
+      "libertex-affiliate-program",
       "etoro-affiliate-program"
     ],
     intro: "Crypto and fintech funnels often have lower friction and higher volume potential, but they carry separate regulatory and product-risk questions.",
@@ -864,6 +1103,10 @@ export const rankings: RankingPage[] = [
       "deriv-affiliate-program",
       "fbs-affiliate-program",
       "axi-affiliate-program",
+      "roboforex-affiliate-program",
+      "hfm-affiliate-program",
+      "fp-markets-affiliate-program",
+      "fxpro-affiliate-program",
       "okx-affiliate-program",
       "bybit-affiliate-program",
       "kraken-affiliate-program"
@@ -894,6 +1137,13 @@ export const rankings: RankingPage[] = [
       "eightcap-affiliate-program",
       "fxtm-affiliate-program",
       "axi-affiliate-program",
+      "tickmill-affiliate-program",
+      "hfm-affiliate-program",
+      "fp-markets-affiliate-program",
+      "fxpro-affiliate-program",
+      "libertex-affiliate-program",
+      "easymarkets-affiliate-program",
+      "roboforex-affiliate-program",
       "xm-affiliate-program",
       "fbs-affiliate-program"
     ],
@@ -916,7 +1166,13 @@ export const rankings: RankingPage[] = [
       "pepperstone-affiliate-program",
       "eightcap-affiliate-program",
       "fxtm-affiliate-program",
-      "axi-affiliate-program"
+      "axi-affiliate-program",
+      "tickmill-affiliate-program",
+      "roboforex-affiliate-program",
+      "hfm-affiliate-program",
+      "fp-markets-affiliate-program",
+      "fxpro-affiliate-program",
+      "easymarkets-affiliate-program"
     ],
     intro: "RevShare is only competitive when the broker retains traders, calculates revenue transparently and gives affiliates enough post-FTD reporting.",
     audience: "Affiliates with education, community and evergreen content assets."
@@ -1517,6 +1773,390 @@ export const cloneScriptPages: CloneScriptPage[] = [
       { label: "Digital options programs", href: "/programas/digital-options-affiliate-programs" },
       { label: "Broker white label", href: "/white-label/broker-white-label-solution" },
       { label: "Compliance guide", href: "/guias/financial-affiliate-compliance" }
+    ]
+  },
+  {
+    slug: "deriv-clone-script",
+    title: "Deriv clone script: trading platform modules and white label path",
+    description:
+      "Plan a Deriv-style trading platform with original branding, multi-product UX, CRM, affiliate tracking, payments, risk controls and compliance review.",
+    keyword: "Deriv clone script",
+    brandReference: "Deriv",
+    positioning:
+      "Deriv is a useful reference for multi-product trading architecture, but a launch brief should focus on your own product scope, entity model, brand identity and operational controls rather than visual imitation.",
+    mustHaveFeatures: [
+      "Original trading interface for the selected product scope",
+      "User cabinet with verification, balances and transaction history",
+      "CRM for support, segmentation, activity and lifecycle events",
+      "Affiliate and IB tracking with subIDs and source rules",
+      "Payment reconciliation, withdrawal review and anti-fraud controls",
+      "Country, product, leverage and risk-warning controls"
+    ],
+    buildModules: [
+      {
+        title: "Product scope",
+        body: "Define whether the platform covers CFDs, options-style products, synthetic assets, copy trading, API access or education. Each product family changes risk, reporting and compliance requirements."
+      },
+      {
+        title: "Partner infrastructure",
+        body: "Deriv-style acquisition often includes affiliates, IBs or master partners. Build campaign attribution, source restrictions and partner reporting before scale."
+      },
+      {
+        title: "Back office",
+        body: "Managers need visibility into users, deposits, withdrawals, KYC, trading activity, complaints, bonuses and manual decisions."
+      },
+      {
+        title: "White label option",
+        body: "A white label platform can speed validation, but the brand, legal terms, product availability and promotional claims still need to be original and reviewed."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not copy Deriv branding, domains, interface details or legal wording.",
+      "Synthetic, CFD and derivatives products can carry different restrictions by country.",
+      "Keep risk warnings visible across onboarding, trading screens and promotional pages."
+    ],
+    monetizationAngles: [
+      "Use affiliate and IB modules to control publisher acquisition under your own rules.",
+      "Measure value by product type instead of blending all trader activity together.",
+      "Use API or education angles only when they are supported by the actual platform."
+    ],
+    faq: [
+      {
+        question: "What should a Deriv clone script include?",
+        answer:
+          "It should include original trading UX, user cabinet, CRM, payments, affiliate or IB tracking, product controls, risk notices and reporting. It should not copy Deriv protected assets."
+      },
+      {
+        question: "Is Deriv-style architecture suitable for every launch?",
+        answer:
+          "No. Multi-product trading architecture adds operational and compliance complexity. A narrower white label launch can be safer for validation."
+      }
+    ],
+    relatedLinks: [
+      { label: "Deriv affiliate review", href: "/reviews/deriv-affiliate-program" },
+      { label: "Broker white label", href: "/white-label/broker-white-label-solution" },
+      { label: "Broker launch cost", href: "/white-label/trading-platform-launch-cost" }
+    ]
+  },
+  {
+    slug: "expertoption-clone-script",
+    title: "ExpertOption clone script: digital trading platform checklist",
+    description:
+      "A practical guide to ExpertOption-style platform requests: original trading UX, onboarding, CRM, payments, affiliate tracking, risk notices and white label alternatives.",
+    keyword: "ExpertOption clone script",
+    brandReference: "ExpertOption",
+    positioning:
+      "ExpertOption clone script searches usually point to short-cycle trading UX and affiliate-led acquisition. The defensible build is an original platform with clear rules, risk disclosure and compliant market access.",
+    mustHaveFeatures: [
+      "Fast mobile-first trading flow with original visual design",
+      "Account cabinet for deposits, withdrawals and verification",
+      "CRM for FTDs, retention, support and complaint notes",
+      "Affiliate module with postbacks, subIDs and traffic rules",
+      "Payment provider integrations with reconciliation and review queues",
+      "Country restrictions, risk warnings and promotional controls"
+    ],
+    buildModules: [
+      {
+        title: "Trading experience",
+        body: "Build a clear and original trading room around your product rules. Avoid confusing users with screens that appear affiliated with another brand."
+      },
+      {
+        title: "Traffic quality",
+        body: "Short-cycle trading funnels need fraud controls, source reports and conservative landing pages that educate users before registration."
+      },
+      {
+        title: "CRM workflows",
+        body: "Support teams need a timeline of deposits, KYC, source, bonuses, support messages and retention events."
+      },
+      {
+        title: "Launch route",
+        body: "White label can be a faster way to validate demand, while custom development gives more control after acquisition economics are proven."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not use ExpertOption marks, screenshots, domain lookalikes or copy that suggests affiliation.",
+      "Avoid guaranteed-profit, signal or easy-income claims.",
+      "Review product legality, payments and advertising rules for every target country."
+    ],
+    monetizationAngles: [
+      "Turn affiliate traffic into a controlled partner funnel only after quality is measurable.",
+      "Use education and transparent product rules to improve activation quality.",
+      "Compare third-party RevShare with own-brand economics before investing in custom technology."
+    ],
+    faq: [
+      {
+        question: "Can I buy an ExpertOption clone script and launch quickly?",
+        answer:
+          "A front-end script is not enough. You need payments, CRM, KYC, reporting, risk controls, support workflows, legal review and original branding."
+      },
+      {
+        question: "What is safer than copying ExpertOption?",
+        answer:
+          "Use the search intent to define required modules, then launch an original white label or custom platform with compliant terms."
+      }
+    ],
+    relatedLinks: [
+      { label: "Digital options programs", href: "/programas/digital-options-affiliate-programs" },
+      { label: "Pocket Option clone script", href: "/clone-script/pocket-option-clone-script" },
+      { label: "Compliance guide", href: "/guias/financial-affiliate-compliance" }
+    ]
+  },
+  {
+    slug: "exness-clone-script",
+    title: "Exness clone script: forex broker platform requirements",
+    description:
+      "What an Exness clone script request should cover: forex broker cabinet, CRM, IB tracking, payments, reporting, compliance and white label infrastructure.",
+    keyword: "Exness clone script",
+    brandReference: "Exness",
+    positioning:
+      "Exness-style search demand is usually about forex broker scale, onboarding and partner operations. A serious build should define a regulated or white label launch model under a distinct brand.",
+    mustHaveFeatures: [
+      "Trader cabinet with account types, deposits, withdrawals and verification",
+      "CRM for leads, FTDs, trader status and support events",
+      "IB and affiliate tracking with source-level reporting",
+      "Payment operations, reconciliation and fraud review",
+      "Risk disclosure, jurisdiction controls and complaint handling",
+      "Reporting for CAC, LTV, active traders and partner payouts"
+    ],
+    buildModules: [
+      {
+        title: "Broker cabinet",
+        body: "Forex users expect account management, platform access, deposit status, withdrawal requests and verification visibility in one cabinet."
+      },
+      {
+        title: "IB and affiliate layer",
+        body: "If acquisition depends on partners, build rebates, CPA events, subIDs, partner tiers and source restrictions into the operating model."
+      },
+      {
+        title: "Compliance operations",
+        body: "Forex and CFDs require entity-specific disclosure, eligibility checks, advertising controls and record keeping."
+      },
+      {
+        title: "White label route",
+        body: "A white label brokerage can reduce launch time, but it does not remove the need for original branding, legal terms and partner governance."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not copy Exness branding, partner materials, interfaces or legal positioning.",
+      "Forex and CFDs are high-risk products and can be restricted by jurisdiction.",
+      "Validate entity, payment, KYC and advertising obligations before accepting traffic."
+    ],
+    monetizationAngles: [
+      "Use IB and affiliate economics to align partners with qualified trader activity.",
+      "Measure recurring value before choosing CPA, RevShare or hybrid partner terms.",
+      "Create separate reporting for paid media, SEO, creators and IB networks."
+    ],
+    faq: [
+      {
+        question: "Is an Exness clone script the same as a forex broker white label?",
+        answer:
+          "No. A clone script is usually a feature request. A white label is a launch model using vendor infrastructure with your own brand and operational setup."
+      },
+      {
+        question: "What matters most for an Exness-style broker launch?",
+        answer:
+          "Trader cabinet, CRM, partner tracking, payments, risk disclosure, compliance controls and reliable reporting matter more than interface similarity."
+      }
+    ],
+    relatedLinks: [
+      { label: "Exness affiliate review", href: "/reviews/exness-affiliate-program" },
+      { label: "Best forex affiliate programs", href: "/programas/best-forex-affiliate-programs" },
+      { label: "Broker white label", href: "/white-label/broker-white-label-solution" }
+    ]
+  },
+  {
+    slug: "binance-clone-script",
+    title: "Binance clone script: crypto exchange build and compliance checklist",
+    description:
+      "Plan a Binance-style crypto exchange build with original branding, wallets, KYC, trading modules, affiliate tracking, risk controls and legal review.",
+    keyword: "Binance clone script",
+    brandReference: "Binance",
+    positioning:
+      "Binance clone script intent is usually about crypto exchange functionality. The safe path is not brand imitation; it is defining an original exchange, broker or fintech platform with proper custody, compliance and security controls.",
+    mustHaveFeatures: [
+      "Original exchange or brokerage interface",
+      "Wallet, balance and transaction monitoring workflows",
+      "KYC, AML, sanctions and risk-scoring integrations",
+      "Admin panel for users, limits, disputes and support",
+      "Affiliate or referral tracking with anti-abuse rules",
+      "Security controls, audit logs and incident response planning"
+    ],
+    buildModules: [
+      {
+        title: "Custody and payments",
+        body: "Crypto platforms require careful wallet architecture, reconciliation, limits, monitoring and incident response. A UI demo is not a production exchange."
+      },
+      {
+        title: "Trading and liquidity",
+        body: "Define whether the product is an exchange, broker, swap interface, copy-trading product or white label integration. Liquidity and pricing logic change the build dramatically."
+      },
+      {
+        title: "Compliance stack",
+        body: "KYC, AML, country restrictions, sanctions screening and user-risk controls should be planned before commercial acquisition."
+      },
+      {
+        title: "Referral layer",
+        body: "Referral and affiliate systems need fraud controls, subIDs, campaign reporting and clear rules for prohibited traffic."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not use Binance branding, domains, screenshots or wording that implies official relationship.",
+      "Crypto products are regulated differently across markets and can be unavailable to some users.",
+      "Security, custody, KYC and AML controls are core launch requirements, not optional extras."
+    ],
+    monetizationAngles: [
+      "Monetize through trading fees, spread, referral programs or premium features only where permitted.",
+      "Use affiliate tracking to control campaign quality and prevent bonus abuse.",
+      "Consider a narrower crypto broker or wallet product before attempting full exchange scope."
+    ],
+    faq: [
+      {
+        question: "Can I launch a Binance clone script legally?",
+        answer:
+          "You should not copy Binance protected assets or imply affiliation. You can scope an original crypto platform, but legal, compliance and security review are essential."
+      },
+      {
+        question: "Is a crypto exchange clone script enough for launch?",
+        answer:
+          "No. Production exchange work requires custody, security, liquidity, compliance, monitoring, support, risk controls and reliable infrastructure."
+      }
+    ],
+    relatedLinks: [
+      { label: "Binance affiliate review", href: "/reviews/binance-affiliate-program" },
+      { label: "Crypto affiliate programs", href: "/programas/crypto-fintech-affiliate-programs" },
+      { label: "Compliance guide", href: "/guias/financial-affiliate-compliance" }
+    ]
+  },
+  {
+    slug: "metatrader-5-clone-script",
+    title: "MetaTrader 5 clone script: trading platform alternative and white label notes",
+    description:
+      "Understand MetaTrader 5 clone script searches from a product perspective: trader terminal, broker cabinet, CRM, bridge integrations, reporting and compliant white label options.",
+    keyword: "MetaTrader 5 clone script",
+    brandReference: "MetaTrader 5",
+    positioning:
+      "MetaTrader 5-style intent usually means a need for professional trading infrastructure. Instead of copying a terminal, define whether you need a licensed platform, white label, broker cabinet or custom front end around existing infrastructure.",
+    mustHaveFeatures: [
+      "Trader cabinet connected to account and verification flows",
+      "Platform access, account type and server configuration logic",
+      "CRM for clients, IBs, deposits, withdrawals and support",
+      "Bridge, liquidity or platform-provider integrations where applicable",
+      "Reporting for trades, deposits, partner payouts and retention",
+      "Risk, disclosure and jurisdiction controls"
+    ],
+    buildModules: [
+      {
+        title: "Terminal versus cabinet",
+        body: "Many launches do not need to rebuild a trading terminal. They need a strong cabinet, CRM, payment stack and integration with an approved platform provider."
+      },
+      {
+        title: "Broker operations",
+        body: "Operational work includes onboarding, account status, deposit/withdrawal workflows, support, risk review and partner reporting."
+      },
+      {
+        title: "IB management",
+        body: "A broker-focused platform should include IB links, rebates, commission reports, sub-partner visibility and anti-abuse controls."
+      },
+      {
+        title: "White label decision",
+        body: "White label can be the practical route when speed, platform reliability and vendor support matter more than custom terminal ownership."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not use MetaTrader or platform-provider marks without permission.",
+      "Confirm license, vendor, bridge, liquidity and hosting responsibilities before launch.",
+      "Risk warnings and product restrictions must match the broker entity and target markets."
+    ],
+    monetizationAngles: [
+      "Monetize through spreads, commissions, IB networks or platform service fees only where permitted.",
+      "Use partner reporting to compare affiliate CPA with own-brand broker economics.",
+      "Start with a cabinet and CRM if rebuilding a full terminal is unnecessary."
+    ],
+    faq: [
+      {
+        question: "Should I build a MetaTrader 5 clone?",
+        answer:
+          "Usually no. Many broker launches are better served by licensed platform access, white label infrastructure, a strong cabinet and CRM rather than rebuilding a terminal."
+      },
+      {
+        question: "What is the practical alternative?",
+        answer:
+          "Use approved platform infrastructure or a white label route, then build original onboarding, CRM, payments, reporting and partner tools around it."
+      }
+    ],
+    relatedLinks: [
+      { label: "How to start brokerage", href: "/white-label/how-to-start-online-brokerage" },
+      { label: "Trading platform launch cost", href: "/white-label/trading-platform-launch-cost" },
+      { label: "Broker affiliate metrics", href: "/guias/broker-affiliate-metrics" }
+    ]
+  },
+  {
+    slug: "crypto-exchange-clone-script",
+    title: "Crypto exchange clone script: modules, security and launch risks",
+    description:
+      "A brand-neutral crypto exchange clone script guide covering wallets, KYC, trading, liquidity, referral tracking, CRM, security and compliance requirements.",
+    keyword: "crypto exchange clone script",
+    brandReference: "crypto exchange",
+    positioning:
+      "A crypto exchange clone script brief should be treated as a product architecture request. The goal is not to copy a known exchange, but to understand the modules required for a secure, compliant and original crypto platform.",
+    mustHaveFeatures: [
+      "User onboarding, KYC and account-risk scoring",
+      "Wallet, ledger and transaction monitoring architecture",
+      "Trading, swap or brokerage module with pricing logic",
+      "Admin CRM for users, tickets, limits and compliance actions",
+      "Affiliate, referral or creator tracking with fraud controls",
+      "Security monitoring, audit logs and incident response workflows"
+    ],
+    buildModules: [
+      {
+        title: "Wallet and ledger",
+        body: "The ledger is the product core. It must handle balances, transaction states, reconciliation, limits and auditability before any marketing campaign starts."
+      },
+      {
+        title: "Liquidity model",
+        body: "Decide whether the product uses internal matching, external liquidity, broker-style execution or swaps. Each model affects pricing, risk and compliance."
+      },
+      {
+        title: "Growth layer",
+        body: "Referral and affiliate modules can drive acquisition, but they need source tracking, anti-fraud logic and clear promotional rules."
+      },
+      {
+        title: "Compliance and security",
+        body: "KYC, AML, sanctions screening, custody controls, monitoring and support processes are part of the launch scope, not post-launch polish."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not imitate protected exchange brands, interfaces or domains.",
+      "Crypto availability, licensing and promotional rules vary significantly by jurisdiction.",
+      "Security and custody responsibilities must be reviewed before accepting deposits."
+    ],
+    monetizationAngles: [
+      "Earn through trading fees, spread, premium tools or referral programs only under permitted terms.",
+      "Use affiliate analytics to measure active funded users rather than signups alone.",
+      "Start with a narrower broker, wallet or swap product if a full exchange is too complex."
+    ],
+    faq: [
+      {
+        question: "What is a crypto exchange clone script?",
+        answer:
+          "It usually means a request for exchange-like modules such as wallets, KYC, trading, admin tools and referral tracking. It should not mean copying a protected brand or codebase."
+      },
+      {
+        question: "What is the biggest risk in a cheap exchange script?",
+        answer:
+          "Security, wallet accounting, compliance, liquidity and support gaps can be far more expensive than the script itself."
+      }
+    ],
+    relatedLinks: [
+      { label: "Crypto affiliate programs", href: "/programas/crypto-fintech-affiliate-programs" },
+      { label: "Binance clone script", href: "/clone-script/binance-clone-script" },
+      { label: "White label brokerage", href: "/white-label/broker-white-label-solution" }
     ]
   }
 ];
