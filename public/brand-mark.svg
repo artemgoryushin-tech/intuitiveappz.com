@@ -1,15 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="AffiliatePro Hub mark">
-  <defs>
-    <linearGradient id="bg" x1="12" y1="8" x2="84" y2="88" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#384143"/>
-      <stop offset="1" stop-color="#4e5759"/>
-    </linearGradient>
-  </defs>
-  <rect width="96" height="96" rx="22" fill="url(#bg)"/>
-  <g fill="none" stroke="#ffad3d" stroke-linejoin="miter" stroke-width="4.4">
-    <path d="M24 26 72 47 24 72 17 32 67 53"/>
-    <path d="M32 19 79 40 32 78 25 28 73 48"/>
-    <path d="M16 35 63 55 20 82 10 31 58 51"/>
+  <rect width="96" height="96" rx="18" fill="#4c5353"/>
+  <g fill="none" stroke="#ffae3a" stroke-linejoin="miter" stroke-width="5.4">
+    <path d="M34 19 82 40 38 80 27 40 70 58 82 40"/>
+    <path d="M28 35 73 54 35 75 25 35 63 52"/>
+    <path d="M18 44 55 60 31 73 14 41 48 55"/>
   </g>
-  <text x="27" y="60" fill="#ffad3d" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="900" letter-spacing="-2">AP</text>
+  <text x="30" y="60" fill="#ffae3a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="900" letter-spacing="-2.4">AP</text>
 </svg>
