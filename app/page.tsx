@@ -15,7 +15,7 @@ import {
   siteConfig
 } from "@/data/site";
 
-const featuredPrograms = programs.slice(0, 3);
+const featuredPrograms = programs.slice(0, 6);
 
 export const metadata: Metadata = {
   alternates: {
@@ -70,17 +70,17 @@ export default function HomePage() {
                 href="/clone-script"
                 className="rounded-xl border border-white/20 bg-white/10 px-6 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-white hover:text-ink"
               >
-                Explore clone script briefs
+                Explore platform briefs
               </Link>
             </div>
             <div className="mt-10 grid max-w-2xl gap-3 text-sm font-bold text-white/70 sm:grid-cols-3">
               {[
-                ["57", "indexed-style pages"],
-                ["5", "clone script briefs"],
-                ["B2B", "white label funnel"]
+                ["Programs", "broker, forex and trading offers"],
+                ["Reviews", "brand checks and payout notes"],
+                ["Guides", "CPA, traffic and compliance"]
               ].map(([value, label]) => (
                 <div key={label} className="rounded-2xl border border-white/15 bg-white/10 p-4">
-                  <p className="text-2xl font-black text-white">{value}</p>
+                  <p className="text-xl font-black text-white">{value}</p>
                   <p className="mt-1">{label}</p>
                 </div>
               ))}
@@ -97,18 +97,18 @@ export default function HomePage() {
               New SEO cluster
             </p>
             <h2 className="mt-4 text-balance text-4xl font-black tracking-tight text-white">
-              From affiliate offer pages to platform-build intent
+              Platform-build research lives one step deeper
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/70">
-              The English site now covers people searching for broker affiliate offers and people
-              exploring their own trading platform. Clone-script pages are written as brand-safe
-              white label briefs, not as instructions to copy a competitor.
+              The homepage stays focused on affiliate program discovery. Clone-script and white
+              label pages sit in a separate research path for teams comparing platform UX, CRM,
+              payments, risk controls and partner tracking without copying protected brands.
             </p>
             <Link
               href="/clone-script"
               className="mt-7 inline-flex rounded-xl bg-white px-6 py-3 text-sm font-black text-ink shadow-soft transition hover:-translate-y-0.5 hover:bg-accent hover:text-white"
             >
-              View clone script hub
+              Open platform research
             </Link>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
@@ -167,8 +167,8 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-5 py-20">
           <SectionHeader
             eyebrow="Editorial picks"
-            title="Featured programs"
-            description="Initial reviews for brands with strong search demand among trading and forex affiliates."
+            title="Featured affiliate programs"
+            description="A broader starting set of broker, forex, trading and fintech programs with public partner information to verify before scaling traffic."
           />
           <div className="mt-9 grid gap-6 lg:grid-cols-3">
             {featuredPrograms.map((program, index) => (

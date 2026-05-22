@@ -7,7 +7,7 @@ type BeBrokerCTAProps = {
 };
 
 const leadCopy =
-  "If you already generate qualified trading traffic and want to explore ownership of the customer funnel, share your project context. Our team will follow up about broker white label opportunities and next steps.";
+  "If you have been running qualified trading traffic for a while and want to evaluate the next operational step, share your project context. Our team will follow up about broker white label opportunities and practical launch requirements.";
 
 export function BeBrokerCTA({ compact = false, horizontal = false, formId }: BeBrokerCTAProps) {
   return (
@@ -18,7 +18,7 @@ export function BeBrokerCTA({ compact = false, horizontal = false, formId }: BeB
         layout={horizontal ? "wide" : compact ? "sidebar" : "standard"}
         contextName="AffiliatePro Hub white label"
         contextSlug="affiliatepro-hub-white-label"
-        requestType="white-label broker ownership"
+        requestType="white-label brokerage opportunity"
         title="Explore white label opportunities"
         description={leadCopy}
       />

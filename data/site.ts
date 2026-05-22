@@ -3,7 +3,7 @@ export const siteConfig = {
   // TODO: Replace with the final production domain before launch.
   domain: "https://affiliateprohub.com",
   description:
-    "Independent guides for broker affiliate programs, trading platform clone scripts, white label brokerage launches and fintech growth.",
+    "Independent research for broker, forex, trading and fintech affiliate programs, with practical guides for traffic, payouts, compliance and white label opportunities.",
   locale: "en_US"
 };
 
@@ -16,12 +16,12 @@ export const navigation = [
 ];
 
 export const positioning = {
-  eyebrow: "Affiliate growth, broker launches and trading platform infrastructure",
-  headline: "From broker affiliate offers to your own trading platform",
+  eyebrow: "Affiliate program research for finance traffic",
+  headline: "Compare broker, forex and trading affiliate programs",
   subheadline:
-    "Compare affiliate programs, study clone-script requirements and plan compliant white label brokerage launches without copying brands, trademarks or risky marketing claims.",
+    "Independent reviews, payout notes, traffic-source checks and risk-aware guides for publishers, media buyers, creators and affiliate teams.",
   bebrokerValue:
-    "For affiliates who already understand trader acquisition, the next B2B step may be launching a broker brand with a white label platform, structured operations and direct ownership of the customer funnel."
+    "For affiliates who already generate predictable trading traffic, white label opportunities can be a more controlled B2B path to evaluate after program-level monetization is working."
 };
 
 export type Program = {
@@ -290,6 +290,134 @@ export const programs: Program[] = [
     sources: [{ label: "FBS multi-level partnership", url: "https://fbs.com/multi-level" }],
     lastChecked: "2026-04-28",
     keywords: ["FBS affiliate program", "FBS partners", "forex partner program"]
+  },
+  {
+    name: "Vantage",
+    slug: "vantage-affiliate-program",
+    category: "forex",
+    officialUrl: "https://partners.vantagemarkets.com/",
+    officialLabel: "Vantage Partners",
+    payoutModel: "CPA Affiliate Program and Introducing Broker",
+    commission: "CPA and IB commercial terms are presented through Vantage Partners; confirm current country, product and qualification rules before launch",
+    payoutFrequency: "Confirm by partner account and agreement",
+    subAffiliate: "Not a primary public selling point; confirm any network terms directly with Vantage Partners",
+    bestFor: "Forex and multi-asset affiliates who want a recognized broker with both CPA and IB paths",
+    markets: "Global multi-asset broker reach, subject to entity and jurisdiction restrictions",
+    paymentMethods: "Defined inside the partner account and agreement",
+    verdict:
+      "Vantage is a useful addition for forex affiliates because the public partner site clearly separates CPA and IB paths. It is best reviewed as a regulated-market offer where country fit, traffic source and entity rules matter as much as the headline commission model.",
+    pros: ["CPA and IB paths", "Multi-asset broker angle", "Public partner portal", "Affiliate marketing tools and guidelines"],
+    cons: ["Public CPA values are not the main page focus", "Final terms depend on approval", "Jurisdiction and product rules need validation"],
+    affiliateTools: ["Partner portal", "Affiliate marketing tools", "Guidelines", "CPA and IB application paths"],
+    trafficNotes: ["Good fit for forex education, broker comparisons and trading communities", "Segment CPA campaigns from IB-style relationship traffic", "Ask for country and product restrictions before buying paid media"],
+    complianceNotes: ["Use CFD and forex risk warnings", "Do not imply guaranteed outcomes", "Check permitted brand bidding and creative rules"],
+    facts: ["Vantage Partners presents CPA Affiliate Program and IB options", "The official site references affiliate marketing tools and guidelines", "Commercial details should be confirmed in the partner agreement"],
+    sources: [{ label: "Vantage Partners", url: "https://partners.vantagemarkets.com/" }],
+    lastChecked: "2026-05-22",
+    keywords: ["Vantage affiliate program", "Vantage Partners", "forex affiliate program"]
+  },
+  {
+    name: "Pepperstone",
+    slug: "pepperstone-affiliate-program",
+    category: "forex",
+    officialUrl: "https://partnership.pepperstone.com/en/affiliates-program/",
+    officialLabel: "Pepperstone Partners",
+    payoutModel: "Affiliate CPA and Introducing Broker structures",
+    commission: "Affiliates typically receive CPA while IBs receive ongoing volume-based payments; exact terms vary by jurisdiction and agreement",
+    payoutFrequency: "Confirm in the Pepperstone Partners agreement and portal",
+    subAffiliate: "Not a core public claim on the affiliate page; confirm with the partner team",
+    bestFor: "Finance publishers and performance marketers who need a well-known forex and CFD broker",
+    markets: "Global, with explicit country and jurisdiction restrictions",
+    paymentMethods: "Defined by the partner portal and agreement",
+    verdict:
+      "Pepperstone Partners is strong for affiliates who value brand trust and formal promotional rules. It is less about a public headline CPA number and more about matching traffic, jurisdiction, risk warning and partner category correctly.",
+    pros: ["Recognized forex and CFD brand", "Clear CPA vs IB distinction", "Formal affiliate page", "Detailed promotional restrictions"],
+    cons: ["Terms vary by jurisdiction", "Long restricted-country list", "Some partner rewards are unavailable in certain regions"],
+    affiliateTools: ["Partner portal", "Affiliate support contact", "Program documentation", "Brand and risk-warning rules"],
+    trafficNotes: ["Works best for broker comparison, forex education and high-intent review traffic", "Check whether a market is accepted before building localized pages", "Avoid creative that implies unrealistic trading gains"],
+    complianceNotes: ["Risk warning must be visible", "Content should be balanced and not misleading", "Traffic sources must not impersonate official Pepperstone channels"],
+    facts: ["The affiliate page states that affiliates typically receive CPA", "Pepperstone distinguishes affiliate and IB structures", "The page lists jurisdiction and promotional restrictions"],
+    sources: [{ label: "Pepperstone Affiliates Program", url: "https://partnership.pepperstone.com/en/affiliates-program/" }],
+    lastChecked: "2026-05-22",
+    keywords: ["Pepperstone affiliate program", "Pepperstone Partners", "forex CPA affiliate"]
+  },
+  {
+    name: "Eightcap",
+    slug: "eightcap-affiliate-program",
+    category: "forex",
+    officialUrl: "https://www.eightcap.com/en/partners/affiliates/",
+    officialLabel: "Eightcap Affiliates",
+    payoutModel: "CPA affiliate and broader partner models",
+    commission: "CPA up to USD 600 with monthly payments according to the official affiliates page",
+    payoutFrequency: "Monthly payments are stated on the official affiliates page",
+    subAffiliate: "Not a primary public affiliate-page claim; confirm current terms with Eightcap",
+    bestFor: "Trading educators, content creators and affiliates promoting CFD platforms and tools",
+    markets: "Global partner reach, subject to entity, CFD and country restrictions",
+    paymentMethods: "Confirm in the Eightcap Partner Portal",
+    verdict:
+      "Eightcap is relevant for affiliates who want a modern CFD broker with tracking, marketing assets and platform/tool angles such as MT4, MT5, TradingView and TradeLocker. The public CPA ceiling is useful, but qualification and country rules still determine real payout.",
+    pros: ["CPA up to USD 600", "Monthly payment positioning", "Advanced tracking", "Marketing assets and dedicated support"],
+    cons: ["CPA is qualification-dependent", "CFDs are high risk", "Availability depends on entity and market"],
+    affiliateTools: ["Partner Portal", "Real-time activity tracking", "Landing pages", "Banners", "Social media content", "Dedicated affiliate manager"],
+    trafficNotes: ["Good fit for trading education, platform comparisons and creator traffic", "Use platform/tool angles instead of simple bonus messaging", "Separate CFD trading campaigns from prop or challenge content"],
+    complianceNotes: ["Use Eightcap CFD risk warnings", "Do not present leveraged trading as suitable for everyone", "Verify regional restrictions before promotion"],
+    facts: ["The official page references CPA up to USD 600", "Monthly payments are stated publicly", "Eightcap highlights Partner Portal tracking and marketing assets"],
+    sources: [{ label: "Eightcap Affiliates", url: "https://www.eightcap.com/en/partners/affiliates/" }],
+    lastChecked: "2026-05-22",
+    keywords: ["Eightcap affiliate program", "Eightcap partners", "forex CPA affiliate"]
+  },
+  {
+    name: "FXTM",
+    slug: "fxtm-affiliate-program",
+    category: "forex",
+    officialUrl: "https://www.fxtm.com/affiliates/",
+    officialLabel: "FXTM Affiliates",
+    payoutModel: "CPA affiliate and partner programs",
+    commission: "Tiered CPA is published by qualification criteria; the commission table should be checked before quoting current values",
+    payoutFrequency: "FXTM commission materials reference monthly CPA payment timing",
+    subAffiliate: "Partner structures can vary; confirm current sub-partner terms with FXTM",
+    bestFor: "Forex affiliates comparing CPA qualification rules by deposit and closed-lot requirements",
+    markets: "International, with explicit exclusions and entity restrictions",
+    paymentMethods: "Bank wire, Skrill and Neteller are referenced in FXTM commission materials",
+    verdict:
+      "FXTM is useful for SEO comparison because its public affiliate materials explain CPA qualification criteria more clearly than many broker pages. The key is to keep values current and separate global, UK/EU and excluded-market rules.",
+    pros: ["Published CPA qualification logic", "Known forex brand", "Monthly payout timing in materials", "Common affiliate payment methods"],
+    cons: ["Countries and entities have exclusions", "CPA tiers can change", "Qualified trader rules require careful explanation"],
+    affiliateTools: ["Affiliate application", "Commission tables", "Payment FAQs", "Partner support"],
+    trafficNotes: ["Good fit for long-form forex CPA comparisons", "Explain deposit and closed-lot qualification criteria", "Avoid using outdated CPA numbers in ads"],
+    complianceNotes: ["Do not offer investment advice", "Use forex and CFD risk disclosure", "Respect excluded-country lists"],
+    facts: ["FXTM publishes CPA qualification criteria", "Commission materials reference monthly payment timing", "Payment methods include bank wire, Skrill and Neteller in public materials"],
+    sources: [
+      { label: "FXTM Affiliates", url: "https://www.fxtm.com/affiliates/" },
+      { label: "FXTM Affiliates Commission", url: "https://www.fxtm.com/affiliates-commission/" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["FXTM affiliate program", "FXTM Partners", "forex CPA affiliate"]
+  },
+  {
+    name: "Axi",
+    slug: "axi-affiliate-program",
+    category: "forex",
+    officialUrl: "https://www.axi.com/int/partnerships/affiliate-program",
+    officialLabel: "Axi Affiliate Program",
+    payoutModel: "CPA affiliate and Master Affiliate sub-affiliate model",
+    commission: "Up to USD 1,200 CPA per qualified client plus 10% sub-affiliate commission for Master Affiliates according to official materials",
+    payoutFrequency: "Payouts every two weeks are referenced in Axi affiliate FAQs",
+    subAffiliate: "10% commission on sub-affiliate earnings for Master Affiliates",
+    bestFor: "Forex publishers, media buyers and partner recruiters who can meet qualified-client volume rules",
+    markets: "International, subject to local availability and product restrictions",
+    paymentMethods: "Defined by the Axi affiliate account and agreement",
+    verdict:
+      "Axi is one of the clearer high-CPA forex affiliate pages because it publishes a headline CPA, qualification concept and Master Affiliate angle. Affiliates still need to validate volume thresholds, country rules and whether the promoted entity accepts their traffic source.",
+    pros: ["Up to USD 1,200 CPA", "Biweekly payout positioning", "10% sub-affiliate angle", "Affiliate calculator and FAQ content"],
+    cons: ["CPA requires qualified clients", "Volume thresholds apply", "Entity and regional rules must be checked"],
+    affiliateTools: ["Tracking links", "Affiliate calculator", "FAQ content", "Master Affiliate structure", "Partner support"],
+    trafficNotes: ["Good fit for forex comparison content, paid search tests and partner-network recruitment", "Confirm qualifying trading volume before forecasting economics", "Separate CPA acquisition campaigns from sub-affiliate recruitment"],
+    complianceNotes: ["Use CFD and forex risk warnings", "Do not imply the CPA is guaranteed for every signup", "Check local rules before promoting to restricted regions"],
+    facts: ["Official materials reference up to USD 1,200 CPA", "Axi states biweekly affiliate payouts in FAQ content", "Master Affiliates can receive 10% of sub-affiliate earnings"],
+    sources: [{ label: "Axi Forex Affiliate Program", url: "https://www.axi.com/int/partnerships/affiliate-program" }],
+    lastChecked: "2026-05-22",
+    keywords: ["Axi affiliate program", "Axi forex affiliate", "forex CPA affiliate"]
   },
   {
     name: "Binance",

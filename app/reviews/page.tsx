@@ -8,8 +8,13 @@ import { brandReviewSeoContent, programs, siteConfig, type BrandReviewSeoContent
 const priorityReviewSlugs = [
   "pocket-option-affiliate-program",
   "quotex-affiliate-program",
+  "vantage-affiliate-program",
+  "pepperstone-affiliate-program",
+  "eightcap-affiliate-program",
   "iq-option-affiliate-program",
   "olymp-trade-affiliate-program",
+  "axi-affiliate-program",
+  "fxtm-affiliate-program",
   "deriv-affiliate-program"
 ];
 
@@ -27,14 +32,14 @@ const priorityKeywordLinks = priorityReviewSlugs
 export const metadata: Metadata = {
   title: "Reviews of trading and broker affiliate programs",
   description:
-    "English reviews of affiliate programs such as Pocket Option, Quotex, IQ Option, Olymp Trade, Deriv, Exness, XM and AvaTrade.",
+    "English reviews of affiliate programs such as Pocket Option, Quotex, Vantage, Pepperstone, Eightcap, Axi, FXTM, Exness, XM and AvaTrade.",
   alternates: {
     canonical: "/reviews"
   },
   openGraph: {
     title: "Reviews of trading and broker affiliate programs",
     description:
-      "English reviews of affiliate programs such as Pocket Option, Quotex, IQ Option, Olymp Trade, Deriv, Exness, XM and AvaTrade.",
+      "English reviews of affiliate programs such as Pocket Option, Quotex, Vantage, Pepperstone, Eightcap, Axi, FXTM, Exness, XM and AvaTrade.",
     url: `${siteConfig.domain}/reviews`
   }
 };
@@ -76,9 +81,9 @@ export default function ReviewsIndexPage() {
             </h2>
             <p className="mt-4 text-sm leading-7 text-muted">
               These reviews are prioritized for searches such as Pocket Option affiliate program,
-              Quotex affiliate program, IQ Option affiliates, Kingfin Partners and Deriv affiliates.
-              The goal is to answer what pays, how it works, which rules to validate and when to
-              compare alternatives.
+              Quotex affiliate program, Vantage Partners, Pepperstone affiliates, Eightcap
+              affiliates, Axi forex affiliate and FXTM affiliates. The goal is to answer what
+              pays, how it works, which rules to validate and when to compare alternatives.
             </p>
           </div>
           <div className="surface-card rounded-[2rem] p-7">

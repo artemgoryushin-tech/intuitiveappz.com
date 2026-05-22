@@ -194,7 +194,7 @@ function IllustrationImage({
 }
 
 export function HeroVisual() {
-  const checks = ["CPA that clears", "RevShare that scales", "Approved FTD", "No blocked account"];
+  const checks = ["Clear CPA terms", "RevShare fit", "Approved FTD rules", "Allowed traffic"];
 
   return (
     <div className="relative self-center overflow-hidden rounded-[2rem] bg-white/85 p-5 shadow-soft md:p-6">
@@ -210,7 +210,7 @@ export function HeroVisual() {
         <div className="rounded-3xl bg-ink p-4 text-white sm:p-5">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-white/60 sm:text-sm">
-              Choose with ROI
+              Compare with context
             </p>
             <p className="text-sm font-black text-accent">Global markets</p>
           </div>
@@ -231,8 +231,8 @@ export function HeroVisual() {
             <p className="mt-2 text-lg font-black text-ink">Affiliate programs</p>
           </div>
           <div className="rounded-2xl border border-line bg-white p-4">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-muted">To grow</p>
-            <p className="mt-2 text-lg font-black text-ink">Own brand</p>
+            <p className="text-xs font-black uppercase tracking-[0.18em] text-muted">To validate</p>
+            <p className="mt-2 text-lg font-black text-ink">Traffic fit</p>
           </div>
         </div>
       </div>
@@ -366,15 +366,15 @@ export function WhiteLabelFlowVisual() {
       copy: "Technology, payments and the operating panel become ready-made infrastructure."
     },
     {
-      title: "Own brand",
-      copy: "The affiliate stops capturing only commission and starts building an asset."
+      title: "Operational control",
+      copy: "A more advanced path to evaluate when program-level monetization is already proven."
     }
   ];
 
   return (
     <div className="surface-card rounded-[2rem] p-6">
       <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
-        From affiliate to brand owner
+        Next-level path
       </p>
       <div className="mt-6 grid gap-4 md:grid-cols-3">
         {steps.map((step, index) => (
