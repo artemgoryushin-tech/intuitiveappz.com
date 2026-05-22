@@ -11,7 +11,7 @@ export function Header() {
           className="flex items-center gap-3 text-lg font-black tracking-tight text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-brand"
         >
           <Image
-            src="/brand-mark.svg"
+            src="/brand-mark.png"
             alt=""
             width={40}
             height={40}
