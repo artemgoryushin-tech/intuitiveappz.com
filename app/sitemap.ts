@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { cloneScriptPages, editorialProfile, guides, programs, rankings, siteConfig, whiteLabelPages } from "@/data/site";
+import { calculators, cloneScriptPages, editorialProfile, guides, programs, rankings, siteConfig, whiteLabelPages } from "@/data/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const editorialDate = new Date(editorialProfile.lastUpdated);
@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/clone-script",
     "/guias",
     "/white-label",
-    "/ferramentas",
+    "/calculators",
     "/metodologia",
     "/sobre",
     "/divulgacao",
@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...rankings.map((item) => `/programas/${item.slug}`),
     ...programs.map((item) => `/reviews/${item.slug}`),
     ...cloneScriptPages.map((item) => `/clone-script/${item.slug}`),
+    ...calculators.map((item) => `/calculators/${item.slug}`),
     ...guides.map((item) => `/guias/${item.slug}`),
     ...whiteLabelPages.map((item) => `/white-label/${item.slug}`)
   ];
@@ -31,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const isMoneyPage = route.startsWith("/programas/") || route.startsWith("/clone-script/");
     const isReview = route.startsWith("/reviews/");
     const isGuide = route.startsWith("/guias/");
+    const isCalculator = route.startsWith("/calculators/");
     const isWhiteLabel = route.startsWith("/white-label/");
 
     const review = route.startsWith("/reviews/")
@@ -41,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteConfig.domain}${route}`,
       lastModified: review ? new Date(review.lastChecked) : editorialDate,
       changeFrequency: isHome || isMoneyPage ? "daily" : "weekly",
-      priority: isHome ? 1 : isMoneyPage ? 0.95 : isReview ? 0.85 : isGuide || isWhiteLabel ? 0.75 : 0.7
+      priority: isHome ? 1 : isMoneyPage ? 0.95 : isReview ? 0.85 : isCalculator ? 0.8 : isGuide || isWhiteLabel ? 0.75 : 0.7
     };
   });
 }
