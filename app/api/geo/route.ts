@@ -33,9 +33,16 @@ export function GET(request: Request) {
   const country =
     normalizeCountry(headers.get("x-vercel-ip-country")) ||
     normalizeCountry(headers.get("cf-ipcountry")) ||
+    normalizeCountry(headers.get("cloudfront-viewer-country")) ||
+    normalizeCountry(headers.get("fastly-client-country")) ||
+    normalizeCountry(headers.get("fly-client-ip-country")) ||
+    normalizeCountry(headers.get("x-nf-country")) ||
+    normalizeCountry(headers.get("x-real-ip-country")) ||
+    normalizeCountry(headers.get("x-forwarded-country")) ||
+    normalizeCountry(headers.get("geoip-country-code")) ||
     normalizeCountry(headers.get("x-country-code")) ||
     countryFromAcceptLanguage(headers.get("accept-language")) ||
-    "BR";
+    "US";
 
   return NextResponse.json({ country });
 }

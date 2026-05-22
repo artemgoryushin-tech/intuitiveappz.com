@@ -8,7 +8,7 @@ import { MethodologyBlock } from "@/components/MethodologyBlock";
 import { ProgramCard } from "@/components/ProgramCard";
 import { BeBrokerCTA } from "@/components/BeBrokerCTA";
 import { CommissionVisual, FunnelVisual } from "@/components/Visuals";
-import { editorialProfile, programs, rankingSeoContent, rankings, siteConfig } from "@/data/site";
+import { editorialProfile, programs, rankingSeoContent, rankings, siteConfig, type RankingPage } from "@/data/site";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -16,6 +16,22 @@ type PageProps = {
 
 export function generateStaticParams() {
   return rankings.map((ranking) => ({ slug: ranking.slug }));
+}
+
+function getRankingPrograms(ranking: RankingPage) {
+  if (ranking.programSlugs?.length) {
+    const selectedPrograms = ranking.programSlugs
+      .map((programSlug) => programs.find((program) => program.slug === programSlug))
+      .filter((program): program is (typeof programs)[number] => Boolean(program));
+
+    if (selectedPrograms.length > 0) {
+      return selectedPrograms;
+    }
+  }
+
+  return ranking.category === "all"
+    ? programs
+    : programs.filter((program) => program.category === ranking.category);
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -48,10 +64,7 @@ export default async function RankingPage({ params }: PageProps) {
     notFound();
   }
 
-  const filteredPrograms =
-    ranking.category === "all"
-      ? programs
-      : programs.filter((program) => program.category === ranking.category);
+  const filteredPrograms = getRankingPrograms(ranking);
   const rankedPrograms = filteredPrograms.length > 0 ? filteredPrograms : programs;
   const seoContent = rankingSeoContent[ranking.slug] ?? rankingSeoContent["best-broker-affiliate-programs"];
 

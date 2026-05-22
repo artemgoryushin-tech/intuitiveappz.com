@@ -11,10 +11,14 @@ const priorityReviewSlugs = [
   "vantage-affiliate-program",
   "pepperstone-affiliate-program",
   "eightcap-affiliate-program",
+  "etoro-affiliate-program",
   "iq-option-affiliate-program",
   "olymp-trade-affiliate-program",
   "axi-affiliate-program",
   "fxtm-affiliate-program",
+  "bybit-affiliate-program",
+  "coinbase-affiliate-program",
+  "kraken-affiliate-program",
   "deriv-affiliate-program"
 ];
 
@@ -32,14 +36,14 @@ const priorityKeywordLinks = priorityReviewSlugs
 export const metadata: Metadata = {
   title: "Reviews of trading and broker affiliate programs",
   description:
-    "English reviews of affiliate programs such as Pocket Option, Quotex, Vantage, Pepperstone, Eightcap, Axi, FXTM, Exness, XM and AvaTrade.",
+    "English reviews of affiliate programs such as Pocket Option, Quotex, Vantage, Pepperstone, Eightcap, eToro, Axi, FXTM, Bybit, Coinbase, Kraken, Exness, XM and AvaTrade.",
   alternates: {
     canonical: "/reviews"
   },
   openGraph: {
     title: "Reviews of trading and broker affiliate programs",
     description:
-      "English reviews of affiliate programs such as Pocket Option, Quotex, Vantage, Pepperstone, Eightcap, Axi, FXTM, Exness, XM and AvaTrade.",
+      "English reviews of affiliate programs such as Pocket Option, Quotex, Vantage, Pepperstone, Eightcap, eToro, Axi, FXTM, Bybit, Coinbase, Kraken, Exness, XM and AvaTrade.",
     url: `${siteConfig.domain}/reviews`
   }
 };
@@ -82,8 +86,9 @@ export default function ReviewsIndexPage() {
             <p className="mt-4 text-sm leading-7 text-muted">
               These reviews are prioritized for searches such as Pocket Option affiliate program,
               Quotex affiliate program, Vantage Partners, Pepperstone affiliates, Eightcap
-              affiliates, Axi forex affiliate and FXTM affiliates. The goal is to answer what
-              pays, how it works, which rules to validate and when to compare alternatives.
+              affiliates, eToro Partners, Axi forex affiliate, FXTM affiliates, Bybit affiliates,
+              Coinbase affiliates and Kraken affiliates. The goal is to answer what pays, how it
+              works, which rules to validate and when to compare alternatives.
             </p>
           </div>
           <div className="surface-card rounded-[2rem] p-7">

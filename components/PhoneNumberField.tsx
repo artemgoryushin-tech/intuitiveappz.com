@@ -10,11 +10,12 @@ import {
 } from "libphonenumber-js/min";
 
 const priorityCountries = ["US", "GB", "CA", "AU", "BR", "PT", "ES", "CY", "AE", "IN", "ZA", "DE", "FR", "IT"] as const;
+const regionNames = new Intl.DisplayNames(["en"], { type: "region" });
 
 const countryOptions = getCountries()
   .map((country) => ({
     country,
-    name: country,
+    name: regionNames.of(country) ?? country,
     callingCode: getCountryCallingCode(country)
   }))
   .sort((left, right) => {
@@ -63,6 +64,12 @@ function normalizePhoneNumber(rawValue: string, country: CountryCode) {
   return "";
 }
 
+function countryFromLocale(value: string | undefined) {
+  const region = value?.split("-")[1]?.toUpperCase();
+
+  return region && isSupportedCountry(region) ? region : "";
+}
+
 export function PhoneNumberField({ id, name, label, required, compact = false }: PhoneNumberFieldProps) {
   const [country, setCountry] = useState<CountryCode>("US");
   const [phoneInput, setPhoneInput] = useState("");
@@ -71,10 +78,20 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
   const userSelectedCountryRef = useRef(false);
 
   const normalizedPhone = useMemo(() => normalizePhoneNumber(phoneInput, country), [country, phoneInput]);
+  const selectedCallingCode = useMemo(() => getCountryCallingCode(country), [country]);
+  const selectedCountryName = useMemo(() => regionNames.of(country) ?? country, [country]);
   const isInvalid = Boolean(phoneInput.trim()) && !normalizedPhone;
 
   useEffect(() => {
     let isMounted = true;
+    const browserCountry =
+      countryFromLocale(navigator.language) ||
+      navigator.languages?.map(countryFromLocale).find(Boolean) ||
+      "";
+
+    if (browserCountry && !userSelectedCountryRef.current) {
+      setCountry(browserCountry);
+    }
 
     fetch("/api/geo", { cache: "no-store" })
       .then((response) => response.json())
@@ -140,7 +157,7 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
           type="tel"
           inputMode="tel"
           autoComplete="tel-national"
-          placeholder="Phone number"
+          placeholder={`+${selectedCallingCode} phone number`}
           value={phoneInput}
           required={required}
           aria-invalid={isInvalid && touched ? true : undefined}
@@ -157,7 +174,7 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
         </p>
       ) : (
         <p id={`${id}-hint`} className="text-xs font-semibold leading-5 text-muted">
-          Country is detected automatically. Change it if needed.
+          Selected automatically: {selectedCountryName} +{selectedCallingCode}. Change it if needed.
         </p>
       )}
     </div>

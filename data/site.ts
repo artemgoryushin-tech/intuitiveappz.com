@@ -420,6 +420,112 @@ export const programs: Program[] = [
     keywords: ["Axi affiliate program", "Axi forex affiliate", "forex CPA affiliate"]
   },
   {
+    name: "eToro",
+    slug: "etoro-affiliate-program",
+    category: "broker",
+    officialUrl: "https://etoropartners.com/",
+    officialLabel: "eToro Partners",
+    payoutModel: "Affiliate partner program with commercial terms by region and partner profile",
+    commission: "Final CPA, RevShare or placement terms should be confirmed with eToro Partners before publishing campaign numbers",
+    payoutFrequency: "Defined in the partner account and agreement",
+    subAffiliate: "Not a primary public claim on the main partner page; confirm any network terms with eToro Partners",
+    bestFor: "Finance publishers, investing creators and comparison sites covering social trading, investing and multi-asset platforms",
+    markets: "Global brand reach, with product availability and instruments varying by country",
+    paymentMethods: "Defined by eToro Partners and the affiliate agreement",
+    verdict:
+      "eToro Partners is useful for broader trading and investing traffic because the brand covers social investing, stocks, crypto and CFD products depending on region. Affiliates should be careful with country-specific product availability and avoid presenting one global product mix as universal.",
+    pros: ["Strong brand recognition", "Social trading angle", "Multi-asset platform positioning", "Dedicated partner program"],
+    cons: ["Products vary by country", "Public commission details are limited", "Regulatory and promotional rules differ by entity"],
+    affiliateTools: ["Partner application", "Campaign materials", "Account manager support", "Regional compliance guidance"],
+    trafficNotes: ["Useful for investing education, broker comparisons and creator funnels", "Segment US, UK, EU and global content because products differ", "Keep stock, crypto and CFD messaging clearly separated"],
+    complianceNotes: ["Do not imply all instruments are available everywhere", "Avoid investment advice and performance promises", "Check local partner compliance rules before paid campaigns"],
+    facts: ["The official partner site positions eToro as a social investment network", "Product availability varies by country", "The partner program is operated through eToro Partners"],
+    sources: [{ label: "eToro Partners", url: "https://etoropartners.com/" }],
+    lastChecked: "2026-05-22",
+    keywords: ["eToro affiliate program", "eToro Partners", "trading affiliate program"]
+  },
+  {
+    name: "Bybit",
+    slug: "bybit-affiliate-program",
+    category: "crypto",
+    officialUrl: "https://affiliates.bybit.com/",
+    officialLabel: "Bybit Affiliates",
+    payoutModel: "Lifetime commission based on referred trading activity",
+    commission: "Commission is calculated from referred users who actively trade; current rates and eligibility should be confirmed in the Bybit affiliate portal",
+    payoutFrequency: "Real-time commission calculation is referenced in official FAQ materials; settlement terms should be checked in the portal",
+    subAffiliate: "Confirm current sub-affiliate or network permissions in the Bybit affiliate terms",
+    bestFor: "Crypto publishers, trading creators, software owners and communities with active trader audiences",
+    markets: "Global crypto markets, subject to Bybit country and product restrictions",
+    paymentMethods: "Bybit account and portal-based settlement methods",
+    verdict:
+      "Bybit can be a strong crypto affiliate option for audiences already interested in active trading, but it needs careful compliance review because product availability, derivatives rules and local restrictions can change quickly.",
+    pros: ["Dedicated affiliate portal", "Lifetime commission positioning", "Account-manager support", "Crypto trader audience fit"],
+    cons: ["Requires approval", "Crypto derivatives can be restricted by market", "Rates and rules should be validated frequently"],
+    affiliateTools: ["Affiliate portal", "Tracking links", "Dedicated account manager", "Marketing and technical support"],
+    trafficNotes: ["Good fit for crypto education, exchange comparisons and trading communities", "Avoid bonus-led pages without risk context", "Segment spot, derivatives and copy-trading traffic where relevant"],
+    complianceNotes: ["Check local availability before promotion", "Disclose crypto and derivatives risk", "Do not promise profit or safe returns"],
+    facts: ["Bybit FAQ says selected affiliates receive commissions based on referred trading activity", "The program requires application review", "Official materials reference dedicated account-manager support"],
+    sources: [
+      { label: "Bybit Affiliates", url: "https://affiliates.bybit.com/" },
+      { label: "Bybit Affiliate Program FAQ", url: "https://www.bybit.com/en/help-center/article/Bybit-Affiliate-Program-General-FAQ?category=69abf91aea1ca55ebd" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["Bybit affiliate program", "Bybit affiliates", "crypto affiliate program"]
+  },
+  {
+    name: "Coinbase",
+    slug: "coinbase-affiliate-program",
+    category: "crypto",
+    officialUrl: "https://help.coinbase.com/coinbase/other-topics/cb-affiliate-program",
+    officialLabel: "Coinbase Affiliate Program",
+    payoutModel: "Commission after qualifying customer transactions",
+    commission: "Qualified businesses can earn commissions when referred customers complete qualifying transactions; exact commercial terms are not published as a universal rate",
+    payoutFrequency: "Confirm in the affiliate agreement or partner platform",
+    subAffiliate: "Not a public core claim; confirm directly before recruiting sub-affiliates",
+    bestFor: "Crypto comparison sites, media publishers, financial influencers and education-led audiences",
+    markets: "Coinbase-supported countries and products, subject to local crypto rules",
+    paymentMethods: "Defined by Coinbase affiliate setup and partner platform",
+    verdict:
+      "Coinbase is best for trust-led crypto and fintech content rather than aggressive trading funnels. The public affiliate page is conservative, so affiliates should validate exact qualification and payout terms before forecasting revenue.",
+    pros: ["Very strong crypto brand recognition", "Good fit for education and comparison content", "Official help-center documentation", "Broad publisher eligibility categories"],
+    cons: ["No universal public commission rate", "Affiliates are qualification-based", "Crypto availability varies by market"],
+    affiliateTools: ["Signup links", "Website, social and newsletter promotion paths", "Official safety guidance", "Partner qualification process"],
+    trafficNotes: ["Works well for beginner crypto education and exchange comparisons", "Use official-domain safety guidance to reduce phishing risk", "Track qualifying transactions separately from signups"],
+    complianceNotes: ["Disclose crypto-asset risk", "Do not request user credentials or account details", "Verify official domains and avoid misleading impersonation"],
+    facts: ["Coinbase says qualified businesses can earn commissions through signup links", "Qualifying transactions are required", "Coinbase lists crypto comparison sites, media sites and financial influencers as potential affiliate types"],
+    sources: [{ label: "Coinbase Affiliate Program help page", url: "https://help.coinbase.com/coinbase/other-topics/cb-affiliate-program" }],
+    lastChecked: "2026-05-22",
+    keywords: ["Coinbase affiliate program", "Coinbase affiliates", "crypto affiliate program"]
+  },
+  {
+    name: "Kraken",
+    slug: "kraken-affiliate-program",
+    category: "crypto",
+    officialUrl: "https://www.kraken.com/affiliate/apply",
+    officialLabel: "Kraken Affiliate Program",
+    payoutModel: "RevShare, CPA, flat placement or hybrid by partner profile",
+    commission: "Up to 50% commission is promoted on Kraken affiliate materials; rates vary by product, region and affiliate profile",
+    payoutFrequency: "Support materials reference payouts through Impact to a bank account; exact timing should be confirmed in the partner setup",
+    subAffiliate: "Sub-affiliate networks may apply but need pre-approval of publisher sites and apps",
+    bestFor: "Crypto publishers, personal finance sites, creators and sub-affiliate networks with transparent traffic sources",
+    markets: "Kraken-supported crypto markets, subject to product and regional restrictions",
+    paymentMethods: "Impact payouts to bank account according to official support materials",
+    verdict:
+      "Kraken is one of the more transparent crypto affiliate options because official materials discuss revenue share, alternate payout models and pre-approval requirements. It fits trust-led crypto audiences better than anonymous high-volume traffic.",
+    pros: ["Up to 50% commission messaging", "RevShare plus alternate payout models", "Impact payout infrastructure", "Sub-affiliate network path with approval"],
+    cons: ["Rates vary by product and region", "Pre-approval is required", "Crypto products remain high risk"],
+    affiliateTools: ["Affiliate application", "Impact tracking", "Dedicated manager support for established partners", "Publisher and app pre-approval workflow"],
+    trafficNotes: ["Good fit for crypto education, personal finance and exchange comparisons", "Document publisher sites before applying", "Separate spot, futures, margin and other product traffic"],
+    complianceNotes: ["Do not provide investment advice", "Use crypto and derivatives risk disclosure", "Confirm product availability by region"],
+    facts: ["Kraken official materials reference up to 50% commission", "Support materials mention RevShare, CPA, flat placement and hybrid models", "Pre-approval of sites and apps is required"],
+    sources: [
+      { label: "Kraken affiliate application", url: "https://www.kraken.com/affiliate/apply" },
+      { label: "Kraken affiliate support page", url: "https://support.kraken.com/articles/360027545252-kraken-affiliate-program" }
+    ],
+    lastChecked: "2026-05-22",
+    keywords: ["Kraken affiliate program", "Kraken affiliates", "crypto affiliate program"]
+  },
+  {
     name: "Binance",
     slug: "binance-affiliate-program",
     category: "crypto",
@@ -502,6 +608,7 @@ export type RankingPage = {
   keyword: string;
   secondaryKeywords?: string[];
   category: Program["category"] | "all";
+  programSlugs?: string[];
   intro: string;
   audience: string;
 };
@@ -514,6 +621,20 @@ export const rankings: RankingPage[] = [
     keyword: "best broker affiliate programs",
     secondaryKeywords: ["broker affiliate programs", "affiliate programs for brokers"],
     category: "broker",
+    programSlugs: [
+      "exness-affiliate-program",
+      "xm-affiliate-program",
+      "avatrade-affiliate-program",
+      "deriv-affiliate-program",
+      "vantage-affiliate-program",
+      "pepperstone-affiliate-program",
+      "eightcap-affiliate-program",
+      "axi-affiliate-program",
+      "fxtm-affiliate-program",
+      "etoro-affiliate-program",
+      "iq-option-affiliate-program",
+      "fbs-affiliate-program"
+    ],
     intro: "Broker affiliate programs can be attractive, but they require careful review of qualification rules, tracking, compliance and product risk.",
     audience: "Affiliates, media buyers and publishers monetizing finance or trading traffic."
   },
@@ -524,6 +645,17 @@ export const rankings: RankingPage[] = [
     keyword: "forex affiliate programs",
     secondaryKeywords: ["forex CPA affiliate", "forex RevShare", "IB affiliate program"],
     category: "forex",
+    programSlugs: [
+      "exness-affiliate-program",
+      "xm-affiliate-program",
+      "avatrade-affiliate-program",
+      "vantage-affiliate-program",
+      "pepperstone-affiliate-program",
+      "eightcap-affiliate-program",
+      "fxtm-affiliate-program",
+      "axi-affiliate-program",
+      "fbs-affiliate-program"
+    ],
     intro: "Forex combines high lead value with strict requirements around trust, trader education and risk disclosure.",
     audience: "Forex education sites, trading channels, newsletters and performance affiliates."
   },
@@ -534,6 +666,21 @@ export const rankings: RankingPage[] = [
     keyword: "trading affiliate programs",
     secondaryKeywords: ["trading CPA", "trading RevShare"],
     category: "trading",
+    programSlugs: [
+      "pocket-option-affiliate-program",
+      "quotex-affiliate-program",
+      "olymp-trade-affiliate-program",
+      "iq-option-affiliate-program",
+      "deriv-affiliate-program",
+      "etoro-affiliate-program",
+      "eightcap-affiliate-program",
+      "axi-affiliate-program",
+      "exness-affiliate-program",
+      "bybit-affiliate-program",
+      "binance-affiliate-program",
+      "okx-affiliate-program",
+      "kraken-affiliate-program"
+    ],
     intro: "Trading affiliate programs can advertise high commissions, but the right offer depends on audience intent, product risk and traffic-source rules.",
     audience: "Affiliates with trading, investment, finance-app or creator traffic."
   },
@@ -544,6 +691,14 @@ export const rankings: RankingPage[] = [
     keyword: "crypto fintech affiliate programs",
     secondaryKeywords: ["crypto affiliate programs", "fintech affiliate programs"],
     category: "crypto",
+    programSlugs: [
+      "binance-affiliate-program",
+      "okx-affiliate-program",
+      "bybit-affiliate-program",
+      "coinbase-affiliate-program",
+      "kraken-affiliate-program",
+      "etoro-affiliate-program"
+    ],
     intro: "Crypto and fintech funnels often have lower friction and higher volume potential, but they carry separate regulatory and product-risk questions.",
     audience: "Creators, publishers and communities covering digital finance."
   },
@@ -553,6 +708,13 @@ export const rankings: RankingPage[] = [
     description: "Compare Pocket Option, Quotex, Kingfin and other programs for affiliates focused on short-cycle trading traffic.",
     keyword: "digital options affiliate programs",
     category: "trading",
+    programSlugs: [
+      "pocket-option-affiliate-program",
+      "quotex-affiliate-program",
+      "olymp-trade-affiliate-program",
+      "iq-option-affiliate-program",
+      "deriv-affiliate-program"
+    ],
     intro: "Digital options and short-term trading offers often promote high RevShare, but they need extra care around lead quality, country rules and risk messaging.",
     audience: "Media buyers, creators and communities promoting short-term trading apps."
   },
@@ -562,6 +724,17 @@ export const rankings: RankingPage[] = [
     description: "See which programs support sub-affiliates, master partner structures or referral-network revenue.",
     keyword: "sub affiliate broker programs",
     category: "all",
+    programSlugs: [
+      "pocket-option-affiliate-program",
+      "xm-affiliate-program",
+      "avatrade-affiliate-program",
+      "deriv-affiliate-program",
+      "fbs-affiliate-program",
+      "axi-affiliate-program",
+      "okx-affiliate-program",
+      "bybit-affiliate-program",
+      "kraken-affiliate-program"
+    ],
     intro: "Sub-affiliate and master partner models are useful when you can build a network of creators, communities or publishers instead of buying traffic alone.",
     audience: "Experienced affiliates, community operators and publisher-network owners."
   },
@@ -580,6 +753,17 @@ export const rankings: RankingPage[] = [
     description: "Compare CPA offers in forex and broker programs, including approval rules, regional payout logic and net CPA.",
     keyword: "forex CPA affiliate programs",
     category: "forex",
+    programSlugs: [
+      "exness-affiliate-program",
+      "avatrade-affiliate-program",
+      "vantage-affiliate-program",
+      "pepperstone-affiliate-program",
+      "eightcap-affiliate-program",
+      "fxtm-affiliate-program",
+      "axi-affiliate-program",
+      "xm-affiliate-program",
+      "fbs-affiliate-program"
+    ],
     intro: "CPA can help recover media spend quickly, but the advertised number only matters after deposit rules, trading volume, holds and reversals.",
     audience: "Media buyers and affiliates who need predictable cash flow in forex campaigns."
   },
@@ -589,6 +773,18 @@ export const rankings: RankingPage[] = [
     description: "Learn when RevShare can outperform CPA and which metrics to track before accepting recurring revenue.",
     keyword: "forex RevShare affiliate programs",
     category: "forex",
+    programSlugs: [
+      "xm-affiliate-program",
+      "avatrade-affiliate-program",
+      "deriv-affiliate-program",
+      "exness-affiliate-program",
+      "fbs-affiliate-program",
+      "vantage-affiliate-program",
+      "pepperstone-affiliate-program",
+      "eightcap-affiliate-program",
+      "fxtm-affiliate-program",
+      "axi-affiliate-program"
+    ],
     intro: "RevShare is only competitive when the broker retains traders, calculates revenue transparently and gives affiliates enough post-FTD reporting.",
     audience: "Affiliates with education, community and evergreen content assets."
   }
