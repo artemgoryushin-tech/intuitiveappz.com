@@ -94,7 +94,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl items-start gap-8 px-5 py-20 lg:grid-cols-[0.85fr_1.15fr]">
           <div className="rounded-[1.5rem] bg-ink p-7 text-white shadow-soft md:p-10">
             <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
-              New SEO cluster
+              Platform research
             </p>
             <h2 className="mt-4 text-balance text-4xl font-black tracking-tight text-white">
               Platform-build research lives one step deeper

@@ -73,7 +73,7 @@ export default function ReviewsIndexPage() {
           <SectionHeader
             eyebrow="Reviews"
             title="Reviews of trading and broker affiliate programs"
-            description="English reviews for brand searches: commission, CPA, RevShare, payouts, traffic sources, risks and alternatives."
+            description="English reviews for people comparing brands: commission, CPA, RevShare, payouts, traffic sources, risks and alternatives."
             titleAs="h1"
           />
         </div>
@@ -81,7 +81,7 @@ export default function ReviewsIndexPage() {
         <div className="mt-8 grid gap-4 lg:grid-cols-[1fr_0.7fr]">
           <div className="surface-card rounded-[2rem] p-7">
             <h2 className="text-2xl font-black tracking-tight text-ink">
-              Start with the highest-intent pages
+              Start with priority reviews
             </h2>
             <p className="mt-4 text-sm leading-7 text-muted">
               These reviews are prioritized for searches such as Pocket Option affiliate program,
@@ -93,7 +93,7 @@ export default function ReviewsIndexPage() {
           </div>
           <div className="surface-card rounded-[2rem] p-7">
             <p className="text-xs font-black uppercase tracking-[0.18em] text-brand">
-              Money queries
+              Popular searches
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               {priorityKeywordLinks.map(({ slug, content }) => (

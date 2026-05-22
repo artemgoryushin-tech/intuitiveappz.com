@@ -8,14 +8,14 @@ import { cloneScriptPages, siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "Trading platform clone scripts and white label alternatives",
   description:
-    "SEO briefs for Quotex clone script, Pocket Option clone script and similar trading platform build searches, with brand-safe white label guidance.",
+    "Guides for Quotex clone script, Pocket Option clone script and similar trading platform build requests, with brand-safe white label guidance.",
   alternates: {
     canonical: "/clone-script"
   },
   openGraph: {
     title: "Trading platform clone scripts and white label alternatives",
     description:
-      "SEO briefs for clone script searches and compliant trading platform launch planning.",
+      "Brand-safe guides for clone script searches and compliant trading platform launch planning.",
     url: `${siteConfig.domain}/clone-script`
   }
 };
@@ -52,21 +52,21 @@ export default function CloneScriptIndexPage() {
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_0.45fr]">
           <div className="rounded-[1.5rem] bg-ink p-7 text-white shadow-soft md:p-10">
             <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
-              Clone Script SEO
+              Platform build guides
             </p>
             <h1 className="mt-4 max-w-3xl text-balance text-4xl font-black tracking-tight text-white md:text-5xl">
-              Capture platform-build searches without copying brands
+              Plan platform builds without copying brands
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/70">
-              These briefs translate high-intent searches like Quotex clone script and Pocket
+              These briefs translate requests like Quotex clone script and Pocket
               Option clone script into legal white label, custom build and broker infrastructure
               requirements.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {[
-                ["Search intent", "Users are asking for trading platform functionality, launch speed and vendor options."],
+                ["Platform needs", "Teams are asking for trading functionality, launch speed and vendor options."],
                 ["Brand safety", "Names are search references only; the product needs original identity and legal review."],
-                ["B2B funnel", "Pages qualify teams that may be ready for white label, CRM, payments and affiliate tools."]
+                ["Launch planning", "Compare white label, CRM, payments and affiliate tools before choosing a build path."]
               ].map(([title, copy]) => (
                 <div key={title} className="rounded-xl border border-white/15 bg-white/10 p-5">
                   <p className="text-sm font-black text-white">{title}</p>

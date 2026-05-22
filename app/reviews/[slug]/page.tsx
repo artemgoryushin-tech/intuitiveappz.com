@@ -30,7 +30,7 @@ const categoryMarketNotes: Record<string, string[]> = {
   forex: [
     "Verify whether the target country is included in the CPA table or IB agreement before projecting ROI.",
     "Compare gross CPA with net CPA after minimum deposit, trading volume, hold and rejected leads.",
-    "Educational content, YouTube and comparison SEO usually produce more qualified traders than quick-profit messaging."
+    "Educational content, YouTube and organic comparisons usually produce more qualified traders than quick-profit messaging."
   ],
   trading: [
     "Digital options and short-term trading require conservative messaging and very visible risk disclosure.",

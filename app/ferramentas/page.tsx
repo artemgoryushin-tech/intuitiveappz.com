@@ -29,7 +29,7 @@ const checklist = [
   "Commission published or confirmed by a manager",
   "Qualification rules: FTD, minimum deposit and trading volume",
   "Accepted countries and restricted regions",
-  "Allowed sources: SEO, social, paid media, Telegram, influencers",
+  "Allowed sources: organic search, social, paid media, Telegram, influencers",
   "Brand bidding and trademark-use policy",
   "Payout frequency, minimum and method",
   "Access to subIDs, postback and campaign-level reports",
