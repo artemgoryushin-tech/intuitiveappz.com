@@ -92,7 +92,7 @@ export default function ReviewsIndexPage() {
             </p>
           </div>
           <div className="surface-card rounded-[2rem] p-7">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-brand">
+            <p className="text-xs font-black uppercase tracking-[0.01em] text-brand">
               Popular searches
             </p>
             <div className="mt-4 flex flex-wrap gap-2">

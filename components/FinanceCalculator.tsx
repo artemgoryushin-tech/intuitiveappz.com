@@ -189,7 +189,7 @@ function valueFromParams(params: CalculatorSearchParams | undefined, key: string
 function InputControl({ input, value }: { input: CalculatorInput; value: number }) {
   return (
     <label className="grid min-w-0 gap-2 overflow-hidden rounded-2xl bg-cream/80 p-4">
-      <span className="text-xs font-black uppercase leading-5 tracking-[0.08em] text-muted">
+      <span className="text-xs font-black uppercase leading-5 tracking-[0.01em] text-muted">
         {input.label}
       </span>
       <span className="grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
@@ -213,7 +213,7 @@ function ResultTile({ result }: { result: Result }) {
 
   return (
     <div className="min-w-0 overflow-hidden rounded-2xl border border-line bg-white p-5 shadow-sm">
-      <p className="text-xs font-black uppercase leading-5 tracking-[0.08em] text-muted">{result.label}</p>
+      <p className="text-xs font-black uppercase leading-5 tracking-[0.01em] text-muted">{result.label}</p>
       <p className={`mt-3 break-words text-[1.6rem] font-black leading-tight tracking-tight @3xl:text-3xl ${toneClass}`}>
         {result.value}
       </p>
@@ -241,7 +241,7 @@ export function FinanceCalculator({
     <form className="@container surface-card rounded-[1.5rem] p-5 md:p-8" method="GET">
       <div className="flex flex-col gap-4 @4xl:flex-row @4xl:items-end @4xl:justify-between">
         <div>
-          <p className="text-xs font-black uppercase tracking-[0.18em] text-brand">
+          <p className="text-xs font-black uppercase tracking-[0.01em] text-brand">
             Interactive model
           </p>
           <h2 className="mt-3 text-2xl font-black tracking-tight text-ink @3xl:text-3xl">

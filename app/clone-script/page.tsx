@@ -51,7 +51,7 @@ export default function CloneScriptIndexPage() {
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_0.45fr]">
           <div className="rounded-[1.5rem] bg-ink p-7 text-white shadow-soft md:p-10">
-            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
+            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-accent">
               Platform build guides
             </p>
             <h1 className="mt-4 max-w-3xl text-balance text-4xl font-black tracking-tight text-white md:text-5xl">
@@ -85,7 +85,7 @@ export default function CloneScriptIndexPage() {
               href={`/clone-script/${page.slug}`}
               className="visual-card group rounded-[1.25rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
             >
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
                 {page.keyword}
               </p>
               <h2 className="mt-3 text-balance text-2xl font-black tracking-tight text-ink group-hover:text-brand">

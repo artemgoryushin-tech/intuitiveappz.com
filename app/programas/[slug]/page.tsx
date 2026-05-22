@@ -147,7 +147,7 @@ export default async function RankingPage({ params }: PageProps) {
       />
       <article className="mx-auto max-w-7xl px-5 py-16">
         <div>
-          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
             {ranking.keyword}
           </p>
           <h1 className="mt-5 max-w-5xl text-balance text-5xl font-black tracking-tight text-ink">
@@ -158,7 +158,7 @@ export default async function RankingPage({ params }: PageProps) {
             Ideal audience: {ranking.audience}
           </p>
           <div className="mt-6 rounded-3xl border border-line bg-cream/80 p-5">
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-brand">
+            <p className="text-sm font-black uppercase tracking-[0.02em] text-brand">
               Quick answer
             </p>
             <p className="mt-3 text-base leading-8 text-muted">{seoContent.directAnswer}</p>
@@ -181,7 +181,7 @@ export default async function RankingPage({ params }: PageProps) {
         <section className="mt-12 grid gap-4 md:grid-cols-3">
           {seoContent.bestForBadges.map((badge) => (
             <div key={badge.label} className="surface-card rounded-3xl p-5">
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">{badge.label}</p>
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">{badge.label}</p>
               <h2 className="mt-3 text-2xl font-black tracking-tight text-ink">{badge.program}</h2>
               <p className="mt-3 text-sm leading-7 text-muted">{badge.reason}</p>
             </div>
@@ -253,11 +253,11 @@ export default async function RankingPage({ params }: PageProps) {
           {seoContent.commissionModels.map((item) => (
             <div key={item.model} className="surface-card rounded-[2rem] p-7">
               <h2 className="text-3xl font-black tracking-tight text-ink">{item.model}</h2>
-              <p className="mt-4 text-sm font-black uppercase tracking-[0.16em] text-brand">
+              <p className="mt-4 text-sm font-black uppercase tracking-[0.02em] text-brand">
                 Best when
               </p>
               <p className="mt-2 text-sm leading-7 text-muted">{item.bestWhen}</p>
-              <p className="mt-4 text-sm font-black uppercase tracking-[0.16em] text-brand">
+              <p className="mt-4 text-sm font-black uppercase tracking-[0.02em] text-brand">
                 Risk
               </p>
               <p className="mt-2 text-sm leading-7 text-muted">{item.risk}</p>
@@ -298,7 +298,7 @@ export default async function RankingPage({ params }: PageProps) {
         ) : null}
 
         <section className="surface-card mt-14 rounded-[2rem] p-7 md:p-10">
-          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
             How we choose
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -319,7 +319,7 @@ export default async function RankingPage({ params }: PageProps) {
         </section>
 
         <section className="mt-14 rounded-[2rem] border border-line bg-ink p-7 text-white shadow-soft md:p-10">
-          <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white/70">
+          <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-white/70">
             B2B next step
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight">

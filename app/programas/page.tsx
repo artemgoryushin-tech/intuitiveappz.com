@@ -55,7 +55,7 @@ export default function ProgramsIndexPage() {
               href={`/programas/${ranking.slug}`}
               className="surface-card group rounded-[1.75rem] p-7 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
             >
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
                 {ranking.keyword}
               </p>
               <h2 className="mt-3 text-2xl font-black tracking-tight text-ink group-hover:text-brand">{ranking.title}</h2>

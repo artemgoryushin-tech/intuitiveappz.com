@@ -9,7 +9,7 @@ const criteria = [
 export function MethodologyBlock() {
   return (
     <section className="surface-card rounded-[2rem] p-7 md:p-10">
-      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
         Editorial methodology
       </p>
       <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">

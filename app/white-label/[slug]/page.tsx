@@ -107,7 +107,7 @@ export default async function WhiteLabelPage({ params }: PageProps) {
       <article className="mx-auto max-w-7xl px-5 py-16">
         <header className="surface-card-strong grid items-center gap-8 rounded-[2rem] p-7 md:p-10 lg:grid-cols-[minmax(0,1fr)_22rem]">
           <div>
-            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
               {page.keyword}
             </p>
             <h1 className="mt-5 max-w-5xl text-balance text-5xl font-black tracking-tight text-ink">

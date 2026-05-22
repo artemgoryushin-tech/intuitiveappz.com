@@ -203,7 +203,7 @@ export default async function ReviewPage({ params }: PageProps) {
       <article className="mx-auto max-w-7xl px-5 py-16">
         <div className="grid items-start gap-10 lg:grid-cols-[1fr_0.4fr]">
           <div>
-            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
               {brandSeo?.primaryKeyword ?? "Affiliate program review"}
             </p>
             <h1 className="mt-5 text-balance text-5xl font-black tracking-tight text-ink">
@@ -233,7 +233,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         {brandSeo ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
-            <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
+            <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-accent">
               Quick answer
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -260,14 +260,14 @@ export default async function ReviewPage({ params }: PageProps) {
             ["Payments", program.paymentMethods]
           ].map(([label, value]) => (
             <div key={label} className="surface-card rounded-3xl p-5">
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">{label}</p>
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">{label}</p>
               <p className="mt-3 text-sm leading-7 text-muted">{value}</p>
             </div>
           ))}
         </section>
 
         <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
-          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
             Official data
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -283,7 +283,7 @@ export default async function ReviewPage({ params }: PageProps) {
               ["Last check", program.lastChecked]
             ].map(([label, value]) => (
               <div key={label} className="rounded-2xl bg-cream/80 p-4">
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">{label}</p>
+                <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">{label}</p>
                 <p className="mt-2 text-sm font-bold leading-7 text-ink">{value}</p>
               </div>
             ))}
@@ -293,7 +293,7 @@ export default async function ReviewPage({ params }: PageProps) {
         {brandSeo ? (
           <section className="surface-card mt-12 overflow-hidden rounded-[2rem]">
             <div className="border-b border-line bg-white/70 p-7 md:p-10">
-              <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+              <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
                 Commission and rules
               </p>
               <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -329,7 +329,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         {brandSeo ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
-            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
               How it works for affiliates
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -370,7 +370,7 @@ export default async function ReviewPage({ params }: PageProps) {
         </section>
 
         <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
-          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+          <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
             Markets and compliance
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -394,7 +394,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         {deepDive ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
-            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
               Editorial analysis
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -419,7 +419,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         {seoEnhancement ? (
           <section className="surface-card mt-12 rounded-[2rem] p-7 md:p-10">
-            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
               How to monetize
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -506,7 +506,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         {seoEnhancement ? (
           <section className="mt-12 rounded-[2rem] border border-line bg-ink p-7 text-white shadow-soft md:p-10">
-            <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white/70">
+            <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-white/70">
               Strategic alternative
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight">
@@ -550,7 +550,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         {deepDive ? (
           <section className="mt-12 rounded-[2rem] border border-line bg-ink p-7 text-white shadow-soft md:p-10">
-            <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-white/70">
+            <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-white/70">
               Optimization checklist
             </p>
             <h2 className="mt-3 text-3xl font-black tracking-tight">
@@ -600,7 +600,7 @@ export default async function ReviewPage({ params }: PageProps) {
 
         <div className="mt-12">
           <SourceList sources={program.sources} />
-          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-muted">
+          <p className="mt-4 text-xs font-semibold uppercase tracking-[0.01em] text-muted">
             Last editorial check: {program.lastChecked}
           </p>
         </div>

@@ -50,7 +50,7 @@ export default function HomePage() {
       <section className="home-hero relative overflow-hidden">
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 md:grid-cols-[1.05fr_0.95fr] md:py-24">
           <div>
-            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent shadow-sm">
+            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-accent shadow-sm">
               {positioning.eyebrow}
             </p>
             <h1 className="mt-5 max-w-4xl text-balance text-5xl font-black tracking-tight text-white md:text-7xl">
@@ -93,7 +93,7 @@ export default function HomePage() {
       <section className="section-band">
         <div className="mx-auto grid max-w-7xl items-start gap-8 px-5 py-20 lg:grid-cols-[0.85fr_1.15fr]">
           <div className="rounded-[1.5rem] bg-ink p-7 text-white shadow-soft md:p-10">
-            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
+            <p className="inline-flex rounded-xl border border-white/15 bg-white/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-accent">
               Platform research
             </p>
             <h2 className="mt-4 text-balance text-4xl font-black tracking-tight text-white">
@@ -118,7 +118,7 @@ export default function HomePage() {
                 href={`/clone-script/${page.slug}`}
                 className="visual-card group rounded-[1.25rem] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-soft"
               >
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
+                <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
                   {page.keyword}
                 </p>
                 <h3 className="mt-3 text-balance text-xl font-black tracking-tight text-ink group-hover:text-brand">
@@ -148,7 +148,7 @@ export default function HomePage() {
                 label={ranking.category === "all" ? "Broker" : ranking.category}
                 tone={index % 3 === 0 ? "brand" : index % 3 === 1 ? "accent" : "ink"}
               />
-              <p className="mt-5 text-xs font-black uppercase tracking-[0.16em] text-brand">
+              <p className="mt-5 text-xs font-black uppercase tracking-[0.02em] text-brand">
                 {ranking.keyword}
               </p>
               <h2 className="mt-3 text-2xl font-black tracking-tight text-ink group-hover:text-brand">{ranking.title}</h2>
@@ -181,7 +181,7 @@ export default function HomePage() {
       <section className="mx-auto grid max-w-7xl items-start gap-8 px-5 py-20 lg:grid-cols-[0.9fr_1.1fr]">
         <MethodologyBlock />
         <div className="surface-card rounded-[1.5rem] p-7 md:p-10">
-          <p className="inline-flex rounded-xl border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+          <p className="inline-flex rounded-xl border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
             Selection criteria
           </p>
           <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -221,7 +221,7 @@ export default function HomePage() {
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {guides.map((guide) => (
                 <Link key={guide.slug} href={`/guias/${guide.slug}`} className="surface-card group rounded-[1.25rem] p-6 transition hover:-translate-y-1 hover:shadow-soft">
-                <p className="text-xs font-black uppercase tracking-[0.16em] text-accent">
+                <p className="text-xs font-black uppercase tracking-[0.02em] text-accent">
                   {guide.keyword}
                 </p>
                 <h2 className="mt-3 text-xl font-black tracking-tight text-ink group-hover:text-brand">{guide.title}</h2>

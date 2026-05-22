@@ -11,7 +11,7 @@ export function SectionHeader({ eyebrow, title, description, titleAs = "h2" }: S
   return (
     <div className="max-w-3xl">
       {eyebrow ? (
-        <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+        <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
           {eyebrow}
         </p>
       ) : null}

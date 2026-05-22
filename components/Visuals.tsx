@@ -209,7 +209,7 @@ export function HeroVisual() {
         />
         <div className="rounded-3xl bg-ink p-4 text-white sm:p-5">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-white/60 sm:text-sm">
+            <p className="text-xs font-black uppercase tracking-[0.01em] text-white/60 sm:text-sm">
               Compare with context
             </p>
             <p className="text-sm font-black text-accent">Global markets</p>
@@ -227,11 +227,11 @@ export function HeroVisual() {
         </div>
         <div className="grid gap-3 min-[420px]:grid-cols-2">
           <div className="rounded-2xl border border-line bg-white p-4">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-muted">To compare</p>
+            <p className="text-xs font-black uppercase tracking-[0.01em] text-muted">To compare</p>
             <p className="mt-2 text-lg font-black text-ink">Affiliate programs</p>
           </div>
           <div className="rounded-2xl border border-line bg-white p-4">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-muted">To validate</p>
+            <p className="text-xs font-black uppercase tracking-[0.01em] text-muted">To validate</p>
             <p className="mt-2 text-lg font-black text-ink">Traffic fit</p>
           </div>
         </div>
@@ -269,7 +269,7 @@ export function CategoryVisual({ label, tone = "brand" }: { label: string; tone?
           integrated
         />
         <div>
-          <p className="text-xs font-black uppercase tracking-[0.18em] text-muted">Category</p>
+          <p className="text-xs font-black uppercase tracking-[0.01em] text-muted">Category</p>
           <p className="mt-2 text-lg font-black text-ink">{label}</p>
         </div>
       </div>
@@ -287,11 +287,11 @@ export function FunnelVisual() {
         className="mb-6 aspect-[2.4]"
         imageClassName="object-contain object-center"
       />
-      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">Affiliate funnel</p>
+      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">Affiliate funnel</p>
       <div className="mt-6 grid gap-3 md:grid-cols-4">
         {steps.map((step, index) => (
           <div key={step} className="relative rounded-2xl bg-cream/80 p-4">
-            <p className="text-xs font-black uppercase tracking-[0.18em] text-muted">
+            <p className="text-xs font-black uppercase tracking-[0.01em] text-muted">
               Step {index + 1}
             </p>
             <p className="mt-2 text-lg font-black text-ink">{step}</p>
@@ -313,7 +313,7 @@ export function CommissionVisual() {
         className="mb-6 aspect-[2.4]"
         imageClassName="object-contain object-center"
       />
-      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
         Commission logic
       </p>
       <div className="mt-6 grid grid-cols-[repeat(auto-fit,minmax(12rem,1fr))] gap-4">
@@ -343,7 +343,7 @@ export function TrafficSourcesVisual({ sources }: { sources: string[] }) {
         className="mb-6 aspect-[2.4]"
         imageClassName="object-contain object-center"
       />
-      <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">Traffic sources</p>
+      <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-accent">Traffic sources</p>
       <div className="mt-6 grid gap-3">
         {sources.slice(0, 5).map((source) => (
           <div key={source} className="rounded-2xl bg-cream/80 p-4">
@@ -373,7 +373,7 @@ export function WhiteLabelFlowVisual() {
 
   return (
     <div className="surface-card rounded-[2rem] p-6">
-      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
         Next-level path
       </p>
       <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -383,7 +383,7 @@ export function WhiteLabelFlowVisual() {
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white text-sm font-black text-brand shadow-sm">
                 {index + 1}
               </span>
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-muted">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-muted">
                 Phase {index + 1}
               </p>
             </div>
@@ -430,12 +430,12 @@ export function BrandReviewVisual({
         <div className="grid min-w-0 grid-cols-[auto_minmax(0,1fr)] items-center gap-3 rounded-2xl bg-white p-4">
           <BrandLogo slug={slug} name={name} size="md" />
           <div className="min-w-0">
-            <p className="text-xs font-black uppercase leading-5 tracking-[0.08em] text-brand">Brand review</p>
+            <p className="text-xs font-black uppercase leading-5 tracking-[0.01em] text-brand">Brand review</p>
             <p className="mt-1 text-balance text-lg font-black leading-snug tracking-tight text-ink">{name}</p>
           </div>
         </div>
         <div className="min-w-0 rounded-2xl bg-ink p-4 text-white">
-          <p className="text-xs font-black uppercase leading-5 tracking-[0.08em] text-white/60">Target search</p>
+          <p className="text-xs font-black uppercase leading-5 tracking-[0.01em] text-white/60">Target search</p>
           <p className="mt-2 break-words text-sm font-black leading-6 text-white/90">{keyword}</p>
         </div>
       </div>
@@ -451,7 +451,7 @@ export function MetricsVisual({ metrics }: { metrics: string[] }) {
         className="mb-6 aspect-[2.4]"
         imageClassName="object-contain object-center"
       />
-      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
         Metrics summary
       </p>
       <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3">

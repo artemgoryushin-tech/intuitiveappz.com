@@ -110,7 +110,7 @@ export default async function CloneScriptPage({ params }: PageProps) {
       <article className="mx-auto max-w-7xl px-5 py-16">
         <header className="surface-card-strong grid gap-8 rounded-[1.5rem] p-7 md:p-10 lg:grid-cols-[minmax(0,1fr)_21rem]">
           <div>
-            <p className="inline-flex rounded-xl border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+            <p className="inline-flex rounded-xl border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
               {page.keyword}
             </p>
             <h1 className="mt-5 max-w-5xl text-balance text-5xl font-black tracking-tight text-ink">
@@ -122,7 +122,7 @@ export default async function CloneScriptPage({ params }: PageProps) {
             </p>
           </div>
           <div className="rounded-[1.25rem] bg-ink p-6 text-white shadow-soft">
-            <p className="text-xs font-black uppercase tracking-[0.16em] text-accent">
+            <p className="text-xs font-black uppercase tracking-[0.02em] text-accent">
               Build brief
             </p>
             <dl className="mt-5 grid gap-4 text-sm">
@@ -132,7 +132,7 @@ export default async function CloneScriptPage({ params }: PageProps) {
                 ["Priority", "Original branding and compliance"]
               ].map(([term, value]) => (
                 <div key={term} className="rounded-xl border border-white/10 bg-white/10 p-4">
-                  <dt className="text-xs font-black uppercase tracking-[0.12em] text-white/50">{term}</dt>
+                  <dt className="text-xs font-black uppercase tracking-[0.02em] text-white/50">{term}</dt>
                   <dd className="mt-1 font-black text-white">{value}</dd>
                 </div>
               ))}
@@ -141,7 +141,7 @@ export default async function CloneScriptPage({ params }: PageProps) {
         </header>
 
         <section className="mt-8 rounded-[1.5rem] border border-accent/20 bg-accent/10 p-6">
-          <p className="text-xs font-black uppercase tracking-[0.16em] text-accent">
+          <p className="text-xs font-black uppercase tracking-[0.02em] text-accent">
             Brand-safe note
           </p>
           <p className="mt-3 text-sm leading-7 text-ink">
@@ -156,7 +156,7 @@ export default async function CloneScriptPage({ params }: PageProps) {
         <div className="mt-12 grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_22rem]">
           <div className="grid gap-10">
             <section className="surface-card rounded-[1.5rem] p-7">
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
                 Product position
               </p>
               <h2 className="mt-3 text-balance text-3xl font-black tracking-tight text-ink">
@@ -237,7 +237,7 @@ export default async function CloneScriptPage({ params }: PageProps) {
           </div>
           <aside className="lg:sticky lg:top-24">
             <div className="surface-card rounded-[1.5rem] p-6">
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
                 Launch checklist
               </p>
               <ul className="mt-5 grid gap-3 text-sm leading-7 text-muted">

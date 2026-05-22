@@ -118,7 +118,7 @@ export default async function GuidePage({ params }: PageProps) {
         }}
       />
       <article className="mx-auto max-w-5xl px-5 py-16">
-        <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-accent">
+        <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-accent">
           {guide.keyword}
         </p>
         <h1 className="mt-5 text-balance text-5xl font-black tracking-tight text-ink">{guide.title}</h1>
@@ -129,7 +129,7 @@ export default async function GuidePage({ params }: PageProps) {
 
         {deepDive ? (
           <section className="surface-card-strong mt-10 rounded-[2rem] p-7 md:p-10">
-            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+            <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
               Practical guide
             </p>
             <h2 className="mt-4 text-balance text-3xl font-black tracking-tight text-ink">
@@ -142,7 +142,7 @@ export default async function GuidePage({ params }: PageProps) {
         <div className="mt-12 grid gap-6">
           {(seoEnhancement?.expandedSections ?? guide.sections.map((section) => ({ title: "Aprofunde a estratégia", body: section }))).map((section, index) => (
             <section key={`${section.title}-${index}`} className="surface-card rounded-[2rem] p-7">
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
                 Point {index + 1}
               </p>
               <h2 className="mt-3 text-balance text-3xl font-black tracking-tight text-ink">

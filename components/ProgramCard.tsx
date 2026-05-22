@@ -13,13 +13,13 @@ export function ProgramCard({ program, rank }: { program: Program; rank?: number
         <div className="flex min-w-0 items-start gap-3">
           <BrandLogo slug={program.slug} name={program.name} size="sm" />
           <div className="min-w-0">
-            <p className="inline-flex rounded-xl bg-brand/10 px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-brand">
+            <p className="inline-flex rounded-xl bg-brand/10 px-3 py-1 text-xs font-black uppercase tracking-[0.02em] text-brand">
               {rank ? `#${rank}` : program.category}
             </p>
             <h3 className="mt-4 text-balance text-2xl font-black leading-snug tracking-tight text-ink">
               {program.name}
             </h3>
-            <p className="mt-2 text-xs font-black uppercase tracking-[0.14em] text-accent">{reviewKeyword}</p>
+            <p className="mt-2 text-xs font-black uppercase tracking-[0.02em] text-accent">{reviewKeyword}</p>
           </div>
         </div>
         <span className="rounded-xl bg-cream px-3 py-2 text-left text-xs font-black leading-5 text-ink @md:max-w-[12rem] @md:justify-self-end">
@@ -29,15 +29,15 @@ export function ProgramCard({ program, rank }: { program: Program; rank?: number
       <p className="mt-4 text-sm leading-7 text-muted">{program.verdict}</p>
       <dl className="mt-6 grid gap-3 text-sm">
         <div className="rounded-xl bg-cream/80 p-4">
-          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Commission</dt>
+          <dt className="text-xs font-black uppercase tracking-[0.02em] text-ink">Commission</dt>
           <dd className="text-muted">{program.commission}</dd>
         </div>
         <div className="rounded-xl bg-cream/80 p-4">
-          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Best for</dt>
+          <dt className="text-xs font-black uppercase tracking-[0.02em] text-ink">Best for</dt>
           <dd className="text-muted">{program.bestFor}</dd>
         </div>
         <div className="rounded-xl bg-cream/80 p-4">
-          <dt className="text-xs font-black uppercase tracking-[0.14em] text-ink">Payout</dt>
+          <dt className="text-xs font-black uppercase tracking-[0.02em] text-ink">Payout</dt>
           <dd className="text-muted">{program.payoutFrequency}</dd>
         </div>
       </dl>

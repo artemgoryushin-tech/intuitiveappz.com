@@ -139,7 +139,7 @@ export function BrokerageLeadForm({
     >
       <div className={isWide ? "grid gap-7 @5xl:grid-cols-[0.78fr_1.22fr] @5xl:items-start" : ""}>
         <div className="flex min-w-0 flex-col gap-3">
-          <p className="w-fit rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase leading-5 tracking-[0.12em] text-brand">
+          <p className="w-fit rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase leading-5 tracking-[0.02em] text-brand">
             Next level
           </p>
           <h2 className={`text-balance font-black tracking-tight text-ink ${isCompact ? "text-[1.65rem] leading-tight" : "text-3xl"}`}>
@@ -253,7 +253,7 @@ function Field({
 }) {
   return (
     <div className="grid gap-2">
-      <label className="text-xs font-black uppercase leading-5 tracking-[0.08em] text-muted" htmlFor={htmlFor}>
+      <label className="text-xs font-black uppercase leading-5 tracking-[0.01em] text-muted" htmlFor={htmlFor}>
         {label}
         {required ? <span className="text-brand"> *</span> : null}
       </label>

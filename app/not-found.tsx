@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <section className="mx-auto max-w-4xl px-5 py-24 text-center">
       <div className="surface-card-strong rounded-[2rem] p-8 md:p-12">
-        <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">404</p>
+        <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">404</p>
         <h1 className="mt-5 text-balance text-5xl font-black tracking-tight text-ink">Page not found</h1>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-muted">
           The content may have moved or may not have been published yet.

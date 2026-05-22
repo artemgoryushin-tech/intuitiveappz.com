@@ -100,7 +100,7 @@ export default async function CalculatorPage({ params, searchParams }: PageProps
       />
       <article className="mx-auto max-w-7xl px-5 py-16">
         <header className="surface-card-strong rounded-[1.5rem] p-7 md:p-10">
-          <p className="inline-flex rounded-xl border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+          <p className="inline-flex rounded-xl border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
             {calculator.eyebrow}
           </p>
           <h1 className="mt-5 max-w-5xl text-balance text-5xl font-black tracking-tight text-ink">
@@ -115,7 +115,7 @@ export default async function CalculatorPage({ params, searchParams }: PageProps
         <div className="mt-10 grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_22rem]">
           <div className="grid gap-10">
             <section className="surface-card rounded-[1.5rem] p-7">
-              <p className="text-xs font-black uppercase tracking-[0.16em] text-brand">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
                 How to use it
               </p>
               <h2 className="mt-3 text-balance text-3xl font-black tracking-tight text-ink">

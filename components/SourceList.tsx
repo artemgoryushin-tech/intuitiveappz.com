@@ -8,7 +8,7 @@ type Source = {
 export function SourceList({ sources }: { sources: Source[] }) {
   return (
     <section className="surface-card rounded-[2rem] p-7">
-      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.18em] text-brand">
+      <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
         Sources and official links
       </p>
       <p className="mt-3 text-sm leading-7 text-muted">

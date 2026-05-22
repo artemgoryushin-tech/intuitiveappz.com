@@ -126,7 +126,7 @@ export function PhoneNumberField({ id, name, label, required, compact = false }:
 
   return (
     <div className="@container grid gap-2">
-      <label className="text-xs font-black uppercase leading-5 tracking-[0.08em] text-muted" htmlFor={id}>
+      <label className="text-xs font-black uppercase leading-5 tracking-[0.01em] text-muted" htmlFor={id}>
         {label}
         {required ? <span className="text-brand"> *</span> : null}
       </label>
