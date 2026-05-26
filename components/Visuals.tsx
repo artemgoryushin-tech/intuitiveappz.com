@@ -34,127 +34,136 @@ function Arrow({ className = "" }: { className?: string }) {
 
 const illustrations = {
   stockMarket: {
-    src: "/illustrations/stock-market-monetization.jpg",
-    alt: "Illustration about online monetization and investing",
-    width: 5157,
-    height: 3438
+    src: "/illustrations/affiliate-social-media-concept.jpg",
+    alt: "Collage illustration about social media traffic and affiliate attention",
+    width: 2000,
+    height: 1387,
+    blend: false
   },
   coworking: {
-    src: "/illustrations/coworking-cloud-team.jpg",
-    alt: "Illustration of a team connected through online collaboration",
-    width: 5158,
-    height: 3438
+    src: "/illustrations/online-partnership-handshake.jpg",
+    alt: "Collage illustration of an online partnership handshake",
+    width: 1000,
+    height: 667,
+    blend: false
   },
   testing: {
-    src: "/illustrations/testing-team.jpg",
-    alt: "Illustration of a team testing a digital platform",
-    width: 5157,
-    height: 3438
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration of marketing ideas and campaign planning",
+    width: 1500,
+    height: 1000,
+    blend: false
   },
   agile: {
-    src: "/illustrations/agile-team.jpg",
-    alt: "Illustration of a team working on an agile project",
-    width: 5157,
-    height: 3438
+    src: "/illustrations/online-partnership-handshake.jpg",
+    alt: "Collage illustration of online partnership and collaboration",
+    width: 1000,
+    height: 667,
+    blend: false
   },
   analytics: {
-    src: "/illustrations/eye-tracking-analytics.jpg",
-    alt: "Illustration of attention analytics and digital metrics",
-    width: 5157,
-    height: 3438
+    src: "/illustrations/affiliate-social-media-concept.jpg",
+    alt: "Collage illustration about audience attention and digital metrics",
+    width: 2000,
+    height: 1387,
+    blend: false
   },
   platform: {
-    src: "/illustrations/platform-development.jpg",
-    alt: "Illustration of digital platform development",
-    width: 5157,
-    height: 3438
+    src: "/illustrations/online-partnership-handshake.jpg",
+    alt: "Collage illustration of digital partnership and platform launch",
+    width: 1000,
+    height: 667,
+    blend: false
   },
   idea: {
-    src: "/illustrations/innovative-idea.jpg",
-    alt: "Illustration of an innovative idea",
-    width: 2000,
-    height: 2000
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration of a marketing idea",
+    width: 1500,
+    height: 1000,
+    blend: false
   },
   dollar: {
-    src: "/illustrations/dollar-bill.jpg",
-    alt: "Illustration of a one hundred dollar bill",
-    width: 3000,
-    height: 2000
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration for campaign value and business ideas",
+    width: 1500,
+    height: 1000,
+    blend: false
   },
   crowdfunding: {
-    src: "/illustrations/crowdfunding.jpg",
-    alt: "Illustration of crowdfunding and growth",
-    width: 7730,
-    height: 7730
+    src: "/illustrations/affiliate-social-media-concept.jpg",
+    alt: "Collage illustration about social growth and audience engagement",
+    width: 2000,
+    height: 1387,
+    blend: false
   },
   stockExchangeData2: {
-    src: "/illustrations/stock-exchange-data-2-transparent.png",
-    alt: "Illustration of exchange data and market analysis",
-    width: 3000,
-    height: 2000,
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration of marketing signals and campaign planning",
+    width: 1500,
+    height: 1000,
     blend: false
   },
   resellerAffiliate: {
-    src: "/illustrations/reseller-affiliate-transparent.png",
-    alt: "Illustration of reseller and affiliate partnership",
-    width: 2000,
-    height: 2000,
+    src: "/illustrations/online-partnership-handshake.jpg",
+    alt: "Collage illustration of reseller and affiliate partnership",
+    width: 1000,
+    height: 667,
     blend: false
   },
   cryptoTradingBot: {
-    src: "/illustrations/crypto-trading-bot-transparent.png",
-    alt: "Illustration of a crypto trading bot and automation",
-    width: 2400,
-    height: 2400,
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration of digital marketing automation",
+    width: 1500,
+    height: 1000,
     blend: false
   },
   businessIdeaGeneration: {
-    src: "/illustrations/business-idea-generation-transparent.png",
-    alt: "Illustration of digital business idea generation",
-    width: 2400,
-    height: 2400,
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration of business idea generation",
+    width: 1500,
+    height: 1000,
     blend: false
   },
   creativeCollaboration: {
-    src: "/illustrations/creative-collaboration-transparent.png",
-    alt: "Illustration of creative collaboration and a partner program",
-    width: 2400,
-    height: 2400,
+    src: "/illustrations/online-partnership-handshake.jpg",
+    alt: "Collage illustration of creative collaboration and partnership",
+    width: 1000,
+    height: 667,
     blend: false
   },
   traderWorking: {
-    src: "/illustrations/trader-working-transparent.png",
-    alt: "Illustration of a trader working with market data",
+    src: "/illustrations/affiliate-social-media-concept.jpg",
+    alt: "Collage illustration of social media traffic and campaign attention",
     width: 2000,
-    height: 2000,
+    height: 1387,
     blend: false
   },
   stockMarketScreen: {
-    src: "/illustrations/stock-market-screen-transparent.png",
-    alt: "Illustration of a screen with a financial market chart",
-    width: 3000,
-    height: 2000,
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration of campaign ideas and digital signals",
+    width: 1500,
+    height: 1000,
     blend: false
   },
   cryptoTradingDesk: {
-    src: "/illustrations/crypto-trading-desk-transparent.png",
-    alt: "Illustration of a cryptocurrency trading desk",
-    width: 2400,
-    height: 2400,
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration of marketing ideas for digital finance",
+    width: 1500,
+    height: 1000,
     blend: false
   },
   financeLeaders: {
-    src: "/illustrations/finance-leaders-transparent.png",
-    alt: "Illustration of finance leaders analyzing growth",
-    width: 3000,
-    height: 2000,
+    src: "/illustrations/online-partnership-handshake.jpg",
+    alt: "Collage illustration of business partnership and growth",
+    width: 1000,
+    height: 667,
     blend: false
   },
   stockExchangeData: {
-    src: "/illustrations/stock-exchange-data-transparent.png",
-    alt: "Illustration of stock exchange data",
-    width: 3000,
-    height: 2000,
+    src: "/illustrations/marketing-campaign-idea.jpg",
+    alt: "Collage illustration of campaign ideas and market signals",
+    width: 1500,
+    height: 1000,
     blend: false
   }
 } satisfies Record<string, IllustrationAsset>;
@@ -178,6 +187,7 @@ function IllustrationImage({
 }) {
   const useBlend = blend && asset.blend !== false;
   const frameClass = integrated ? "media-frame-integrated" : "media-frame";
+  const imageBaseClass = asset.blend === false ? "object-cover p-0" : "object-contain p-4";
 
   return (
     <div className={`${frameClass} relative w-full overflow-hidden rounded-[1.75rem] ${className}`}>
@@ -187,7 +197,7 @@ function IllustrationImage({
         fill
         sizes="(min-width: 1280px) 560px, (min-width: 1024px) 42vw, 100vw"
         priority={priority}
-        className={`object-contain p-4 ${useBlend ? "mix-blend-multiply" : ""} ${imageClassName}`}
+        className={`${imageBaseClass} ${useBlend ? "mix-blend-multiply" : ""} ${imageClassName}`}
       />
     </div>
   );
@@ -204,7 +214,7 @@ export function HeroVisual() {
         <IllustrationImage
           asset={illustrations.stockMarket}
           className="aspect-[1.35]"
-          imageClassName="object-contain object-center"
+          imageClassName="object-cover object-center"
           priority
         />
         <div className="rounded-3xl bg-ink p-4 text-white sm:p-5">
@@ -265,7 +275,7 @@ export function CategoryVisual({ label, tone = "brand" }: { label: string; tone?
         <IllustrationImage
           asset={categoryIllustration(label)}
           className="aspect-[1.8]"
-          imageClassName="object-contain object-center"
+          imageClassName="object-cover object-center"
           integrated
         />
         <div>
@@ -285,7 +295,7 @@ export function FunnelVisual() {
       <IllustrationImage
         asset={illustrations.creativeCollaboration}
         className="mb-6 aspect-[2.4]"
-        imageClassName="object-contain object-center"
+        imageClassName="object-cover object-center"
       />
       <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">Affiliate funnel</p>
       <div className="mt-6 grid gap-3 md:grid-cols-4">
@@ -311,7 +321,7 @@ export function CommissionVisual() {
       <IllustrationImage
         asset={illustrations.financeLeaders}
         className="mb-6 aspect-[2.4]"
-        imageClassName="object-contain object-center"
+        imageClassName="object-cover object-center"
       />
       <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
         Commission logic
@@ -341,7 +351,7 @@ export function TrafficSourcesVisual({ sources }: { sources: string[] }) {
       <IllustrationImage
         asset={illustrations.stockExchangeData2}
         className="mb-6 aspect-[2.4]"
-        imageClassName="object-contain object-center"
+        imageClassName="object-cover object-center"
       />
       <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-accent">Traffic sources</p>
       <div className="mt-6 grid gap-3">
@@ -424,7 +434,7 @@ export function BrandReviewVisual({
       <IllustrationImage
         asset={asset}
         className="aspect-[1.65]"
-        imageClassName="object-contain object-center"
+        imageClassName="object-cover object-center"
       />
       <div className="mt-4 grid min-w-0 grid-cols-1 gap-3 @2xl:grid-cols-2">
         <div className="grid min-w-0 grid-cols-[auto_minmax(0,1fr)] items-center gap-3 rounded-2xl bg-white p-4">
@@ -449,7 +459,7 @@ export function MetricsVisual({ metrics }: { metrics: string[] }) {
       <IllustrationImage
         asset={illustrations.testing}
         className="mb-6 aspect-[2.4]"
-        imageClassName="object-contain object-center"
+        imageClassName="object-cover object-center"
       />
       <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
         Metrics summary

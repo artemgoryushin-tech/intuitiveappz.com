@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/illustrations/stock-market-monetization.jpg",
-        width: 1200,
-        height: 800,
+        url: "/illustrations/affiliate-social-media-concept.jpg",
+        width: 2000,
+        height: 1387,
         alt: siteConfig.name
       }
     ]
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    images: ["/illustrations/stock-market-monetization.jpg"]
+    images: ["/illustrations/affiliate-social-media-concept.jpg"]
   }
 };
 

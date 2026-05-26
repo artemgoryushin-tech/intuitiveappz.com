@@ -125,7 +125,7 @@ export default async function ReviewPage({ params }: PageProps) {
           "@id": `${pageUrl}#article`,
           headline: pageHeadline,
           description: pageDescription,
-          image: `${siteConfig.domain}/illustrations/stock-market-monetization.jpg`,
+          image: `${siteConfig.domain}/illustrations/affiliate-social-media-concept.jpg`,
           inLanguage: "en-US",
           mainEntityOfPage: pageUrl,
           datePublished: program.lastChecked,

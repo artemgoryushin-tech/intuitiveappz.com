@@ -72,7 +72,7 @@ export default async function GuidePage({ params }: PageProps) {
           headline: guide.title,
           description: guide.description,
           url: pageUrl,
-          image: `${siteConfig.domain}/illustrations/stock-market-monetization.jpg`,
+          image: `${siteConfig.domain}/illustrations/affiliate-social-media-concept.jpg`,
           mainEntityOfPage: pageUrl,
           datePublished: editorialProfile.lastUpdated,
           dateModified: editorialProfile.lastUpdated,
