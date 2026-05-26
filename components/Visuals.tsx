@@ -48,24 +48,24 @@ const illustrations = {
     blend: false
   },
   testing: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
-    alt: "Collage illustration of marketing ideas and campaign planning",
-    width: 1500,
-    height: 1000,
+    src: "/illustrations/problem-solving-puzzle.jpg",
+    alt: "Collage illustration of problem solving and campaign validation",
+    width: 1998,
+    height: 1332,
     blend: false
   },
   agile: {
-    src: "/illustrations/online-partnership-handshake.jpg",
-    alt: "Collage illustration of online partnership and collaboration",
+    src: "/illustrations/market-partnership-hands.jpg",
+    alt: "Collage illustration of partner hands and market collaboration",
     width: 1000,
     height: 667,
     blend: false
   },
   analytics: {
-    src: "/illustrations/affiliate-social-media-concept.jpg",
-    alt: "Collage illustration about audience attention and digital metrics",
+    src: "/illustrations/social-media-growth-concept.jpg",
+    alt: "Collage illustration about social media growth and digital metrics",
     width: 2000,
-    height: 1387,
+    height: 1600,
     blend: false
   },
   platform: {
@@ -76,59 +76,59 @@ const illustrations = {
     blend: false
   },
   idea: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
-    alt: "Collage illustration of a marketing idea",
-    width: 1500,
-    height: 1000,
+    src: "/illustrations/megaphone-announcement.jpg",
+    alt: "Collage illustration of campaign announcements and marketing ideas",
+    width: 1368,
+    height: 912,
     blend: false
   },
   dollar: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
-    alt: "Collage illustration for campaign value and business ideas",
-    width: 1500,
-    height: 1000,
+    src: "/illustrations/dollar-bill-face-concept.jpg",
+    alt: "Close-up collage of a dollar bill with illustrated expression",
+    width: 1445,
+    height: 961,
     blend: false
   },
   crowdfunding: {
-    src: "/illustrations/affiliate-social-media-concept.jpg",
+    src: "/illustrations/social-media-growth-concept.jpg",
     alt: "Collage illustration about social growth and audience engagement",
     width: 2000,
-    height: 1387,
+    height: 1600,
     blend: false
   },
   stockExchangeData2: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
-    alt: "Collage illustration of marketing signals and campaign planning",
-    width: 1500,
-    height: 1000,
+    src: "/illustrations/commission-still-life.jpg",
+    alt: "Still life collage about commission and payout tracking",
+    width: 2000,
+    height: 1335,
     blend: false
   },
   resellerAffiliate: {
-    src: "/illustrations/online-partnership-handshake.jpg",
+    src: "/illustrations/market-partnership-hands.jpg",
     alt: "Collage illustration of reseller and affiliate partnership",
     width: 1000,
     height: 667,
     blend: false
   },
   cryptoTradingBot: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
-    alt: "Collage illustration of digital marketing automation",
-    width: 1500,
-    height: 1000,
+    src: "/illustrations/crypto-distribution-concept.jpg",
+    alt: "3D illustration of cryptocurrency distribution and digital finance",
+    width: 1950,
+    height: 1463,
     blend: false
   },
   businessIdeaGeneration: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
-    alt: "Collage illustration of business idea generation",
-    width: 1500,
-    height: 1000,
+    src: "/illustrations/problem-solving-puzzle.jpg",
+    alt: "Collage illustration of business idea generation and problem solving",
+    width: 1998,
+    height: 1332,
     blend: false
   },
   creativeCollaboration: {
-    src: "/illustrations/online-partnership-handshake.jpg",
+    src: "/illustrations/megaphone-announcement.jpg",
     alt: "Collage illustration of creative collaboration and partnership",
-    width: 1000,
-    height: 667,
+    width: 1368,
+    height: 912,
     blend: false
   },
   traderWorking: {
@@ -139,31 +139,31 @@ const illustrations = {
     blend: false
   },
   stockMarketScreen: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
-    alt: "Collage illustration of campaign ideas and digital signals",
-    width: 1500,
-    height: 1000,
+    src: "/illustrations/commission-still-life.jpg",
+    alt: "Collage illustration of commission data and digital signals",
+    width: 2000,
+    height: 1335,
     blend: false
   },
   cryptoTradingDesk: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
+    src: "/illustrations/crypto-distribution-concept.jpg",
     alt: "Collage illustration of marketing ideas for digital finance",
-    width: 1500,
-    height: 1000,
+    width: 1950,
+    height: 1463,
     blend: false
   },
   financeLeaders: {
-    src: "/illustrations/online-partnership-handshake.jpg",
-    alt: "Collage illustration of business partnership and growth",
-    width: 1000,
-    height: 667,
+    src: "/illustrations/banknotes-economy-flat-lay.jpg",
+    alt: "Flat lay collage of banknotes and economy wording",
+    width: 1153,
+    height: 823,
     blend: false
   },
   stockExchangeData: {
-    src: "/illustrations/marketing-campaign-idea.jpg",
-    alt: "Collage illustration of campaign ideas and market signals",
-    width: 1500,
-    height: 1000,
+    src: "/illustrations/empty-wallet-risk-concept.jpg",
+    alt: "Collage illustration about financial risk and budget constraints",
+    width: 1250,
+    height: 833,
     blend: false
   }
 } satisfies Record<string, IllustrationAsset>;
