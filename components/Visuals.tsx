@@ -187,10 +187,10 @@ function IllustrationImage({
 }) {
   const useBlend = blend && asset.blend !== false;
   const frameClass = integrated ? "media-frame-integrated" : "media-frame";
-  const imageBaseClass = asset.blend === false ? "object-cover p-0" : "object-contain p-4";
+  const imageBaseClass = asset.blend === false ? "object-cover p-0" : "object-contain p-3";
 
   return (
-    <div className={`${frameClass} relative w-full overflow-hidden rounded-[1.75rem] ${className}`}>
+    <div className={`${frameClass} relative w-full overflow-hidden rounded-[1.15rem] ${className}`}>
       <Image
         src={asset.src}
         alt={asset.alt}
@@ -207,10 +207,8 @@ export function HeroVisual() {
   const checks = ["Clear CPA terms", "RevShare fit", "Approved FTD rules", "Allowed traffic"];
 
   return (
-    <div className="relative self-center overflow-hidden rounded-[2rem] bg-white/85 p-5 shadow-soft md:p-6">
-      <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand/10 blur-sm" />
-      <div className="absolute -bottom-16 -left-16 h-40 w-40 rounded-full bg-accent/10 blur-sm" />
-      <div className="relative grid gap-4">
+    <div className="relative self-center">
+      <div className="relative grid gap-3">
         <IllustrationImage
           asset={illustrations.stockMarket}
           className="aspect-[1.35]"
@@ -270,7 +268,7 @@ function categoryIllustration(label: string) {
 
 export function CategoryVisual({ label, tone = "brand" }: { label: string; tone?: VisualTone }) {
   return (
-    <div className={`overflow-hidden rounded-3xl bg-gradient-to-br ${toneClasses[tone]} p-4 shadow-[inset_0_0_44px_rgba(255,255,255,0.42)]`}>
+    <div className={`overflow-hidden rounded-3xl bg-gradient-to-br ${toneClasses[tone]} p-3 shadow-[inset_0_0_28px_rgba(255,255,255,0.32)]`}>
       <div className="grid gap-4">
         <IllustrationImage
           asset={categoryIllustration(label)}
@@ -291,10 +289,10 @@ export function FunnelVisual() {
   const steps = ["Traffic", "Page", "FTD", "Payout"];
 
   return (
-    <div className="visual-card rounded-[2rem] p-6">
+    <div className="visual-card rounded-[2rem] p-5">
       <IllustrationImage
         asset={illustrations.creativeCollaboration}
-        className="mb-6 aspect-[2.4]"
+        className="mb-5 aspect-[2.4]"
         imageClassName="object-cover object-center"
       />
       <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">Affiliate funnel</p>
@@ -317,10 +315,10 @@ export function FunnelVisual() {
 
 export function CommissionVisual() {
   return (
-    <div className="visual-card rounded-[2rem] p-6">
+    <div className="visual-card rounded-[2rem] p-5">
       <IllustrationImage
         asset={illustrations.financeLeaders}
-        className="mb-6 aspect-[2.4]"
+        className="mb-5 aspect-[2.4]"
         imageClassName="object-cover object-center"
       />
       <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
@@ -347,10 +345,10 @@ export function CommissionVisual() {
 
 export function TrafficSourcesVisual({ sources }: { sources: string[] }) {
   return (
-    <div className="visual-card rounded-[2rem] p-6">
+    <div className="visual-card rounded-[2rem] p-5">
       <IllustrationImage
         asset={illustrations.stockExchangeData2}
-        className="mb-6 aspect-[2.4]"
+        className="mb-5 aspect-[2.4]"
         imageClassName="object-cover object-center"
       />
       <p className="inline-flex rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-accent">Traffic sources</p>
@@ -430,7 +428,7 @@ export function BrandReviewVisual({
   const asset = brandReviewIllustration(slug);
 
   return (
-    <div className="@container visual-card-strong min-w-0 overflow-hidden rounded-[2rem] p-5 md:p-6">
+    <div className="@container visual-card-strong min-w-0 overflow-hidden rounded-[2rem] p-4 md:p-5">
       <IllustrationImage
         asset={asset}
         className="aspect-[1.65]"
@@ -455,10 +453,10 @@ export function BrandReviewVisual({
 
 export function MetricsVisual({ metrics }: { metrics: string[] }) {
   return (
-    <div className="visual-card rounded-[2rem] p-6">
+    <div className="visual-card rounded-[2rem] p-5">
       <IllustrationImage
         asset={illustrations.testing}
-        className="mb-6 aspect-[2.4]"
+        className="mb-5 aspect-[2.4]"
         imageClassName="object-cover object-center"
       />
       <p className="inline-flex rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.01em] text-brand">
