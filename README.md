@@ -40,6 +40,16 @@ All MVP content lives in `data/site.ts`:
 
 Before public launch, replace `siteConfig.domain`, connect real analytics, add final legal copy, validate all affiliate program terms against official sources and review financial/compliance disclaimers for the target markets.
 
+## Google Search Console
+
+Use the HTML tag verification method in Search Console and copy only the token from the generated meta tag:
+
+```html
+<meta name="google-site-verification" content="PASTE_THIS_TOKEN" />
+```
+
+Set `GOOGLE_SITE_VERIFICATION` to that token in the deployment environment. If two Search Console properties need separate tokens, add them comma-separated. The site will render the verification meta tag globally through Next.js metadata.
+
 ## Lead Forms
 
 - `BrokerageLeadForm` in `components/BrokerageLeadForm.tsx` submits leads to `/api/leads`.
