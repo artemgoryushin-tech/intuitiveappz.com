@@ -3,8 +3,7 @@ export const siteConfig = {
   domain: "https://intuitiveappz.com",
   description:
     "Independent research for broker, forex, trading and fintech affiliate programs, with practical guides for traffic, payouts, compliance and white label opportunities.",
-  locale: "en_US",
-  googleSiteVerifications: ["Qzwn3ui2JKO0xwpihFrPzZe8a38Dti33R9d4fGzQoqc"]
+  locale: "en_US"
 };
 
 export const navigation = [

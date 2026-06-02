@@ -4,17 +4,6 @@ import { Header } from "@/components/Header";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
 
-const normalizeGoogleVerificationToken = (token: string) =>
-  token.trim().replace(/^google-site-verification=/, "");
-
-const googleSiteVerifications =
-  [
-    ...siteConfig.googleSiteVerifications,
-    ...(process.env.GOOGLE_SITE_VERIFICATION?.split(",") ?? [])
-  ]
-    .map(normalizeGoogleVerificationToken)
-    .filter(Boolean);
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
   title: {
@@ -47,14 +36,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: ["/illustrations/affiliate-social-media-concept.jpg"]
-  },
-  ...(googleSiteVerifications.length > 0
-    ? {
-        verification: {
-          google: googleSiteVerifications
-        }
-      }
-    : {})
+  }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
