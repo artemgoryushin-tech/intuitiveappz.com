@@ -28,19 +28,19 @@ Keep entries short, dated, and useful for future automation runs.
 
 ## Completed Runs
 
-No automated content-growth runs have been recorded yet.
+- 2026-06-16: `english-affiliate-content-growth` refreshed the English `crypto-fintech-affiliate-programs` collection on branch `codex/auto-en-content-2026-06-16`, tightening Coinbase, Kraken and TradingView claims against official sources.
 
 ## Active Branch State
 
 | Branch | Site | State | Note |
 | --- | --- | --- | --- |
-| `codex/english-version` | English | Tracks `intuitiveappz/codex/english-version` | Upstream corrected on 2026-06-15 |
+| `main` | English | Tracks `intuitiveappz/main` | Publish target migrated on 2026-06-17 |
 | `codex/auto-br-content-2026-06-12` | Brazil | Local ahead of remote-tracking branch | Needs release-steward verification before publish |
 | `codex/content-ops-playbook-br` | Brazil | Docs branch pushed to `global21` | Review/merge needed for playbook on BR base |
 
 ## Publish History
 
-No controlled autopublish events recorded yet.
+- 2026-06-16: English task `codex/auto-en-content-2026-06-16` was promoted to the former `intuitiveappz/codex/english-version` target at `e7e5db7`. On 2026-06-17 this content was carried forward into `intuitiveappz/main` as the new publish target.
 
 ## Recovered Or Stuck Work
 
@@ -63,7 +63,9 @@ None recorded yet.
 
 ## Source Concerns
 
-None recorded yet.
+- 2026-06-16: Coinbase public help content does not publish a universal commission rate; keep payout language qualification-based unless the partner agreement is in hand.
+- 2026-06-16: Kraken public affiliate messaging is product- and region-dependent; avoid universal availability claims and note futures-promotion approval limits.
+- 2026-06-16: TradingView payout timing differs slightly between the marketing page and partner rules, so describe it conservatively as monthly with rule verification.
 
 ## Manual Review Notes
 
