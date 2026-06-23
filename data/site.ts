@@ -2236,7 +2236,7 @@ export type GuideDeepDive = {
   actionPlan: string[];
 };
 
-export const guideDeepDives: Record<string, GuideDeepDive> = Object.fromEntries(
+const defaultGuideDeepDives: Record<string, GuideDeepDive> = Object.fromEntries(
   guides.map((guide) => [
     guide.slug,
     {
@@ -2265,6 +2265,45 @@ export const guideDeepDives: Record<string, GuideDeepDive> = Object.fromEntries(
     }
   ])
 );
+
+export const guideDeepDives: Record<string, GuideDeepDive> = {
+  ...defaultGuideDeepDives,
+  "how-to-negotiate-with-affiliate-manager": {
+    intro:
+      "A broker affiliate manager negotiation is strongest when it starts with verifiable traffic quality, not a request for a larger headline CPA. Treat the conversation as a controlled commercial test: show where users come from, how they qualify, which claims appear in the funnel and how payout events will be audited.",
+    checklist: [
+      "Source-level clicks, registrations, FTDs, qualified traders and rejected leads",
+      "Country, device, channel and creative split for the last test period",
+      "Screenshots or URLs for the bridge page, disclosure and risk language",
+      "Written rules for PPC, brand bidding, creators, Telegram, email and retargeting",
+      "A test cap, validation period, payout trigger and review date",
+      "Fallback offer or softer funnel if the target GEO, product or traffic source is declined"
+    ],
+    mistakes: [
+      "Negotiating from gross FTD volume without showing qualified activity",
+      "Accepting a headline CPA without a hold, reversal and approval definition",
+      "Sending paid traffic before the manager confirms brand and financial-ad rules",
+      "Mixing creator, SEO and paid-media traffic under one link",
+      "Using aggressive profit, bonus or signal language to lift conversion temporarily"
+    ],
+    metrics: [
+      "Approved FTD rate",
+      "Qualified trader rate",
+      "Reversal or hold rate",
+      "Net CPA by source",
+      "EPC by country",
+      "Time from action to payable commission",
+      "Support complaints or compliance flags"
+    ],
+    actionPlan: [
+      "Prepare a one-page traffic proof pack",
+      "Ask for written commission triggers and disallowed sources",
+      "Negotiate a small capped test before requesting higher CPA",
+      "Run separate links for SEO, creators, paid search and communities",
+      "Review net payout after the validation window before scaling"
+    ]
+  }
+};
 
 export const editorialProfile = {
   author: "AffiliatePro Hub editorial team",
@@ -2531,7 +2570,7 @@ export type GuideSeoEnhancement = {
   faq?: FaqContent[];
 };
 
-export const guideSeoEnhancements: Record<string, GuideSeoEnhancement> = Object.fromEntries(
+const defaultGuideSeoEnhancements: Record<string, GuideSeoEnhancement> = Object.fromEntries(
   guides.map((guide) => [
     guide.slug,
     {
@@ -2557,3 +2596,56 @@ export const guideSeoEnhancements: Record<string, GuideSeoEnhancement> = Object.
     }
   ])
 );
+
+export const guideSeoEnhancements: Record<string, GuideSeoEnhancement> = {
+  ...defaultGuideSeoEnhancements,
+  "how-to-negotiate-with-affiliate-manager": {
+    expandedSections: [
+      {
+        title: "Start with traffic proof",
+        body:
+          "Bring source-level numbers before asking for better economics: clicks, registrations, FTDs, qualified traders, rejected events, chargebacks and net payout by country. Official partner pages such as FxPro tie affiliate performance to defined actions and account-level offer terms, while Kraken asks applicants to share audience, content channels and target countries. That means a manager can only defend a better deal when the source, audience and quality story are clear."
+      },
+      {
+        title: "Define the payable event",
+        body:
+          "Do not negotiate only around the largest visible CPA. Ask what makes an FTD commissionable, how long conversions can stay on hold, when reconciliation happens and whether the agreement pays on deposit, trading activity, eligible volume or another qualified action. If the answer differs by GEO, product or partner profile, store the written version and model net CPA after holds and reversals."
+      },
+      {
+        title: "Lock traffic and compliance rules",
+        body:
+          "Before scaling, confirm whether organic search, paid search, paid social, creators, Telegram, email, native ads, retargeting and brand bidding are allowed. Google Ads treats financial products, CFDs, forex, crypto and related services as restricted policy areas with disclosure, approval and local-law requirements, so a funnel that is acceptable for SEO may still be unsuitable for paid acquisition."
+      },
+      {
+        title: "Negotiate a test, not a promise",
+        body:
+          "A practical ask is a capped test with a defined traffic source, target country, commission trigger, validation period, payout schedule and review milestone. The negotiation becomes stronger after you can show approved FTD rate, qualified trader rate, EPC, support quality and compliance history instead of only registration volume."
+      }
+    ],
+    internalLinks: [
+      { label: "Broker affiliate metrics", href: "/guias/broker-affiliate-metrics" },
+      { label: "CPA vs RevShare", href: "/guias/cpa-vs-revshare-vs-hybrid" },
+      { label: "Financial compliance", href: "/guias/financial-affiliate-compliance" },
+      { label: "Forex CPA programs", href: "/programas/forex-cpa-affiliate-programs" },
+      { label: "Kraken affiliate review", href: "/reviews/kraken-affiliate-program" },
+      { label: "FxPro affiliate review", href: "/reviews/fxpro-affiliate-program" }
+    ],
+    faq: [
+      {
+        question: "What should I show before asking for a higher broker affiliate CPA?",
+        answer:
+          "Show source-level clicks, FTDs, qualified traders, rejected leads, target countries, traffic rules, funnel URLs and compliance history. A higher CPA is easier to justify when the manager can see quality and risk control."
+      },
+      {
+        question: "Should I negotiate CPA, RevShare or hybrid first?",
+        answer:
+          "Start with the model that fits cash flow and traffic quality. Paid acquisition often needs CPA clarity, while education or community traffic can justify RevShare or hybrid only when retention and reporting are reliable."
+      },
+      {
+        question: "Can I scale paid traffic after a manager approves the affiliate account?",
+        answer:
+          "Not automatically. Get written approval for the traffic source, brand terms, claims, landing page, target GEO and financial-ad policy requirements before scaling."
+      }
+    ]
+  }
+};

@@ -28,6 +28,7 @@ Keep entries short, dated, and useful for future automation runs.
 
 ## Completed Runs
 
+- 2026-06-23: `english-affiliate-content-growth` chose `Practical Guide` mode on branch `codex/auto-en-content-2026-06-23`, deepening `/guias/how-to-negotiate-with-affiliate-manager` with traffic-proof, payable-event, compliance-rule and capped-test negotiation guidance. Source basis: FxPro affiliate FAQ, Kraken affiliate/support pages and Google Ads financial-products policy.
 - 2026-06-16: `english-affiliate-content-growth` refreshed the English `crypto-fintech-affiliate-programs` collection on branch `codex/auto-en-content-2026-06-16`, tightening Coinbase, Kraken and TradingView claims against official sources.
 
 ## Active Branch State
@@ -63,6 +64,7 @@ None recorded yet.
 
 ## Source Concerns
 
+- 2026-06-23: For broker affiliate negotiation content, keep paid-traffic and brand-bidding wording conditional. Source rules differ by program and Google Ads treats financial services, CFDs, forex and crypto as restricted policy areas.
 - 2026-06-16: Coinbase public help content does not publish a universal commission rate; keep payout language qualification-based unless the partner agreement is in hand.
 - 2026-06-16: Kraken public affiliate messaging is product- and region-dependent; avoid universal availability claims and note futures-promotion approval limits.
 - 2026-06-16: TradingView payout timing differs slightly between the marketing page and partner rules, so describe it conservatively as monthly with rule verification.
