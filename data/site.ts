@@ -1432,6 +1432,90 @@ export const whiteLabelPages: WhiteLabelPage[] = [
       { label: "CPA vs RevShare", href: "/guias/cpa-vs-revshare-vs-hybrid" },
       { label: "Program vs own brand", href: "/guias/affiliate-program-vs-own-broker-brand" }
     ]
+  },
+  {
+    slug: "binary-options-platform-software",
+    title: "Binary options platform software: white label launch checklist",
+    description:
+      "Plan binary options-style platform software with original branding, trading room, CRM, payments, KYC/AML, affiliate tracking, risk controls and jurisdiction review.",
+    keyword: "binary options platform software",
+    sections: [
+      {
+        title: "Treat the request as product scope, not a shortcut",
+        body: "Binary options platform software searches often come from teams looking for a Binomo, Quotex or Pocket Option-style product. The safer brief is an original platform scope with clear product rules, risk disclosure, market restrictions and legal review before acquisition."
+      },
+      {
+        title: "Core operating modules",
+        body: "A serious platform needs trading room, demo and real account states, user cabinet, wallet, deposits, withdrawals, KYC/AML, CRM, support workflows, anti-fraud flags, affiliate tracking and reporting. A front-end-only script is not enough for launch."
+      },
+      {
+        title: "Compliance and market access",
+        body: "Short-cycle trading products can be restricted or unsuitable in many markets. Define target countries, eligible users, disclosures, complaint handling, ad claims, payment rules and product availability before publishing landing pages or accepting deposits."
+      },
+      {
+        title: "White label versus custom build",
+        body: "White label can reduce time to validation, while custom build gives more control after acquisition economics are proven. In both cases, the operator remains responsible for legal structure, payments, support, risk communication and marketing conduct."
+      }
+    ],
+    faq: [
+      {
+        question: "Is binary options platform software legal everywhere?",
+        answer:
+          "No. Availability and legality vary by jurisdiction, product design, entity, marketing claims and customer eligibility. Any launch needs legal and compliance review for target markets."
+      },
+      {
+        question: "What should be included beyond the trading interface?",
+        answer:
+          "CRM, payments, withdrawals, KYC/AML, anti-fraud, affiliate tracking, reporting, support, risk warnings, audit logs and jurisdiction controls should be part of the launch brief."
+      }
+    ],
+    relatedLinks: [
+      { label: "Trading app clone script", href: "/clone-script/trading-app-clone-script" },
+      { label: "Binomo clone script", href: "/clone-script/binomo-clone-script" },
+      { label: "Financial affiliate compliance", href: "/guias/financial-affiliate-compliance" }
+    ]
+  },
+  {
+    slug: "forex-broker-crm-software",
+    title: "Forex broker CRM software: back office, IB and affiliate requirements",
+    description:
+      "Evaluate forex broker CRM software for lead tracking, KYC, deposits, withdrawals, IB portals, affiliate reporting, support workflows and compliance operations.",
+    keyword: "forex broker CRM software",
+    sections: [
+      {
+        title: "CRM is the broker operating layer",
+        body: "Forex broker CRM software connects acquisition, onboarding, KYC, deposits, withdrawals, support, retention, IB activity and compliance notes. Without a reliable CRM, the broker cannot see whether traffic quality, payments and support load are sustainable."
+      },
+      {
+        title: "Lead, FTD and trader lifecycle",
+        body: "The CRM should track source, campaign, subID, registration, KYC status, first deposit, active trader status, deposits, withdrawals, complaints and support events. Affiliates need clean reporting, but operators need a full lifecycle view."
+      },
+      {
+        title: "IB and affiliate management",
+        body: "A broker CRM should support partner links, rebates, CPA or hybrid events, sub-affiliates, traffic restrictions, payout status and source-level quality signals. This helps separate valuable acquisition from bonus abuse or prohibited promotion."
+      },
+      {
+        title: "Compliance workflows",
+        body: "Forex and CFD offers need risk disclosure, country controls, audit logs, document status, complaint handling and marketing review. CRM fields should make these operational responsibilities visible instead of keeping them in spreadsheets."
+      }
+    ],
+    faq: [
+      {
+        question: "What is forex broker CRM software?",
+        answer:
+          "It is the operational system for leads, clients, deposits, withdrawals, KYC, support, partner tracking, retention events, reports and compliance notes inside a brokerage."
+      },
+      {
+        question: "Should affiliates care about broker CRM?",
+        answer:
+          "Yes. If an affiliate plans to launch or advise a broker brand, CRM quality affects FTD visibility, partner payouts, lead quality reporting, retention and operational risk."
+      }
+    ],
+    relatedLinks: [
+      { label: "Exness clone script", href: "/clone-script/exness-clone-script" },
+      { label: "Broker white label solution", href: "/white-label/broker-white-label-solution" },
+      { label: "Broker affiliate metrics", href: "/guias/broker-affiliate-metrics" }
+    ]
   }
 ];
 
@@ -1454,6 +1538,77 @@ const cloneScriptDisclaimer =
   "Clone script does not mean copying a protected brand, logo, interface, database, codebase or regulated entity. These pages use brand names only as search references and describe legal, white label or custom platform alternatives with original branding and compliance review.";
 
 export const cloneScriptPages: CloneScriptPage[] = [
+  {
+    slug: "trading-app-clone-script",
+    title: "Trading app clone script: white label platform launch guide",
+    description:
+      "Plan a trading app clone script request as an original white label platform: trading room, user cabinet, payments, KYC/AML, CRM, affiliate tracking, reporting and compliance review.",
+    keyword: "trading app clone script",
+    brandReference: "trading app",
+    positioning:
+      "Trading app clone script searches usually blend Binomo, Quotex, Pocket Option, IQ Option and similar references. The stronger path is to define a brand-safe platform scope, then choose white label or custom delivery under an original name, domain and legal structure.",
+    mustHaveFeatures: [
+      "Original mobile-first trading room and user cabinet",
+      "Demo and real account journeys with clear product rules",
+      "Payments, withdrawals, reconciliation and wallet status",
+      "KYC/AML, anti-fraud, country rules and risk disclosures",
+      "Admin CRM for leads, FTDs, support, balances and retention events",
+      "Affiliate tracking with subIDs, postbacks, tiers and source quality",
+      "Reporting for campaign performance, active traders, complaints and operations",
+      "Brand, domain, legal copy and UI that do not imitate protected products"
+    ],
+    buildModules: [
+      {
+        title: "App and traderoom scope",
+        body: "Define onboarding, demo account, real account, market list, chart area, trade controls, wallet, history and support. The screen flow should be original and tied to your product rules."
+      },
+      {
+        title: "Operations before traffic",
+        body: "Payments, KYC, withdrawal review, fraud flags, complaint handling and support timelines should be specified before the launch team buys traffic or recruits affiliates."
+      },
+      {
+        title: "Affiliate growth layer",
+        body: "If affiliates will drive acquisition, add subIDs, postbacks, campaign status, payout rules, prohibited traffic policies and quality reports to the first release."
+      },
+      {
+        title: "White label decision",
+        body: "White label can validate the business faster, while custom development can make sense after acquisition, retention and compliance capacity are proven."
+      }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not copy app logos, screens, design systems, domains, legal wording or protected product assets.",
+      "Avoid easy-income, guaranteed-profit, signal or risk-free trading claims.",
+      "Review product availability, payments, KYC, advertising rules and customer eligibility in every target market."
+    ],
+    monetizationAngles: [
+      "Use the page as a hub that routes users to Binomo, Quotex, Pocket Option and other specific clone-script briefs.",
+      "Compare third-party affiliate revenue with own-brand economics only after CAC, FTD quality and support cost are known.",
+      "Use affiliate tracking and CRM data to reward qualified acquisition instead of raw signup volume."
+    ],
+    faq: [
+      {
+        question: "What is a trading app clone script?",
+        answer:
+          "It usually means a request for trading app functionality such as onboarding, trading room, wallet, CRM, payments and affiliate tracking. It should not mean copying a protected brand, codebase or interface."
+      },
+      {
+        question: "Which modules matter most in a trading app launch?",
+        answer:
+          "Trading room, user cabinet, payments, withdrawals, KYC/AML, CRM, support, risk warnings, affiliate tracking, reporting and audit logs matter more than visual similarity."
+      },
+      {
+        question: "Is white label enough for launch?",
+        answer:
+          "White label can cover technology faster, but the operator still needs legal review, product rules, payments, customer support, compliance copy, partner governance and acquisition controls."
+      }
+    ],
+    relatedLinks: [
+      { label: "Binomo clone script", href: "/clone-script/binomo-clone-script" },
+      { label: "Binary options platform software", href: "/white-label/binary-options-platform-software" },
+      { label: "Broker white label", href: "/white-label/broker-white-label-solution" }
+    ]
+  },
   {
     slug: "quotex-clone-script",
     title: "Quotex clone script: compliant trading platform alternative",
