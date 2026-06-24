@@ -2198,6 +2198,270 @@ export const cloneScriptPages: CloneScriptPage[] = [
     ]
   },
   {
+    slug: "okx-clone-script",
+    title: "OKX clone script: crypto exchange platform scope and risks",
+    description:
+      "Plan an OKX-style crypto platform with original branding, wallet, KYC/AML, trading modules, referral tracking, security controls and compliance review.",
+    keyword: "OKX clone script",
+    brandReference: "OKX",
+    positioning:
+      "OKX clone script intent should be treated as a crypto exchange or broker architecture brief. The safe path is original product scope, custody review, KYC/AML, security and referral governance, not brand imitation.",
+    mustHaveFeatures: [
+      "Original exchange, broker or wallet interface",
+      "Wallet, ledger, deposits, withdrawals and reconciliation",
+      "KYC/AML, sanctions screening and user-risk controls",
+      "Trading, swap or brokerage module with liquidity rules",
+      "Referral and affiliate tracking with anti-abuse controls",
+      "Security monitoring, support workflows and audit logs"
+    ],
+    buildModules: [
+      { title: "Wallet and ledger", body: "Balances, transaction states, limits, holds and reconciliation need to be reliable before growth campaigns start." },
+      { title: "Trading model", body: "Define whether the product is exchange, broker, swap, copy-trading or white label integration because each model changes risk and liquidity." },
+      { title: "Compliance operations", body: "KYC, AML, country controls, monitoring and support escalation should be part of the first launch scope." },
+      { title: "Referral governance", body: "Crypto referral programs need campaign rules, subIDs, fraud checks, bonus limits and clear promotional restrictions." }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not use OKX branding, domains, screenshots, copy or legal wording that implies affiliation.",
+      "Crypto availability, custody and marketing rules vary by jurisdiction.",
+      "Security, KYC/AML, transaction monitoring and support responsibilities must be defined before deposits."
+    ],
+    monetizationAngles: [
+      "Use referral and affiliate tracking only with fraud controls and clear source reporting.",
+      "Start narrower than a full exchange if wallet, liquidity and compliance capacity are not mature.",
+      "Measure funded active users, not just signups."
+    ],
+    faq: [
+      { question: "Can I launch an OKX clone script?", answer: "You should not copy OKX protected assets or imply affiliation. You can scope an original crypto platform, but legal, security and compliance review are essential." },
+      { question: "What matters most in an OKX-style brief?", answer: "Wallet, ledger, KYC/AML, security, liquidity model, support, reporting, referral controls and original branding matter more than interface similarity." }
+    ],
+    relatedLinks: [
+      { label: "Crypto exchange clone script", href: "/clone-script/crypto-exchange-clone-script" },
+      { label: "Binance clone script", href: "/clone-script/binance-clone-script" },
+      { label: "Crypto affiliate programs", href: "/programas/crypto-fintech-affiliate-programs" }
+    ]
+  },
+  {
+    slug: "bybit-clone-script",
+    title: "Bybit clone script: exchange and trading platform build checklist",
+    description:
+      "Scope a Bybit-style crypto trading platform with original UI, wallet, KYC/AML, trading flows, referral tracking, risk controls and security operations.",
+    keyword: "Bybit clone script",
+    brandReference: "Bybit",
+    positioning:
+      "Bybit clone script searches usually point to crypto trading, derivatives-style UX and referral acquisition. A serious build needs original branding, product controls, KYC/AML, security and market-specific legal review.",
+    mustHaveFeatures: [
+      "Original trading, broker or exchange interface",
+      "Wallet and account-risk workflows",
+      "KYC/AML, country controls and monitoring",
+      "Admin CRM for users, tickets, limits and disputes",
+      "Referral or affiliate layer with anti-fraud rules",
+      "Audit logs, security controls and incident response"
+    ],
+    buildModules: [
+      { title: "Product scope", body: "Define spot, derivatives-style UX, broker execution, swap or copy trading before choosing vendor or architecture." },
+      { title: "Risk controls", body: "Trading products need limits, disclosure, market access controls and complaint workflows from day one." },
+      { title: "Security operations", body: "Account access, admin permissions, monitoring, withdrawal review and incident response are core launch requirements." },
+      { title: "Partner acquisition", body: "Referral and affiliate modules should include subIDs, rules, payout status and source-level quality reports." }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not copy Bybit branding, interface, domain patterns or protected materials.",
+      "Crypto trading products can be restricted by country, entity and customer type.",
+      "Avoid guaranteed-profit, leverage-success or risk-free trading claims."
+    ],
+    monetizationAngles: [
+      "Use partner reporting to separate qualified funded users from signup volume.",
+      "Keep product scope narrow until liquidity, support and compliance operations are proven.",
+      "Use education and clear risk language as conversion assets."
+    ],
+    faq: [
+      { question: "Is a Bybit clone script enough to launch?", answer: "No. A production platform needs wallet, KYC/AML, security, trading logic, liquidity, support, risk controls, reporting and legal review." },
+      { question: "What is safer than copying Bybit?", answer: "Use the search intent to define required modules, then launch an original crypto platform or white label product with compliant terms." }
+    ],
+    relatedLinks: [
+      { label: "Crypto exchange clone script", href: "/clone-script/crypto-exchange-clone-script" },
+      { label: "OKX clone script", href: "/clone-script/okx-clone-script" },
+      { label: "Compliance guide", href: "/guias/financial-affiliate-compliance" }
+    ]
+  },
+  {
+    slug: "kucoin-clone-script",
+    title: "KuCoin clone script: crypto exchange white label requirements",
+    description:
+      "Evaluate a KuCoin-style exchange scope with wallets, ledger, KYC/AML, trading modules, referral programs, CRM, reporting and brand-safe launch controls.",
+    keyword: "KuCoin clone script",
+    brandReference: "KuCoin",
+    positioning:
+      "KuCoin clone script demand is best handled as a crypto exchange software checklist. Focus on wallets, monitoring, compliance, user support and referral governance under an original brand.",
+    mustHaveFeatures: [
+      "Original crypto exchange or broker UX",
+      "Wallet, ledger and transaction monitoring",
+      "KYC/AML and user-risk scoring",
+      "Admin panel for tickets, disputes and limits",
+      "Referral and campaign reporting",
+      "Security logs, audit trails and incident workflows"
+    ],
+    buildModules: [
+      { title: "Ledger first", body: "Exchange-like products should start with balance integrity, transaction states, limits, monitoring and reconciliation." },
+      { title: "Market and liquidity", body: "Decide whether the product uses exchange matching, broker execution, swaps or vendor liquidity before pricing the build." },
+      { title: "Support and disputes", body: "A launch needs clear workflows for deposit issues, withdrawal review, account locks, support tickets and complaints." },
+      { title: "Referral controls", body: "Referral growth needs fraud limits, campaign visibility, rules for paid media and partner payout status." }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not use KuCoin marks, screenshots, trade dress or wording that suggests official relationship.",
+      "Crypto licensing, custody, KYC and promotional rules differ by market.",
+      "Review wallet security and operational responsibilities before launch."
+    ],
+    monetizationAngles: [
+      "Use referral analytics to measure funded activity and retention.",
+      "Consider a narrower crypto broker or swap flow before building full exchange complexity.",
+      "Build trust through support, monitoring and transparent risk communication."
+    ],
+    faq: [
+      { question: "What should a KuCoin clone script include?", answer: "Wallet, ledger, KYC/AML, trading or swap logic, admin CRM, monitoring, support, referral tracking, security controls and original branding." },
+      { question: "Can I copy KuCoin design?", answer: "No. The safer route is an original product with separate brand identity, legal terms and compliance review." }
+    ],
+    relatedLinks: [
+      { label: "Crypto exchange clone script", href: "/clone-script/crypto-exchange-clone-script" },
+      { label: "Binance clone script", href: "/clone-script/binance-clone-script" },
+      { label: "Crypto affiliate programs", href: "/programas/crypto-fintech-affiliate-programs" }
+    ]
+  },
+  {
+    slug: "bitget-clone-script",
+    title: "Bitget clone script: crypto broker, copy trading and exchange scope",
+    description:
+      "Plan a Bitget-style crypto platform around original branding, copy-trading workflows, wallet, KYC/AML, referral tracking, risk controls and reporting.",
+    keyword: "Bitget clone script",
+    brandReference: "Bitget",
+    positioning:
+      "Bitget clone script intent often includes crypto trading and copy-trading style growth. A safe brief should separate exchange, broker, referral and copy-trading modules instead of copying brand assets.",
+    mustHaveFeatures: [
+      "Original exchange, broker or copy-trading interface",
+      "Wallet, deposits, withdrawals and reconciliation",
+      "KYC/AML, risk scoring and market access rules",
+      "Leader, follower or signal workflows if copy trading is in scope",
+      "Referral tracking with anti-abuse logic",
+      "Admin CRM, support, reporting and audit logs"
+    ],
+    buildModules: [
+      { title: "Copy-trading scope", body: "If copy trading is included, define leader onboarding, follower consent, risk warnings, allocation rules, fees and performance display limits." },
+      { title: "Wallet and trading", body: "Wallet, ledger, trading states and reconciliation need a reliable operating model before marketing." },
+      { title: "Partner acquisition", body: "Referral, affiliate and creator programs require campaign rules, attribution and payout governance." },
+      { title: "Compliance review", body: "Crypto, derivatives and copy-trading features can trigger different restrictions by country and customer type." }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not copy Bitget branding, screens, domains, legal copy or campaign assets.",
+      "Copy-trading performance claims require conservative disclosure and market-specific review.",
+      "Crypto custody, KYC/AML, referral and advertising rules must be reviewed before launch."
+    ],
+    monetizationAngles: [
+      "Monetize through spread, fees, referral or copy-trading features only where permitted.",
+      "Separate exchange revenue from copy-trading or creator-led acquisition metrics.",
+      "Use reporting to monitor funded users, active traders, churn and support load."
+    ],
+    faq: [
+      { question: "What is a Bitget clone script request usually asking for?", answer: "It usually points to crypto trading, referral and copy-trading features. The launch should be original and reviewed for security, compliance and market access." },
+      { question: "Can copy trading be added to a white label platform?", answer: "It can be scoped, but it needs risk disclosure, leader controls, follower consent, performance-display rules and legal review." }
+    ],
+    relatedLinks: [
+      { label: "Crypto exchange clone script", href: "/clone-script/crypto-exchange-clone-script" },
+      { label: "Bybit clone script", href: "/clone-script/bybit-clone-script" },
+      { label: "Broker white label", href: "/white-label/broker-white-label-solution" }
+    ]
+  },
+  {
+    slug: "tradingview-clone-script",
+    title: "TradingView clone script: charting platform and trading tools scope",
+    description:
+      "Scope a TradingView-style charting platform with original UI, watchlists, indicators, alerts, broker integrations, user accounts, subscriptions and compliance boundaries.",
+    keyword: "TradingView clone script",
+    brandReference: "TradingView",
+    positioning:
+      "TradingView clone script intent is broader and less broker-specific than binary options pages. It usually means charting, alerts, watchlists, community or broker-integration tools under an original product identity.",
+    mustHaveFeatures: [
+      "Original charting and watchlist interface",
+      "Indicator, drawing, alert and layout workflows",
+      "User accounts, subscriptions or access tiers",
+      "Broker, exchange or data-provider integrations where licensed",
+      "Content moderation and community controls if social features exist",
+      "Clear data, risk and educational disclaimers"
+    ],
+    buildModules: [
+      { title: "Charting product scope", body: "Define chart types, indicators, alerts, watchlists, layouts, data refresh, saved templates and mobile behavior before choosing technology." },
+      { title: "Data and integrations", body: "Market data, broker access and exchange integrations require licensing, latency expectations and clear responsibility boundaries." },
+      { title: "Community and content", body: "If ideas, comments or shared scripts are included, plan moderation, abuse controls, disclaimers and user permissions." },
+      { title: "Monetization", body: "Charting platforms can monetize subscriptions, premium tools, broker referrals or B2B widgets without copying a protected interface." }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not copy TradingView branding, interface, scripts, marketplace assets or protected materials.",
+      "Market data, broker integrations and user-generated trading ideas may require licensing and disclaimers.",
+      "Avoid presenting charts, alerts or indicators as guaranteed trading signals."
+    ],
+    monetizationAngles: [
+      "Subscription tiers can be cleaner than deposit-driven broker funnels.",
+      "Broker integrations and affiliate referrals should be disclosed and tracked separately.",
+      "Educational content can support SEO without promising performance."
+    ],
+    faq: [
+      { question: "What does TradingView clone script mean?", answer: "It usually means a charting and trading-tools platform brief: charts, watchlists, indicators, alerts, accounts, integrations and subscriptions under original branding." },
+      { question: "Can I use third-party market data?", answer: "Only under the provider's licensing and usage terms. Data rights, latency, display rules and redistribution need review." }
+    ],
+    relatedLinks: [
+      { label: "Trading app clone script", href: "/clone-script/trading-app-clone-script" },
+      { label: "Broker white label", href: "/white-label/broker-white-label-solution" },
+      { label: "Financial compliance", href: "/guias/financial-affiliate-compliance" }
+    ]
+  },
+  {
+    slug: "etoro-clone-script",
+    title: "eToro clone script: social trading and copy trading platform guide",
+    description:
+      "Plan an eToro-style social trading platform with original branding, profiles, copy-trading workflows, CRM, payments, KYC, risk disclosures and compliance review.",
+    keyword: "eToro clone script",
+    brandReference: "eToro",
+    positioning:
+      "eToro clone script searches usually signal demand for social trading, profiles, copy-trading workflows and broker-like onboarding. The defensible path is original product design with strong disclosure, suitability and compliance controls.",
+    mustHaveFeatures: [
+      "Original social trading or copy-trading interface",
+      "Trader profiles, follower flows and consent checkpoints",
+      "KYC, suitability, payments and account status workflows",
+      "Performance display rules and risk disclosures",
+      "CRM, support, reporting and complaint handling",
+      "Affiliate, referral or creator tracking with governance"
+    ],
+    buildModules: [
+      { title: "Copy-trading workflow", body: "Define leader onboarding, follower consent, allocation, stop rules, fees, performance display and risk warnings before designing screens." },
+      { title: "Broker operations", body: "Payments, KYC, support, complaints, account status and reporting are core operational modules, not back-office extras." },
+      { title: "Social layer", body: "Profiles, comments, feeds and public performance pages need moderation, disclaimers and abuse controls." },
+      { title: "Compliance first", body: "Copy-trading and social investing claims can be sensitive. Avoid implying predictable returns or suitability for everyone." }
+    ],
+    complianceNotes: [
+      cloneScriptDisclaimer,
+      "Do not copy eToro branding, interfaces, user-profile formats, copy or campaign materials.",
+      "Copy-trading and social investing claims require conservative performance and risk disclosure.",
+      "Review market access, KYC, suitability, payments and promotional rules before launch."
+    ],
+    monetizationAngles: [
+      "Monetize through broker economics, subscriptions, spreads, creator programs or referrals only where permitted.",
+      "Measure copied activity, funded users, churn, complaints and support load separately.",
+      "Use educational pages to qualify users before account creation."
+    ],
+    faq: [
+      { question: "What is an eToro clone script?", answer: "It is usually a request for social trading and copy-trading features. It should not mean copying eToro branding, protected UI or legal positioning." },
+      { question: "What is the biggest risk in copy trading software?", answer: "Performance claims, suitability, follower consent, KYC, risk disclosure, complaints and market restrictions can create more risk than the interface itself." }
+    ],
+    relatedLinks: [
+      { label: "Trading app clone script", href: "/clone-script/trading-app-clone-script" },
+      { label: "Bitget clone script", href: "/clone-script/bitget-clone-script" },
+      { label: "Compliance guide", href: "/guias/financial-affiliate-compliance" }
+    ]
+  },
+  {
     slug: "metatrader-5-clone-script",
     title: "MetaTrader 5 clone script: trading platform alternative and white label notes",
     description:
