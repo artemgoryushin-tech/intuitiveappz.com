@@ -6,16 +6,16 @@ import { WhiteLabelFlowVisual } from "@/components/Visuals";
 import { cloneScriptPages, siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
-  title: "Trading platform clone scripts and white label alternatives",
+  title: "Clone script guides for trading, broker and crypto platforms",
   description:
-    "Guides for Quotex clone script, Pocket Option clone script and similar trading platform build requests, with brand-safe white label guidance.",
+    "Compare clone script requests for trading apps, brokers and crypto platforms, with brand-safe white label guidance, launch modules, compliance notes and platform scope planning.",
   alternates: {
     canonical: "/clone-script"
   },
   openGraph: {
-    title: "Trading platform clone scripts and white label alternatives",
+    title: "Clone script guides for trading, broker and crypto platforms",
     description:
-      "Brand-safe guides for clone script searches and compliant trading platform launch planning.",
+      "Brand-safe clone script guides for trading app, broker and crypto platform launch planning.",
     url: `${siteConfig.domain}/clone-script`
   }
 };
@@ -55,18 +55,18 @@ export default function CloneScriptIndexPage() {
               Platform build guides
             </p>
             <h1 className="mt-4 max-w-3xl text-balance text-4xl font-black tracking-tight text-white md:text-5xl">
-              Plan platform builds without copying brands
+              Clone script guides for trading, broker and crypto platforms
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/70">
-              These briefs translate requests like Quotex clone script and Pocket
-              Option clone script into legal white label, custom build and broker infrastructure
-              requirements.
+              Translate searches like Binomo clone script, Quotex clone script and Binance
+              clone script into original white label or custom platform scopes: trading room,
+              CRM, payments, KYC/AML, affiliate tracking, reporting and compliance review.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {[
-                ["Platform needs", "Teams are asking for trading functionality, launch speed and vendor options."],
-                ["Brand safety", "Names are search references only; the product needs original identity and legal review."],
-                ["Launch planning", "Compare white label, CRM, payments and affiliate tools before choosing a build path."]
+                ["Digital options style", "Short-cycle trading flows, demo/real account journeys, payments, CRM and affiliate tracking."],
+                ["Broker infrastructure", "Cabinet, KYC, IB or affiliate module, reporting, support workflows and risk controls."],
+                ["Crypto platform scope", "Wallet, ledger, liquidity, security, monitoring, referral rules and compliance operations."]
               ].map(([title, copy]) => (
                 <div key={title} className="rounded-xl border border-white/15 bg-white/10 p-5">
                   <p className="text-sm font-black text-white">{title}</p>

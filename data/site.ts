@@ -1712,37 +1712,39 @@ export const cloneScriptPages: CloneScriptPage[] = [
   },
   {
     slug: "binomo-clone-script",
-    title: "Binomo clone script: build requirements for a trading platform",
+    title: "Binomo clone script for trading platform launch",
     description:
-      "A brand-safe guide to Binomo-style trading platform builds, including front end, CRM, payments, affiliate tracking, risk notices and white label alternatives.",
+      "Plan a Binomo-style trading platform under your own brand: trading room, CRM, payments, KYC/AML, affiliate tracking, reporting, risk controls and white label launch requirements.",
     keyword: "Binomo clone script",
     brandReference: "Binomo",
     positioning:
-      "A Binomo clone script brief should clarify platform-build requirements while making clear that the launch needs original branding, legal review and operational infrastructure.",
+      "A Binomo clone script brief should be treated as a platform scope request: fast trading UX, user cabinet, CRM, payments, KYC/AML, affiliate tracking, reporting and operational controls under a distinct brand with legal review.",
     mustHaveFeatures: [
-      "Original trading interface and user cabinet",
-      "Admin CRM for acquisition, KYC, balances and support",
-      "Payments, withdrawals and reconciliation workflows",
-      "Affiliate tracking with fraud and source controls",
-      "Risk notices and product-availability rules",
-      "Reporting for FTD, active trader, retention and complaints"
+      "Original trading room with demo and real account journeys",
+      "User cabinet for profile, wallet, deposits, withdrawals and verification status",
+      "Admin CRM for acquisition, KYC, balances, support and retention events",
+      "Payment operations, withdrawal review, reconciliation and anti-fraud workflows",
+      "Affiliate tracking with subIDs, postbacks, partner tiers and source controls",
+      "Risk notices, product-availability rules and complaint-handling records",
+      "Reporting for FTD, active trader, campaign quality, retention and support load",
+      "Mobile-first web experience with room for iOS, Android or PWA scope"
     ],
     buildModules: [
       {
-        title: "MVP scope",
-        body: "Define the smallest launchable product: onboarding, trading room, cabinet, payments, support and reporting. Avoid buying a script that only shows a front-end demo."
+        title: "Trading room and apps",
+        body: "Define the client journey from registration to demo account, real account, wallet, trading room, transaction history and support. The interface should be original, mobile-first and matched to your product rules."
       },
       {
-        title: "Compliance and operations",
-        body: "Trading products need rules for market access, KYC, complaints, disclosures, promotions and payment monitoring from day one."
+        title: "Back office and CRM",
+        body: "Operators need visibility into leads, FTDs, KYC status, deposits, withdrawals, tickets, bonuses, source attribution and retention events. A front-end script without CRM is not a launch-ready platform."
       },
       {
-        title: "Affiliate stack",
-        body: "If affiliates are the main growth engine, build source-level reports and traffic restrictions into the partner module."
+        title: "Payments, KYC and risk",
+        body: "Scope payment status, withdrawal review, KYC/AML steps, fraud flags, country rules, audit logs and risk disclosures before accepting traffic or deposits."
       },
       {
-        title: "Distinct brand",
-        body: "The platform should not look like Binomo or imply affiliation. Use original identity, domain, legal copy and product terms."
+        title: "Affiliate and reporting layer",
+        body: "If growth depends on publishers, build partner links, subIDs, postbacks, CPA or RevShare rules, lead quality reports and traffic restrictions into the first release."
       }
     ],
     complianceNotes: [
@@ -1761,6 +1763,16 @@ export const cloneScriptPages: CloneScriptPage[] = [
         question: "What is a Binomo clone script?",
         answer:
           "In practical terms, it usually means a request for a trading platform with similar broad capabilities. It should not mean copying Binomo branding, code or protected design."
+      },
+      {
+        question: "What modules should a Binomo-style platform include?",
+        answer:
+          "A serious scope usually includes trading room, user cabinet, wallet, payments, withdrawals, KYC/AML, admin CRM, affiliate tracking, reporting, support workflows, risk notices and audit logs."
+      },
+      {
+        question: "Is white label safer than buying a cheap script?",
+        answer:
+          "Often yes. A cheap script may only cover a demo interface, while white label or custom delivery should clarify operations, payments, KYC, support, reporting, brand ownership and compliance responsibilities."
       },
       {
         question: "What should I ask a vendor before buying a script?",

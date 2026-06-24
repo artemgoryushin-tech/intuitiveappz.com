@@ -15,6 +15,40 @@ export function generateStaticParams() {
   return cloneScriptPages.map((page) => ({ slug: page.slug }));
 }
 
+const platformModules = [
+  "Trading room",
+  "User cabinet",
+  "Admin CRM",
+  "Payments",
+  "KYC/AML",
+  "Risk controls",
+  "Affiliate tracking",
+  "Reporting"
+];
+
+const launchRoadmap = [
+  {
+    step: "01",
+    title: "Map the reference",
+    body: "Turn the brand search into a requirements brief: user journey, trading flow, cabinet, payments, CRM and partner acquisition."
+  },
+  {
+    step: "02",
+    title: "Define the MVP",
+    body: "Separate must-have launch modules from future enhancements so the first version is operational, original and reviewable."
+  },
+  {
+    step: "03",
+    title: "Connect operations",
+    body: "Plan KYC, payment status, support, risk controls, affiliate tracking, reporting and audit logs before buying traffic."
+  },
+  {
+    step: "04",
+    title: "QA and go-live",
+    body: "Validate onboarding, deposits, withdrawals, risk warnings, mobile views, CRM events and compliance copy before launch."
+  }
+];
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const page = cloneScriptPages.find((item) => item.slug === slug);
@@ -88,6 +122,24 @@ export default async function CloneScriptPage({ params }: PageProps) {
       <JsonLd
         data={{
           "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "@id": `${pageUrl}#software`,
+          name: page.title,
+          url: pageUrl,
+          applicationCategory: "BusinessApplication",
+          operatingSystem: "Web, iOS, Android, PWA",
+          description: page.description,
+          provider: {
+            "@type": "Organization",
+            name: siteConfig.name,
+            url: siteConfig.domain
+          },
+          featureList: [...platformModules, ...page.mustHaveFeatures]
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
           "@type": "FAQPage",
           mainEntity: page.faq.map((item) => ({
             "@type": "Question",
@@ -117,6 +169,16 @@ export default async function CloneScriptPage({ params }: PageProps) {
               {page.title}
             </h1>
             <p className="mt-6 max-w-3xl text-xl leading-9 text-muted">{page.description}</p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {platformModules.map((module) => (
+                <span
+                  key={module}
+                  className="rounded-full border border-brand/15 bg-brand/5 px-3 py-1 text-xs font-black uppercase tracking-[0.02em] text-brand"
+                >
+                  {module}
+                </span>
+              ))}
+            </div>
             <p className="mt-5 max-w-3xl text-sm font-semibold leading-7 text-muted">
               By {editorialProfile.author}. Updated on {editorialProfile.lastUpdated}.
             </p>
@@ -150,7 +212,15 @@ export default async function CloneScriptPage({ params }: PageProps) {
         </section>
 
         <section className="mt-8">
-          <BeBrokerCTA horizontal formId="lead-form" />
+          <BeBrokerCTA
+            horizontal
+            formId="lead-form"
+            contextName={`${page.brandReference} platform scope`}
+            contextSlug={`${page.slug}-platform-scope`}
+            requestType={`${page.keyword} white label scope`}
+            title={`Request ${page.brandReference} platform scope`}
+            description={`Share target markets, product scope, payment methods, KYC needs, affiliate model and launch timeline. This is a project brief for an original white label or custom platform, not legal, investment or licensing advice.`}
+          />
         </section>
 
         <div className="mt-12 grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_22rem]">
@@ -179,6 +249,22 @@ export default async function CloneScriptPage({ params }: PageProps) {
               </div>
             </section>
 
+            <section className="surface-card rounded-[1.5rem] p-7">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
+                Included modules
+              </p>
+              <h2 className="mt-3 text-balance text-3xl font-black tracking-tight text-ink">
+                The operating stack behind a {page.brandReference}-style request
+              </h2>
+              <div className="mt-6 grid gap-3 md:grid-cols-4">
+                {platformModules.map((module) => (
+                  <div key={module} className="rounded-2xl bg-cream/80 p-4 text-sm font-black text-ink">
+                    {module}
+                  </div>
+                ))}
+              </div>
+            </section>
+
             <section className="grid gap-5 md:grid-cols-2">
               {page.buildModules.map((module) => (
                 <div key={module.title} className="visual-card rounded-[1.25rem] p-6">
@@ -199,6 +285,24 @@ export default async function CloneScriptPage({ params }: PageProps) {
                   </li>
                 ))}
               </ul>
+            </section>
+
+            <section className="surface-card rounded-[1.5rem] p-7">
+              <p className="text-xs font-black uppercase tracking-[0.02em] text-brand">
+                Launch roadmap
+              </p>
+              <h2 className="mt-3 text-balance text-3xl font-black tracking-tight text-ink">
+                How to turn the search reference into your own platform
+              </h2>
+              <div className="mt-6 grid gap-4 md:grid-cols-2">
+                {launchRoadmap.map((item) => (
+                  <article key={item.step} className="rounded-2xl bg-white p-5 shadow-sm">
+                    <span className="text-sm font-black text-accent">{item.step}</span>
+                    <h3 className="mt-3 text-xl font-black tracking-tight text-ink">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-7 text-muted">{item.body}</p>
+                  </article>
+                ))}
+              </div>
             </section>
 
             <section className="rounded-[1.5rem] bg-ink p-7 text-white shadow-soft">
