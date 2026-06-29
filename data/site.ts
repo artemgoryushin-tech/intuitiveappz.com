@@ -2739,7 +2739,7 @@ export const guideDeepDives: Record<string, GuideDeepDive> = {
 export const editorialProfile = {
   author: "AffiliatePro Hub editorial team",
   reviewer: "Commercial and editorial compliance review",
-  lastUpdated: "2026-04-29",
+  lastUpdated: "2026-06-29",
   policyUrl: "/metodologia",
   disclosureUrl: "/divulgacao",
   riskNotice:
