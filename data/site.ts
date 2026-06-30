@@ -505,25 +505,25 @@ export const programs: Program[] = [
     officialUrl: "https://www.fxtm.com/affiliates/",
     officialLabel: "FXTM Affiliates",
     payoutModel: "CPA affiliate and partner programs",
-    commission: "Tiered CPA is published by qualification criteria; the commission table should be checked before quoting current values",
-    payoutFrequency: "FXTM commission materials reference monthly CPA payment timing",
+    commission: "CPA tiers are published up to USD 600 per new qualified trader, with minimum deposit and closed-lot criteria by tier",
+    payoutFrequency: "CPA is paid once a month within the 1st-15th of the following month according to FXTM commission materials",
     subAffiliate: "Partner structures can vary; confirm current sub-partner terms with FXTM",
     bestFor: "Forex affiliates comparing CPA qualification rules by deposit and closed-lot requirements",
     markets: "International, with explicit exclusions and entity restrictions",
     paymentMethods: "Bank wire, Skrill and Neteller are referenced in FXTM commission materials",
     verdict:
-      "FXTM is useful for affiliate comparisons because its public materials explain CPA qualification criteria more clearly than many broker pages. The key is to keep values current and separate global, UK/EU and excluded-market rules.",
-    pros: ["Published CPA qualification logic", "Known forex brand", "Monthly payout timing in materials", "Common affiliate payment methods"],
+      "FXTM is useful for affiliate comparisons because its public materials explain deposit bands, closed-lot requirements and monthly CPA payment timing more clearly than many broker pages. The key is to keep values current and separate global, UK/EU and excluded-market rules.",
+    pros: ["Published CPA tiers up to USD 600", "Closed-lot and deposit qualification rules", "Monthly payout timing in materials", "Common affiliate payment methods"],
     cons: ["Countries and entities have exclusions", "CPA tiers can change", "Qualified trader rules require careful explanation"],
     affiliateTools: ["Affiliate application", "Commission tables", "Payment FAQs", "Partner support"],
-    trafficNotes: ["Good fit for long-form forex CPA comparisons", "Explain deposit and closed-lot qualification criteria", "Avoid using outdated CPA numbers in ads"],
+    trafficNotes: ["Good fit for long-form forex CPA comparisons", "Explain deposit and closed-lot qualification criteria before projecting CPA", "Avoid using outdated CPA numbers in ads"],
     complianceNotes: ["Do not offer investment advice", "Use forex and CFD risk disclosure", "Respect excluded-country lists"],
-    facts: ["FXTM publishes CPA qualification criteria", "Commission materials reference monthly payment timing", "Payment methods include bank wire, Skrill and Neteller in public materials"],
+    facts: ["FXTM publishes CPA tiers up to USD 600 for qualified traders", "Commission materials reference monthly payment timing", "Payment methods include bank wire, Skrill and Neteller in public materials"],
     sources: [
       { label: "FXTM Affiliates", url: "https://www.fxtm.com/affiliates/" },
       { label: "FXTM Affiliates Commission", url: "https://www.fxtm.com/affiliates-commission/" }
     ],
-    lastChecked: "2026-05-22",
+    lastChecked: "2026-06-30",
     keywords: ["FXTM affiliate program", "FXTM Partners", "forex CPA affiliate"]
   },
   {
@@ -533,22 +533,22 @@ export const programs: Program[] = [
     officialUrl: "https://www.axi.com/int/partnerships/affiliate-program",
     officialLabel: "Axi Affiliate Program",
     payoutModel: "CPA affiliate and Master Affiliate sub-affiliate model",
-    commission: "Up to USD 1,200 CPA per qualified client plus 10% sub-affiliate commission for Master Affiliates according to official materials",
-    payoutFrequency: "Payouts every two weeks are referenced in Axi affiliate FAQs",
+    commission: "Up to USD 600 CPA per qualified client plus 10% sub-affiliate commission for Master Affiliates according to official materials",
+    payoutFrequency: "CPA and sub-affiliate commissions are paid monthly according to the official affiliate page",
     subAffiliate: "10% commission on sub-affiliate earnings for Master Affiliates",
     bestFor: "Forex publishers, media buyers and partner recruiters who can meet qualified-client volume rules",
     markets: "International, subject to local availability and product restrictions",
     paymentMethods: "Defined by the Axi affiliate account and agreement",
     verdict:
-      "Axi is one of the clearer high-CPA forex affiliate pages because it publishes a headline CPA, qualification concept and Master Affiliate angle. Affiliates still need to validate volume thresholds, country rules and whether the promoted entity accepts their traffic source.",
-    pros: ["Up to USD 1,200 CPA", "Biweekly payout positioning", "10% sub-affiliate angle", "Affiliate calculator and FAQ content"],
+      "Axi is one of the clearer forex affiliate pages because it publishes a headline CPA, qualification concept, real-time reporting and Master Affiliate angle. Affiliates still need to validate volume thresholds, country rules and whether the promoted entity accepts their traffic source.",
+    pros: ["Up to USD 600 CPA", "Monthly payout positioning", "10% sub-affiliate angle", "Affiliate calculator and performance dashboard"],
     cons: ["CPA requires qualified clients", "Volume thresholds apply", "Entity and regional rules must be checked"],
-    affiliateTools: ["Tracking links", "Affiliate calculator", "FAQ content", "Master Affiliate structure", "Partner support"],
-    trafficNotes: ["Good fit for forex comparison content, paid search tests and partner-network recruitment", "Confirm qualifying trading volume before forecasting economics", "Separate CPA acquisition campaigns from sub-affiliate recruitment"],
+    affiliateTools: ["Tracking links", "Affiliate calculator", "Real-time statistics", "Master Affiliate structure", "Dedicated account manager"],
+    trafficNotes: ["Good fit for forex comparison content, paid search tests and partner-network recruitment", "Confirm qualified-client rules before forecasting economics", "Separate CPA acquisition campaigns from sub-affiliate recruitment"],
     complianceNotes: ["Use CFD and forex risk warnings", "Do not imply the CPA is guaranteed for every signup", "Check local rules before promoting to restricted regions"],
-    facts: ["Official materials reference up to USD 1,200 CPA", "Axi states biweekly affiliate payouts in FAQ content", "Master Affiliates can receive 10% of sub-affiliate earnings"],
+    facts: ["Official materials reference up to USD 600 CPA per qualified client", "Axi states CPA and sub-affiliate commissions are paid monthly", "Master Affiliates can receive 10% of sub-affiliate earnings"],
     sources: [{ label: "Axi Forex Affiliate Program", url: "https://www.axi.com/int/partnerships/affiliate-program" }],
-    lastChecked: "2026-05-22",
+    lastChecked: "2026-06-30",
     keywords: ["Axi affiliate program", "Axi forex affiliate", "forex CPA affiliate"]
   },
   {
@@ -826,25 +826,22 @@ export const programs: Program[] = [
     officialUrl: "https://www.fxpro.partners/",
     officialLabel: "FxPro Affiliate Program",
     payoutModel: "CPA affiliate, introducer and customized partnership schemes",
-    commission: "Official materials reference CPA up to USD 1,100 for active clients and spread-revenue sharing for introducers",
-    payoutFrequency: "Official FAQ references month-end reconciliation and flexible payout options after approval",
+    commission: "Official materials reference CPA up to USD 1,100 for each active client or referral first deposit, with rates differing by GEO",
+    payoutFrequency: "Official FAQ references month-end reconciliation by the 5th, manager approval and withdrawal through flexible payout options within 15 days",
     subAffiliate: "The public FAQ references a 5% referral-program income share for referred partners",
     bestFor: "Forex affiliates that want a high-CPA broker offer with manager-led validation",
     markets: "Global forex and CFD markets with different CPA rates by GEO",
     paymentMethods: "Flexible payout options are referenced; confirm exact methods with the manager",
     verdict:
-      "FxPro is a strong addition for CPA comparison pages because it publishes a clear affiliate portal and headline CPA language. Affiliates still need to validate GEO rates, hold status, approval rules and promotional restrictions.",
+      "FxPro is a strong CPA comparison entry because it publishes a clear affiliate portal, hold-status explanation, GEO-rate caveat and month-end reconciliation process. Affiliates still need to validate exact rates, approval rules and promotional restrictions with a manager.",
     pros: ["CPA up to USD 1,100 referenced", "Real-time statistics", "Promotional materials", "Referral-program angle"],
     cons: ["GEO rates vary", "Conversions can go on hold for review", "Final payout requires reconciliation and approval"],
     affiliateTools: ["Affiliate portal", "Referral links", "Real-time statistics", "API or postback integration", "Custom promotional materials"],
-    trafficNotes: ["Good fit for broker comparison pages, paid tests and finance creators", "Forecast net CPA after hold and approval rules", "Ask for current GEO rate card before buying media"],
+    trafficNotes: ["Good fit for broker comparison pages, paid tests and finance creators", "Forecast net CPA after hold, qualification and manager-approval rules", "Ask for the current GEO rate card before buying media"],
     complianceNotes: ["Use CFD risk disclosure", "Do not imply every active client qualifies for the headline CPA", "Avoid unauthorized discount or performance claims"],
-    facts: ["FxPro affiliate materials reference up to USD 1,100 per active client", "FAQ content references different CPA rates by GEO", "FAQ content references month-end reconciliation and approval before withdrawal"],
-    sources: [
-      { label: "FxPro Affiliate Program", url: "https://www.fxpro.partners/" },
-      { label: "FxPro affiliate program press release", url: "https://www.fxpro.com/press-releases/fxpro-launches-new-affiliate-program" }
-    ],
-    lastChecked: "2026-05-22",
+    facts: ["FxPro affiliate materials reference up to USD 1,100 per active client", "FAQ content references different CPA rates by GEO", "FAQ content references hold review, month-end reconciliation and approval before withdrawal"],
+    sources: [{ label: "FxPro Affiliate Program", url: "https://www.fxpro.partners/" }],
+    lastChecked: "2026-06-30",
     keywords: ["FxPro affiliate program", "FxPro partners", "forex CPA affiliate"]
   },
   {
@@ -2840,6 +2837,70 @@ const rankingSeoContentDefaults: Record<string, RankingSeoContent> = Object.from
 
 export const rankingSeoContent: Record<string, RankingSeoContent> = {
   ...rankingSeoContentDefaults,
+  "forex-cpa-affiliate-programs": {
+    ...rankingSeoContentDefaults["forex-cpa-affiliate-programs"],
+    directAnswer:
+      "The best forex CPA affiliate program is not simply the largest advertised payout. Compare the payable event, minimum deposit, trading-volume rule, hold status, approval process, country rate card and payout timing before you buy or scale traffic.",
+    bestForBadges: [
+      { label: "Qualification clarity", program: "FXTM", reason: "publishes deposit, closed-lot and monthly CPA payment details that make net CPA easier to model." },
+      { label: "Network recruiters", program: "Axi", reason: "combines a public CPA ceiling with a Master Affiliate sub-affiliate angle." },
+      { label: "Manager-led CPA", program: "FxPro", reason: "explains GEO-rate differences, hold status and month-end reconciliation before withdrawal." }
+    ],
+    methodology: [
+      "We prioritize official partner pages and commission FAQs over generic broker affiliate listicles.",
+      "We compare CPA by net payable outcome, not only headline maximums.",
+      "We give extra weight to programs that explain qualification rules, holds, payout timing and reporting.",
+      "We treat country restrictions, traffic-source approval and risk disclosure as part of the CPA decision."
+    ],
+    brazilValidation: [
+      "Ask the manager for the current country rate card before quoting CPA values in ads or landing pages.",
+      "Confirm the exact payable event: first deposit, qualified trader, closed-lot activity, active client or another approved action.",
+      "Model net CPA after holds, rejected leads, reversals, minimum volume and payout timing.",
+      "Separate paid search, SEO, creator, email and community traffic with different links or subIDs.",
+      "Store the official source, agreement version and last-check date before scaling a campaign."
+    ],
+    commissionModels: [
+      {
+        model: "Fixed CPA",
+        bestWhen: "You buy traffic and need faster payback from qualified first deposits or active-client events.",
+        risk: "The headline value can be reduced by country tier, qualification rules, holds, rejected leads or manager approval."
+      },
+      {
+        model: "Dynamic or tiered CPA",
+        bestWhen: "Your traffic quality differs by market and you can prove better activity over time.",
+        risk: "Forecasts must include deposit bands, volume rules and the lower tiers that apply before quality is proven."
+      },
+      {
+        model: "CPA plus sub-affiliate layer",
+        bestWhen: "You recruit other publishers or community owners and can govern their traffic sources.",
+        risk: "Sub-affiliate revenue adds compliance exposure if partner sources, claims and brand use are not controlled."
+      }
+    ],
+    bebrokerBridge:
+      "If CPA campaigns are already predictable, use approved FTD rate, net CPA, payback and support load to decide whether a broker white label discussion is worth exploring. Do not move to ownership until qualification and retention are visible by source.",
+    faqs: [
+      {
+        question: "Which forex CPA affiliate program pays the most?",
+        answer:
+          "Headline maximums change by country, product and qualification rule. Compare net CPA after deposit requirements, trading activity, holds, rejected leads and payout timing."
+      },
+      {
+        question: "What should media buyers validate before scaling forex CPA?",
+        answer:
+          "Validate allowed traffic sources, brand bidding, target countries, creative claims, FTD definition, qualified-trader rules, hold period and manager approval process."
+      },
+      {
+        question: "Is high CPA safer than RevShare?",
+        answer:
+          "Not automatically. CPA can improve payback, but rejected or unqualified leads can erase the advantage. RevShare can work when retention and reporting are strong."
+      }
+    ],
+    relatedLinks: [
+      { label: "Broker affiliate metrics", href: "/guias/broker-affiliate-metrics" },
+      { label: "Negotiate with managers", href: "/guias/how-to-negotiate-with-affiliate-manager" },
+      { label: "CPA vs RevShare", href: "/guias/cpa-vs-revshare-vs-hybrid" }
+    ]
+  },
   "crypto-fintech-affiliate-programs": {
     ...rankingSeoContentDefaults["crypto-fintech-affiliate-programs"],
     directAnswer:

@@ -28,6 +28,7 @@ Keep entries short, dated, and useful for future automation runs.
 
 ## Completed Runs
 
+- 2026-06-30: `english-affiliate-content-growth` chose `Existing Content Refresh` mode on branch `codex/auto-en-content-2026-06-30`, refreshing the forex CPA cluster around FXTM, Axi and FxPro. Source basis: official FXTM commission materials, Axi affiliate page and FxPro partner FAQ; Axi stale USD 1,200/biweekly wording was corrected to current public USD 600/monthly wording.
 - 2026-06-23: `english-affiliate-content-growth` chose `Practical Guide` mode on branch `codex/auto-en-content-2026-06-23`, deepening `/guias/how-to-negotiate-with-affiliate-manager` with traffic-proof, payable-event, compliance-rule and capped-test negotiation guidance. Source basis: FxPro affiliate FAQ, Kraken affiliate/support pages and Google Ads financial-products policy.
 - 2026-06-16: `english-affiliate-content-growth` refreshed the English `crypto-fintech-affiliate-programs` collection on branch `codex/auto-en-content-2026-06-16`, tightening Coinbase, Kraken and TradingView claims against official sources.
 
